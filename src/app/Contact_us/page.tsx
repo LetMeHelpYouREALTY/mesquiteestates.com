@@ -1,13 +1,58 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaCheckCircle } from "react-icons/fa";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import Newsletter from "@/components/common/Newsletter";
+import { CONTACT_ERROR_MESSAGE } from "@/lib/contact-constants";
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleContactSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError(null);
+
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          form: "contact",
+          name,
+          email,
+          message,
+          sourceUrl: window.location.href,
+        }),
+      });
+
+      if (!response.ok) {
+        const data = (await response.json().catch(() => null)) as {
+          error?: string;
+        } | null;
+        setError(data?.error ?? CONTACT_ERROR_MESSAGE);
+        return;
+      }
+
+      setIsSuccess(true);
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch {
+      setError(CONTACT_ERROR_MESSAGE);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       <Navbar />
@@ -95,41 +140,72 @@ export default function Contact() {
         <section className="mb-16">
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6">Send Us a Message</h2>
-            <form className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-lg text-gray-600 mb-2">Your Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-indigo-900"
-                  placeholder="Enter your name"
-                />
+            {isSuccess ? (
+              <div className="rounded-lg border border-green-200 bg-green-50 p-8 text-center">
+                <FaCheckCircle className="text-4xl text-green-600 mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-indigo-900 mb-2">Message Sent</h3>
+                <p className="text-gray-700">
+                  Thank you for reaching out. Dr. Jan Duffy will get back to you as soon as possible.
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setIsSuccess(false)}
+                  className="mt-6 text-indigo-900 font-semibold underline hover:text-orange-500"
+                >
+                  Send another message
+                </button>
               </div>
-              <div>
-                <label htmlFor="email" className="block text-lg text-gray-600 mb-2">Your Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-indigo-900"
-                  placeholder="Enter your email"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-lg text-gray-600 mb-2">Your Message</label>
-                <textarea
-                  id="message"
-                  className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-indigo-900 h-40"
-                  placeholder="Enter your message"
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full py-3 bg-indigo-900 text-white text-lg font-bold rounded-lg hover:bg-indigo-800 transition duration-300"
-                aria-label="Send contact message"
-              >
-                Send Message
-              </button>
-            </form>
+            ) : (
+              <form onSubmit={handleContactSubmit} className="space-y-4">
+                {error && (
+                  <p className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-red-800" role="alert">
+                    {error}
+                  </p>
+                )}
+                <div>
+                  <label htmlFor="name" className="block text-lg text-gray-600 mb-2">Your Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    required
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-indigo-900"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-lg text-gray-600 mb-2">Your Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-indigo-900"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-lg text-gray-600 mb-2">Your Message</label>
+                  <textarea
+                    id="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-indigo-900 h-40"
+                    placeholder="Enter your message"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full py-3 bg-indigo-900 text-white text-lg font-bold rounded-lg hover:bg-indigo-800 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                  aria-label="Send contact message"
+                >
+                  {isSubmitting ? "Sending..." : "Send Message"}
+                </button>
+              </form>
+            )}
           </div>
         </section>
 

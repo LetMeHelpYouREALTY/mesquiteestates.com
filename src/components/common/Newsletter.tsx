@@ -2,40 +2,49 @@
 
 import React, { useState } from "react";
 import { FaEnvelope, FaCheckCircle } from "react-icons/fa";
+import { CONTACT_ERROR_MESSAGE } from "@/lib/contact-constants";
 
 export default function Newsletter() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
 
-    // Simulate API call - replace with actual newsletter API endpoint
     try {
-      // TODO: Replace with actual newsletter signup API
-      // await fetch('/api/newsletter', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ email, name }),
-      // });
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          form: "newsletter",
+          email,
+          name: name.trim() || undefined,
+          sourceUrl: window.location.href,
+        }),
+      });
 
-      // Simulate API delay
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      if (!response.ok) {
+        const data = (await response.json().catch(() => null)) as {
+          error?: string;
+        } | null;
+        setError(data?.error ?? CONTACT_ERROR_MESSAGE);
+        return;
+      }
 
       setIsSuccess(true);
       setEmail("");
       setName("");
 
-      // Reset success message after 5 seconds
       setTimeout(() => {
         setIsSuccess(false);
       }, 5000);
-    } catch (error) {
-      console.error("Newsletter signup error:", error);
-      alert("Something went wrong. Please try again.");
+    } catch {
+      setError(CONTACT_ERROR_MESSAGE);
     } finally {
       setIsSubmitting(false);
     }
@@ -67,6 +76,11 @@ export default function Newsletter() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="bg-white/10 backdrop-blur-sm rounded-lg p-6 sm:p-8 border border-white/20">
+            {error && (
+              <p className="mb-4 rounded-lg bg-red-500/20 border border-red-300/40 px-4 py-3 text-sm text-white" role="alert">
+                {error}
+              </p>
+            )}
             <div className="flex flex-col sm:flex-row gap-4 mb-4">
               <div className="flex-1">
                 <label htmlFor="newsletter-name" className="block text-sm font-semibold mb-2 text-indigo-100">
@@ -131,4 +145,3 @@ export default function Newsletter() {
     </section>
   );
 }
-
