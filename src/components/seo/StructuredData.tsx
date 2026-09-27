@@ -1,10 +1,11 @@
 import { siteConfig } from '@/config/siteConfig';
+import { homeFaqs } from '@/data/homeFaq';
 
 export default function StructuredData() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'RealEstateAgent',
-    name: siteConfig.name,
+    name: 'Dr. Jan Duffy',
     description: siteConfig.description,
     url: siteConfig.url,
     image: `${siteConfig.url}/Image/hero_bg_1.jpg`,
@@ -60,6 +61,19 @@ export default function StructuredData() {
     ],
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: homeFaqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <>
       <script
@@ -73,6 +87,10 @@ export default function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
     </>
   );
