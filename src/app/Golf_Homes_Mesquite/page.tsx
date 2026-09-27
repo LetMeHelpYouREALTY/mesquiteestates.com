@@ -5,6 +5,7 @@ import Image from "next/image";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import Link from "next/link";
+import NearbyAmenitiesSection from "@/components/amenities/NearbyAmenitiesSection";
 import { FaGolfBall, FaMapMarkerAlt, FaHome, FaTree, FaDollarSign } from "react-icons/fa";
 
 export default function GolfHomesMesquite() {
@@ -233,6 +234,12 @@ export default function GolfHomesMesquite() {
             her the ideal partner for your golf home search.
           </p>
         </section>
+
+        <NearbyAmenitiesSection
+          title="Golf & Amenities Near Mesquite Fairways"
+          defaultCategory="golf"
+          className="mb-8 px-0"
+        />
 
         {/* RealScout Office Listings */}
         <section className="mb-16">

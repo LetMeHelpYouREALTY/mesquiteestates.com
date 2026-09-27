@@ -90,6 +90,14 @@ const Footer = () => {
                   About Mesquite
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/nearby-amenities"
+                  className="text-indigo-200 hover:text-white transition duration-300"
+                >
+                  Nearby Amenities
+                </Link>
+              </li>
             </ul>
           </div>
 

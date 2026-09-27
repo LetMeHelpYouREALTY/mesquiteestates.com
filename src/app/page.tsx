@@ -3,6 +3,7 @@ import Properties from "@/components/ui/home/Properties"
 import QuickPriceSearch from "@/components/ui/home/QuickPriceSearch";
 import CommunitiesPreview from "@/components/ui/home/CommunitiesPreview";
 import Choose_us from "@/components/ui/home/Choose_us";
+import NearbyAmenitiesSection from "@/components/amenities/NearbyAmenitiesSection";
 import Reviews from "@/components/ui/home/Reviews";
 import Agents from "@/components/ui/home/Agents";
 import Footer from "@/components/common/Footer";
@@ -18,6 +19,7 @@ export default function Home() {
       <Properties />
       <QuickPriceSearch />
       <CommunitiesPreview />
+      <NearbyAmenitiesSection />
       <Agents />
       <Choose_us />
       <Reviews />
