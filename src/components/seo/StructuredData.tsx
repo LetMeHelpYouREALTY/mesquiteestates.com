@@ -1,4 +1,5 @@
 import { siteConfig } from '@/config/siteConfig';
+import { communityMapConfig } from '@/config/amenityMapConfig';
 import { homeFaqs } from '@/data/homeFaq';
 
 export default function StructuredData() {
@@ -20,11 +21,22 @@ export default function StructuredData() {
       postalCode: '89027',
       addressCountry: 'US',
     },
-    areaServed: {
-      '@type': 'City',
-      name: 'Mesquite',
-      addressRegion: 'NV',
-    },
+    areaServed: [
+      {
+        '@type': 'Place',
+        name: communityMapConfig.brandName,
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: communityMapConfig.center.lat,
+          longitude: communityMapConfig.center.lng,
+        },
+      },
+      {
+        '@type': 'City',
+        name: 'Mesquite',
+        addressRegion: 'NV',
+      },
+    ],
     priceRange: '$70,000-$700,000',
     memberOf: {
       '@type': 'Organization',

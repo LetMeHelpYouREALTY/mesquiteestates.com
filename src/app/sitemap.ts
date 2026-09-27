@@ -31,6 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/Sun_City_Mesquite_Floor_Plans',
     '/Sun_City_Mesquite_Amenities',
     '/Conestoga_Golf_Mesquite',
+    '/nearby-amenities',
   ]
 
   return staticPages.map((route) => {
@@ -39,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     if (route === '') priority = 1.0;
     else if (route === '/Sun_City_Mesquite') priority = 0.9;
     else if (['/Sun_City_Mesquite_Floor_Plans', '/Sun_City_Mesquite_Amenities', '/Conestoga_Golf_Mesquite'].includes(route)) priority = 0.85;
-    else if (['/Mesquite_Homes_For_Sale', '/Golf_Homes_Mesquite', '/Contact_us'].includes(route)) priority = 0.85;
+    else if (['/Mesquite_Homes_For_Sale', '/Golf_Homes_Mesquite', '/Contact_us', '/nearby-amenities'].includes(route)) priority = 0.85;
     
     return {
       url: `${baseUrl}${route}`,

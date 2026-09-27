@@ -68,6 +68,7 @@ export default function Navbar() {
                 { href: "/Mesquite_Homes_For_Sale", label: "Homes for Sale" },
                 { href: "/Golf_Homes_Mesquite", label: "Golf Homes" },
                 { href: "/About_Mesquite", label: "About Mesquite" },
+                { href: "/nearby-amenities", label: "Nearby Amenities" },
                 { href: "/Services", label: "Services" },
                 { href: "/Dashboard", label: "Market Analysis" },
                 { href: "/Contact_us", label: "Contact" },

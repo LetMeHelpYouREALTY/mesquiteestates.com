@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
+import NearbyAmenitiesSection from "@/components/amenities/NearbyAmenitiesSection";
 
 const communities = [
   {
@@ -99,6 +100,8 @@ export default function CommunitiesPage() {
             </Link>
           ))}
         </div>
+
+        <NearbyAmenitiesSection className="mb-16 px-0" />
 
         <section className="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white p-8 rounded-lg text-center shadow-lg">
           <h2 className="text-3xl font-bold mb-4">
