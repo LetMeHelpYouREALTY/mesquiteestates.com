@@ -19,6 +19,9 @@ export const communityMapConfig = {
   communityMarkerAddress: '1155 W Pioneer Blvd, Mesquite, NV 89027',
 };
 
+/** www host for the nearby-amenities page canonical + page-level JSON-LD (apex redirects to www). */
+export const amenitiesPageProductionUrl = 'https://www.mesquiteestates.com';
+
 export type AmenityCategoryId =
   | 'golf'
   | 'healthcare'
@@ -35,149 +38,143 @@ export type AmenityCategoryId =
 export type AmenityCategory = {
   id: AmenityCategoryId;
   label: string;
-  /** Places API (New) primary types */
+  /** Places API (New) primary types — one searchNearby per category */
   includedPrimaryTypes: string[];
-  /** Legacy PlacesService type (fallback) */
-  legacyType?: string;
 };
 
-/** Golf-forward order for Mesquite's resort & family market (not high-rise / not schools-omitted 55+ only). */
+/** Golf-forward order for Mesquite's resort market. */
 export const amenityCategories: AmenityCategory[] = [
   {
     id: 'golf',
     label: 'Golf',
     includedPrimaryTypes: ['golf_course'],
-    legacyType: 'golf_course',
   },
   {
     id: 'healthcare',
     label: 'Healthcare',
     includedPrimaryTypes: ['hospital', 'doctor'],
-    legacyType: 'hospital',
   },
   {
     id: 'parks',
     label: 'Parks',
     includedPrimaryTypes: ['park'],
-    legacyType: 'park',
   },
   {
     id: 'grocery',
     label: 'Grocery',
     includedPrimaryTypes: ['grocery_store', 'supermarket'],
-    legacyType: 'grocery_or_supermarket',
   },
   {
     id: 'restaurants',
     label: 'Restaurants',
     includedPrimaryTypes: ['restaurant'],
-    legacyType: 'restaurant',
   },
   {
     id: 'cafes',
     label: 'Cafes',
     includedPrimaryTypes: ['cafe', 'coffee_shop'],
-    legacyType: 'cafe',
   },
   {
     id: 'fitness',
     label: 'Fitness',
     includedPrimaryTypes: ['gym', 'fitness_center'],
-    legacyType: 'gym',
   },
   {
     id: 'shopping',
     label: 'Shopping',
     includedPrimaryTypes: ['shopping_mall', 'department_store', 'store'],
-    legacyType: 'shopping_mall',
   },
   {
     id: 'pharmacies',
     label: 'Pharmacies',
     includedPrimaryTypes: ['pharmacy', 'drugstore'],
-    legacyType: 'pharmacy',
   },
   {
     id: 'parking',
     label: 'Parking',
     includedPrimaryTypes: ['parking'],
-    legacyType: 'parking',
   },
   {
     id: 'schools',
     label: 'Schools',
     includedPrimaryTypes: ['school', 'primary_school', 'secondary_school'],
-    legacyType: 'school',
   },
 ];
 
 export type CuratedPlace = {
   name: string;
-  address: string;
+  /** Verified street address; omit from JSON-LD when undefined */
+  address?: string;
+  sourceUrl: string;
   category: AmenityCategoryId;
   schemaType: string;
   note?: string;
 };
 
-/** Verified businesses and public places in Mesquite, NV (names + street addresses only). */
+/** Verified hyperlocal places in Mesquite, NV (primary-source URLs on file). */
 export const curatedPlaces: CuratedPlace[] = [
   {
     name: 'Conestoga Golf Club',
-    address: '1025 Omaha Dr, Mesquite, NV 89027',
+    address: '1499 Falcon Ridge Pkwy, Mesquite, NV 89034',
+    sourceUrl: 'https://conestogagolf.com/contact/',
     category: 'golf',
     schemaType: 'GolfCourse',
+    note: 'Sun City Mesquite resident course',
   },
   {
     name: 'Wolf Creek Golf Club',
-    address: '4031 Wolf Creek Dr, Mesquite, NV 89034',
+    address: '403 Paradise Pkwy, Mesquite, NV 89027',
+    sourceUrl: 'https://golfwolfcreek.com/contact-us/',
     category: 'golf',
     schemaType: 'GolfCourse',
   },
   {
     name: 'CasaBlanca Golf Club',
-    address: '511 W Mesquite Blvd, Mesquite, NV 89027',
+    address: '1100 W Hafen Ln, Mesquite, NV 89027',
+    sourceUrl: 'https://www.visitmesquite.com/listing/casablanca-golf-club/36799/',
     category: 'golf',
     schemaType: 'GolfCourse',
   },
   {
-    name: 'Mesa View Regional Medical Center',
+    name: 'Mesa View Regional Hospital',
     address: '1299 Bertha Howe Ave, Mesquite, NV 89027',
+    sourceUrl: 'https://mesaviewhospital.com/contact-us/',
     category: 'healthcare',
     schemaType: 'Hospital',
   },
   {
     name: "Smith's Food and Drug",
-    address: '1127 W Pioneer Blvd, Mesquite, NV 89027',
+    address: '350 N Sandhill Blvd, Mesquite, NV 89027',
+    sourceUrl: 'https://www.smithsfoodanddrug.com/stores/grocery/nv/mesquite',
     category: 'grocery',
     schemaType: 'GroceryStore',
   },
   {
-    name: 'Albertsons',
-    address: '475 W Mesquite Blvd, Mesquite, NV 89027',
-    category: 'grocery',
-    schemaType: 'GroceryStore',
+    name: 'Walmart Supercenter',
+    address: '1120 W Pioneer Blvd, Mesquite, NV 89027',
+    sourceUrl: 'https://www.walmart.com/store/3847-mesquite-nv',
+    category: 'shopping',
+    schemaType: 'Store',
   },
   {
-    name: 'Mesquite Veterans Memorial Park',
-    address: '836 E Pioneer Blvd, Mesquite, NV 89027',
+    name: "Veteran's Memorial Park",
+    address: '501 Hillside Dr, Mesquite, NV 89027',
+    sourceUrl: 'https://www.mesquitenv.gov/locations/veterans-memorial-park',
     category: 'parks',
     schemaType: 'Park',
   },
   {
     name: 'Virgin Valley High School',
     address: '820 Valley View Dr, Mesquite, NV 89027',
+    sourceUrl: 'https://www.vvhsdawgs.org/about-vvhs/contact',
     category: 'schools',
     schemaType: 'School',
+    note: 'Verify attendance zones with CCSD Zoning Search.',
   },
   {
-    name: 'Walmart Supercenter',
-    address: '1120 W Pioneer Blvd, Mesquite, NV 89027',
-    category: 'shopping',
-    schemaType: 'Store',
-  },
-  {
-    name: 'CVS Pharmacy',
-    address: '611 W Mesquite Blvd, Mesquite, NV 89027',
+    name: 'Walgreens Pharmacy',
+    address: '329 N Sandhill Blvd, Mesquite, NV 89027',
+    sourceUrl: 'https://www.walgreens.com/storelocator/pharmacy/mesquite-nv-329-n-sandhill-blvd-12646',
     category: 'pharmacies',
     schemaType: 'Pharmacy',
   },

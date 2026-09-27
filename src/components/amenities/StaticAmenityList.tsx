@@ -31,11 +31,20 @@ export default function StaticAmenityList({
             <ul className="space-y-2">
               {places.map((place) => (
                 <li
-                  key={`${place.name}-${place.address}`}
+                  key={`${place.name}-${place.address ?? place.sourceUrl}`}
                   className="rounded-lg border border-gray-200 bg-white p-3 text-sm text-gray-700 shadow-sm"
                 >
-                  <p className="font-medium text-gray-900">{place.name}</p>
-                  <p className="text-gray-600">{place.address}</p>
+                  <p className="font-medium text-gray-900">
+                    <a
+                      href={place.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-indigo-800 hover:underline"
+                    >
+                      {place.name}
+                    </a>
+                  </p>
+                  {place.address && <p className="text-gray-600">{place.address}</p>}
                   {place.note && <p className="mt-1 text-gray-500">{place.note}</p>}
                 </li>
               ))}

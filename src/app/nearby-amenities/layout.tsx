@@ -1,20 +1,22 @@
 import type { Metadata } from 'next';
 import { siteConfig } from '@/config/siteConfig';
-import { communityMapConfig } from '@/config/amenityMapConfig';
+import { amenitiesPageProductionUrl, communityMapConfig } from '@/config/amenityMapConfig';
 
 const title = `Nearby Amenities in ${communityMapConfig.communityName}, Nevada | Dr. Jan Duffy`;
 const description = `Interactive map of golf, healthcare, groceries, parks, and shopping near Mesquite Estates in Mesquite, NV. Hyperlocal guide by Dr. Jan Duffy — call 702-718-2228.`;
+
+const canonicalUrl = `${amenitiesPageProductionUrl}/nearby-amenities`;
 
 export const metadata: Metadata = {
   title,
   description,
   alternates: {
-    canonical: `${siteConfig.url}/nearby-amenities`,
+    canonical: canonicalUrl,
   },
   openGraph: {
     title,
     description,
-    url: `${siteConfig.url}/nearby-amenities`,
+    url: canonicalUrl,
     siteName: siteConfig.name,
     type: 'website',
     images: [

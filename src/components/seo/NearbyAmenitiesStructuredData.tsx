@@ -1,16 +1,17 @@
 import { siteConfig } from '@/config/siteConfig';
 import {
+  amenitiesPageProductionUrl,
   communityMapConfig,
   curatedPlaces,
 } from '@/config/amenityMapConfig';
 
-const pageUrl = `${siteConfig.url}/nearby-amenities`;
+const pageUrl = `${amenitiesPageProductionUrl}/nearby-amenities`;
 
 const faqItems = [
   {
     question: 'What grocery stores are near Mesquite Estates?',
     answer:
-      "Smith's Food and Drug on W Pioneer Blvd and Albertsons on W Mesquite Blvd serve Mesquite residents daily.",
+      "Smith's Food and Drug on N Sandhill Blvd is the primary supermarket in Mesquite. Walmart Supercenter on W Pioneer Blvd also carries groceries.",
   },
   {
     question: 'How far is Mesquite from the Las Vegas Strip?',
@@ -20,7 +21,7 @@ const faqItems = [
   {
     question: 'Are there hospitals near Mesquite?',
     answer:
-      'Mesa View Regional Medical Center on Bertha Howe Ave in Mesquite provides hospital care for the Virgin River Valley.',
+      'Mesa View Regional Hospital on Bertha Howe Ave in Mesquite provides hospital care for the Virgin River Valley.',
   },
   {
     question: 'What golf courses are near Mesquite homes?',
@@ -35,7 +36,7 @@ const faqItems = [
   {
     question: 'What parks are in Mesquite?',
     answer:
-      'Mesquite Veterans Memorial Park on E Pioneer Blvd is a central public park for events, walking, and community gatherings.',
+      "Veteran's Memorial Park on Hillside Drive is a city park with a playground, pavilion, and restrooms.",
   },
   {
     question: 'Who helps buyers find homes near these Mesquite amenities?',
@@ -68,13 +69,18 @@ export default function NearbyAmenitiesStructuredData() {
       item: {
         '@type': place.schemaType,
         name: place.name,
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: place.address.split(',')[0]?.trim(),
-          addressLocality: communityMapConfig.city,
-          addressRegion: communityMapConfig.stateCode,
-          addressCountry: 'US',
-        },
+        url: place.sourceUrl,
+        ...(place.address
+          ? {
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: place.address.split(',')[0]?.trim(),
+                addressLocality: communityMapConfig.city,
+                addressRegion: communityMapConfig.stateCode,
+                addressCountry: 'US',
+              },
+            }
+          : {}),
       },
     })),
   };
@@ -87,7 +93,7 @@ export default function NearbyAmenitiesStructuredData() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: siteConfig.url,
+        item: amenitiesPageProductionUrl,
       },
       {
         '@type': 'ListItem',

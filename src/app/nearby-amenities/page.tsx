@@ -41,16 +41,15 @@ export default function NearbyAmenitiesPage() {
         <section className="mb-16 prose prose-indigo max-w-none">
           <h2 className="text-3xl font-semibold text-indigo-900 mb-4">Golf &amp; recreation</h2>
           <p className="text-gray-700 mb-4">
-            Mesquite is known for championship desert golf.{' '}
-            <strong>Conestoga Golf Club</strong> (1025 Omaha Dr) hosts Sun City Mesquite&apos;s
-            resident course; <strong>Wolf Creek Golf Club</strong> (4031 Wolf Creek Dr) is a
-            nationally recognized public layout; and <strong>CasaBlanca Golf Club</strong> (511 W
-            Mesquite Blvd) pairs with resort amenities along Mesquite Boulevard.
+            Mesquite is known for desert golf. <strong>Conestoga Golf Club</strong> (1499 Falcon Ridge Pkwy)
+            serves Sun City Mesquite; <strong>Wolf Creek Golf Club</strong> (403 Paradise Pkwy) is a public
+            layout north of I-15; and <strong>CasaBlanca Golf Club</strong> (1100 W Hafen Ln) sits along the
+            Virgin River near resort dining on Mesquite Boulevard.
           </p>
           <p className="text-gray-700 mb-4">
-            <strong>Mesquite Veterans Memorial Park</strong> (836 E Pioneer Blvd) offers a central
-            public park for walking and community events. Sun City Mesquite&apos;s Pioneer Center
-            and trail network serve active-adult residents — see our{' '}
+            <strong>Veteran&apos;s Memorial Park</strong> (501 Hillside Dr) is a city park with a playground
+            and pavilion. Sun City Mesquite&apos;s Pioneer Center and trail network serve active-adult
+            residents — see our{' '}
             <Link href="/Sun_City_Mesquite_Amenities" className="text-indigo-700 underline">
               Sun City amenities guide
             </Link>{' '}
@@ -67,25 +66,32 @@ export default function NearbyAmenitiesPage() {
 
           <h2 className="text-3xl font-semibold text-indigo-900 mb-4 mt-10">Healthcare &amp; pharmacies</h2>
           <p className="text-gray-700 mb-4">
-            <strong>Mesa View Regional Medical Center</strong> (1299 Bertha Howe Ave) is Mesquite&apos;s
-            hospital serving Clark County&apos;s northeastern communities. <strong>CVS Pharmacy</strong>{' '}
-            (611 W Mesquite Blvd) and grocery-store pharmacies at Smith&apos;s and Albertsons cover
-            routine prescriptions.
+            <strong>Mesa View Regional Hospital</strong> (1299 Bertha Howe Ave) is Mesquite&apos;s
+            hospital serving Clark County&apos;s northeastern communities. <strong>Walgreens</strong> (329 N
+            Sandhill Blvd) and in-store pharmacies at Smith&apos;s and Walmart cover routine prescriptions.
           </p>
 
           <h2 className="text-3xl font-semibold text-indigo-900 mb-4 mt-10">Grocery &amp; shopping</h2>
           <p className="text-gray-700 mb-4">
-            <strong>Smith&apos;s Food and Drug</strong> (1127 W Pioneer Blvd) and{' '}
-            <strong>Albertsons</strong> (475 W Mesquite Blvd) are the primary supermarkets in town.{' '}
-            <strong>Walmart Supercenter</strong> (1120 W Pioneer Blvd) adds general merchandise and
+            <strong>Smith&apos;s Food and Drug</strong> (350 N Sandhill Blvd) is the primary supermarket in
+            town. <strong>Walmart Supercenter</strong> (1120 W Pioneer Blvd) adds general merchandise and
             additional grocery options along the Pioneer corridor near Mesquite Estates.
           </p>
 
           <h2 className="text-3xl font-semibold text-indigo-900 mb-4 mt-10">Schools</h2>
           <p className="text-gray-700 mb-4">
-            Families in Mesquite are served by the Clark County School District.{' '}
-            <strong>Virgin Valley High School</strong> (820 Valley View Dr) is the local public high
-            school. Contact the district for current attendance zones and enrollment.
+            Mesquite addresses are served by the Clark County School District.{' '}
+            <strong>Virgin Valley High School</strong> (820 Valley View Dr) is the local public high school.
+            Which CCSD schools are assigned to a specific Mesquite address? Verify with the{' '}
+            <a
+              href="https://zoning.ccsd.net/"
+              className="text-indigo-700 underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CCSD Zoning Search
+            </a>{' '}
+            before you buy.
           </p>
 
           <h2 className="text-3xl font-semibold text-indigo-900 mb-4 mt-10">
