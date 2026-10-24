@@ -39,7 +39,7 @@ export default function MesquiteHomesForSale() {
           </div>
           <p className="text-base text-gray-700 mb-4">
             When searching for Mesquite homes for sale, you&apos;ll discover a diverse selection of properties that cater to 
-            various lifestyles and budgets. Dr. Jan Duffy, your experienced Mesquite realtor with BHHS Nevada Properties, 
+            various lifestyles and budgets. Dr. Jan Duffy, your experienced Mesquite realtor, 
             specializes in helping clients find their ideal home in this beautiful desert community. The Mesquite real estate 
             market offers everything from starter homes to luxury estates, ensuring there&apos;s a perfect property for every buyer.
           </p>
@@ -227,7 +227,7 @@ export default function MesquiteHomesForSale() {
             and professional real estate services ensures a successful and enjoyable home search experience.
           </p>
           <p className="text-base text-gray-700 mb-4">
-            As a Mesquite realtor with BHHS Nevada Properties, Dr. Jan Duffy offers comprehensive services to buyers of 
+            As a Mesquite realtor in real estate since 1983, Dr. Jan Duffy offers comprehensive services to buyers of 
             Mesquite homes for sale. These services include property search assistance, neighborhood tours, market analysis, 
             offer preparation, and negotiation. Her expertise in Mesquite real estate allows her to identify properties that 
             offer the best value and match client preferences, making the home search process efficient and effective.

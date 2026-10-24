@@ -36,7 +36,7 @@ export default function About() {
               </h2>
               <p className="text-base text-gray-700 mb-4">
                 Mesquite Estates represents the vision of bringing exceptional living experiences to the beautiful 
-                Virgin River Valley. Under the leadership of Dr. Jan Duffy with BHHS Nevada Properties, we specialize 
+                Virgin River Valley. Under the leadership of Dr. Jan Duffy, in real estate since 1983, we specialize 
                 in helping clients discover their perfect home in Mesquite, Nevada. Our expertise in Mesquite real estate 
                 encompasses everything from golf homes and luxury properties to custom lots and family residences, ensuring 
                 that every client finds the ideal property that matches their lifestyle and budget.
@@ -162,10 +162,7 @@ export default function About() {
                 <h3 className="text-xl font-bold text-indigo-900">
                   Dr. Jan Duffy
                 </h3>
-                <p className="text-gray-600">Mesquite Realtor | BHHS Nevada Properties</p>
-                <p className="text-sm text-gray-500 mt-2">
-                  Nevada REALTOR® License #S.0197614.LLC
-                </p>
+                <p className="text-gray-600">Mesquite Realtor | Top 1% Las Vegas REALTOR®</p>
               </div>
             </div>
           </div>

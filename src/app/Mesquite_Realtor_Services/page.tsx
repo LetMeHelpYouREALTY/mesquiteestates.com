@@ -15,7 +15,7 @@ export default function MesquiteRealtorServices() {
         {/* H1 - Only One */}
         <section className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold text-indigo-900 mb-4">
-            Professional Mesquite Realtor Services | Dr. Jan Duffy BHHS Nevada Properties
+            Professional Mesquite Realtor Services | Dr. Jan Duffy
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto mb-6">
             Expert Mesquite realtor services from Dr. Jan Duffy, your trusted real estate professional in Mesquite, Nevada. 
@@ -39,7 +39,7 @@ export default function MesquiteRealtorServices() {
           </div>
           <p className="text-base text-gray-700 mb-4">
             Dr. Jan Duffy provides comprehensive Mesquite realtor services to clients seeking expert guidance in the Mesquite 
-            real estate market. As a trusted Mesquite realtor with BHHS Nevada Properties, she offers professional realtor services 
+            real estate market. As a trusted Mesquite realtor in real estate since 1983, she offers professional realtor services 
             that encompass all aspects of buying and selling homes in this premier desert destination. Her Mesquite realtor services 
             combine extensive market knowledge, negotiation expertise, and personalized attention to ensure successful real estate 
             transactions.
@@ -231,13 +231,12 @@ export default function MesquiteRealtorServices() {
           
           {/* H3 Subsection */}
           <h3 className="text-2xl font-semibold text-indigo-900 mb-4">
-            Comprehensive Realtor Services with BHHS Nevada Properties
+            Comprehensive Realtor Services with Dr. Jan Duffy
           </h3>
           <p className="text-base text-gray-700 mb-4">
-            As a Mesquite realtor with BHHS Nevada Properties, Dr. Jan Duffy&apos;s realtor services benefit from the resources and 
-            network of one of Nevada&apos;s premier real estate companies. These professional realtor services provide clients with 
-            access to extensive property databases, marketing tools, and industry connections that enhance the real estate experience. 
-            This affiliation ensures that Mesquite realtor services from Dr. Jan Duffy meet the highest professional standards.
+            As a Mesquite realtor in real estate since 1983, Dr. Jan Duffy provides clients with access to extensive property
+            databases, marketing tools, and industry connections that enhance the real estate experience, so her Mesquite realtor
+            services meet the highest professional standards.
           </p>
           <p className="text-base text-gray-700">
             Professional realtor services in Mesquite require ongoing education, market awareness, and commitment to excellence. 

@@ -19,8 +19,7 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-2xl mb-6">Mesquite Estates</h3>
             <p className="text-indigo-200 mb-4">
-              Homes by Dr. Jan Duffy<br />
-              BHHS Nevada Properties
+              Homes by Dr. Jan Duffy
             </p>
             <p className="text-2xl font-bold text-orange-400 mb-4">
               <a href="tel:702-718-2228">702-718-2228</a>
@@ -252,8 +251,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Mesquite Estates. All Rights Reserved.
           </p>
           <p className="mt-2">
-            Dr. Jan Duffy | Nevada REALTOR® License #S.0197614.LLC<br />
-            Berkshire Hathaway HomeServices Nevada Properties
+            Berkshire Hathaway HomeServices Nevada Properties since September 2008 · License S.0197614.LLC
           </p>
         </div>
       </div>

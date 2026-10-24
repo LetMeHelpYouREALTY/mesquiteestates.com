@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Navbar from "@/components/common/Navbar";
+import Footer from "@/components/common/Footer";
 import { useRouter } from "next/navigation";
 import { FaGoogle, FaFacebookF } from "react-icons/fa";
 
@@ -88,6 +89,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

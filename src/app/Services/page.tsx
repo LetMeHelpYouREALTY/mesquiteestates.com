@@ -16,7 +16,7 @@ export default function Services() {
       <section className="text-center mb-16">
         <h1 className="text-4xl sm:text-5xl font-bold text-indigo-900 mb-4">Real Estate Services in Mesquite, Nevada</h1>
         <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto mb-4">
-          Dr. Jan Duffy and BHHS Nevada Properties offer comprehensive real estate services tailored to help you find your 
+          Dr. Jan Duffy offers comprehensive real estate services tailored to help you find your 
           dream home in beautiful Mesquite, Nevada. From custom lots to move-in-ready homes, we&apos;re here to guide you every step of the way.
         </p>
         <div className="mb-6">
@@ -163,7 +163,7 @@ export default function Services() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { icon: FaUserTie, title: "Expert Agent", description: "Dr. Jan Duffy is an experienced real estate professional with BHHS Nevada Properties, specializing in Mesquite real estate." },
+            { icon: FaUserTie, title: "Expert Agent", description: "Dr. Jan Duffy is an experienced real estate professional, in real estate since 1983, specializing in Mesquite real estate." },
             { icon: FaCog, title: "Custom Options", description: "From custom lots to move-in-ready homes, we offer options tailored to your specific needs and budget ($70K-$700K)." },
             { icon: FaCheckCircle, title: "Client-Focused", description: "We prioritize your satisfaction and work tirelessly to help you find the perfect property that matches your lifestyle and goals." },
             { icon: FaChartLine, title: "Market Expertise", description: "Deep knowledge of the Mesquite market, area amenities, and investment potential to help you make informed decisions." }

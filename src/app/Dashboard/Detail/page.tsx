@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/common/Footer";
 import React from "react";
 import Sidebar from "@/components/ui/Dashbaord/sidebar";
 
@@ -140,6 +141,7 @@ const properties: Property[] = [
 
 const Detail: React.FC = () => {
   return (
+  <>
     <div className="flex flex-col md:flex-row min-h-screen bg-blue-50">
     <Sidebar />
 
@@ -182,6 +184,8 @@ const Detail: React.FC = () => {
       </div>
     </div>
   </div>
+  <Footer />
+  </>
   );
 };
 

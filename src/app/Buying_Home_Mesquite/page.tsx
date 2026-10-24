@@ -51,7 +51,7 @@ export default function BuyingHomeMesquite() {
             to Las Vegas, and abundant recreational opportunities makes Mesquite an ideal location for buying a home.
           </p>
           <p className="text-base text-gray-700 mb-4">
-            Dr. Jan Duffy, an experienced Mesquite realtor with BHHS Nevada Properties, specializes in helping clients navigate 
+            Dr. Jan Duffy, an experienced Mesquite realtor in real estate since 1983, specializes in helping clients navigate 
             the process of buying a home in Mesquite. Her expertise includes market analysis, property evaluation, and guidance 
             through the entire home purchase process. Whether you&apos;re a first-time homebuyer or an experienced real estate investor, 
             her professional realtor services ensure you make informed decisions when buying a home in Mesquite.
@@ -225,7 +225,7 @@ export default function BuyingHomeMesquite() {
             ideal partner for buying a home in Mesquite.
           </p>
           <p className="text-base text-gray-700 mb-4">
-            As a Mesquite realtor with BHHS Nevada Properties, Dr. Jan Duffy offers comprehensive services to homebuyers. 
+            As a Mesquite realtor, Dr. Jan Duffy offers comprehensive services to homebuyers. 
             Her realtor services include property search assistance, market analysis, property evaluation, offer preparation, 
             negotiation, and transaction coordination. This full-service approach ensures that clients buying a home in Mesquite 
             receive professional representation throughout the entire purchase process.
