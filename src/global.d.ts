@@ -1,6 +1,6 @@
 import 'react';
 
-declare global {
+declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
       'realscout-simple-search': React.DetailedHTMLProps<
