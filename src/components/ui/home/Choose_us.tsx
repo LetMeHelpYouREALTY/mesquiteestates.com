@@ -31,7 +31,7 @@ const reasons: Reason[] = [
   {
     title: "Investment Potential",
     description:
-      "Growing area with excellent amenities and a welcoming community. Custom lots from $70K, homes $360K-$700K. A smart investment in Nevada's desert paradise.",
+      "Growing area with golf communities and new construction. Homes from condos under $200K to estates over $1 million, plus custom lots. Median home list price about $415,000.",
     icon: "💰",
   },
 ];

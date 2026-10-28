@@ -25,7 +25,7 @@ export default function StructuredData() {
       name: 'Mesquite',
       addressRegion: 'NV',
     },
-    priceRange: '$70,000-$700,000',
+    priceRange: '$150,000-$1,500,000',
     memberOf: {
       '@type': 'Organization',
       name: 'Berkshire Hathaway HomeServices Nevada Properties',
