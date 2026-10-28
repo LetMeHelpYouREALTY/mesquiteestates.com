@@ -30,6 +30,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/Sun_City_Mesquite_Floor_Plans',
     '/Sun_City_Mesquite_Amenities',
     '/Conestoga_Golf_Mesquite',
+    '/mesquite-estates',
+    '/mesquite-estates/new-construction-buyers',
+    '/mesquite-estates/lots-and-custom-homes',
+    '/mesquite-estates/sell-your-home',
+    '/mesquite-estates/gatherings-at-ridgemont',
+    '/mesquite-estates/val-vista',
+    '/mesquite-estates/mohave-ridge',
+    '/mesquite-estates/bella-horizon',
+    '/mesquite-estates/royal-vista',
+    '/mesquite-estates/sierra-ridge',
   ]
 
   return staticPages.map((route) => {
@@ -37,6 +47,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     let priority = 0.8;
     if (route === '') priority = 1.0;
     else if (route === '/Sun_City_Mesquite') priority = 0.9;
+    else if (route === '/mesquite-estates') priority = 0.95;
+    else if (route.startsWith('/mesquite-estates/')) priority = 0.9;
     else if (['/Sun_City_Mesquite_Floor_Plans', '/Sun_City_Mesquite_Amenities', '/Conestoga_Golf_Mesquite'].includes(route)) priority = 0.85;
     else if (['/Mesquite_Homes_For_Sale', '/Golf_Homes_Mesquite', '/Contact_us'].includes(route)) priority = 0.85;
     
