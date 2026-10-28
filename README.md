@@ -1,87 +1,37 @@
-# Property Theme
+# mesquiteestates.com
 
-Welcome to Property Theme, a comprehensive Next.js-based solution for real estate websites. This theme offers a wide range of features to showcase various property types and provide an excellent user experience for property seekers and real estate professionals.
+Hyperlocal real estate site for Mesquite Estates and Mesquite, Nevada — Dr. Jan Duffy, REALTOR®.
 
-## Features
+## Stack
 
-- **All Properties Listing**: Browse through a complete catalog of available properties.
-- **Single Property View**: Detailed view of individual properties with comprehensive information.
-- **Multiple Property Types**: Support for various property categories including:
-  - Residential
-    - Apartments
-    - Houses
-    - Villas
-    - Penthouses
-  - Commercial
-    - Office Spaces
-    - Retail Spaces
-  - Special Properties
-    - Ranch
-    - Luxury Villas
+- Next.js 15 (App Router) + React 19, TypeScript
+- Tailwind CSS (`tailwind.config.js` is the only Tailwind config)
+- Hosted on Vercel (`janet-duffys-projects/mesquiteestates.com`); pushes to `main` deploy to production
+- DNS on Cloudflare
+- Leads: `/api/newsletter` posts to Follow Up Boss (`src/lib/fub.ts`)
 
-## Getting Started
+## Develop
 
-### Prerequisites
+```bash
+npm ci
+npm run dev     # http://localhost:3000
+npm run build   # run before every push
+```
 
-- Node.js (version 14 or later)
-- npm or yarn
-- Git
+## Where things live
 
-### Installation
+| What | Where |
+| --- | --- |
+| Site name, URL, description | `src/config/siteConfig.ts` |
+| Site phone (error fallback) | `src/lib/contact-constants.ts` |
+| Sitemap / robots / llms.txt | `src/app/sitemap.ts`, `src/app/robots.ts`, `src/app/llms.txt/route.ts` |
+| Schema markup | `src/components/seo/StructuredData.tsx` |
+| Images | `public/Image/` — keep photos under ~600 KB and ≤1920 px wide |
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/mohitchandel/real-estate-tremplate.git
-   ```
+## Rules for this site
 
-2. Navigate to the project directory:
-   ```
-   cd real-estate-tremplate
-   ```
-
-3. Install dependencies:
-   ```
-   npm install
-   ```
-   or
-   ```
-   yarn install
-   ```
-
-4. Start the development server:
-   ```
-   npm run dev
-   ```
-   or
-   ```
-   yarn dev
-   ```
-
-5. Open your browser and visit `http://localhost:3000` to see the theme in action.
-
-## Configuration
-
-To customize the theme for your specific needs, you can modify the following files:
-
-- `config/siteConfig.js`: Update site-wide settings like name, description, and contact information.
-- `data/properties.js`: Add or modify property listings.
-
-## Deployment
-
-This theme is optimized for deployment on Vercel. To deploy:
-
-1. Push your changes to your GitHub repository.
-2. Connect your repository to Vercel.
-3. Vercel will automatically deploy your site and provide you with a URL.
-
-For other deployment options, please refer to the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
-
-
-
-## Support
-
-If you encounter any issues or have questions, please file an issue on the GitHub repository.
-
----
-
-We hope you enjoy using Property Theme for your real estate website needs!
+- This site has its own phone number. Don't swap in another site's number or the general CTA line.
+- Fair Housing: no protected-class wording or proxies ("family-friendly", "safe neighborhood", "good schools"). Describe homes, lots, amenities, and distances instead.
+- Brokerage name and license appear in the footer only.
+- `/Dashboard`, `/Login`, and `/Property` are template pages with demo data; they are noindexed and disallowed in robots.
+- Work on a branch and open a PR; Vercel builds a preview for every PR.

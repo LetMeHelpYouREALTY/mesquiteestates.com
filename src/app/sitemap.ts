@@ -19,7 +19,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/Mesquite_Golf_Trip',
     '/Mesquite_Transportation',
     '/Mesquite_Weather',
-    '/Property',
     '/communities',
     '/communities/sun-city-mesquite',
     '/communities/falcon-ridge',
