@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import FubPageviews from "@/components/common/FubPageviews";
 import "./globals.css";
 import { siteConfig } from "@/config/siteConfig";
 import AccessibilityWidget from "@/components/common/AccessibilityWidget";
@@ -111,7 +112,18 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <AccessibilityWidget />
+        <FubPageviews />
         <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module" async></script>
+        {/* Follow Up Boss Widget Tracker (pixel WT-XQHVYQWW) */}
+        <Script id="fub-widget-tracker" strategy="afterInteractive">
+          {`(function(w,i,d,g,e,t){w["WidgetTrackerObject"]=g;(w[g]=w[g]||function()
+{(w[g].q=w[g].q||[]).push(arguments);}),(w[g].ds=1*new Date());(e="script"),
+(t=d.createElement(e)),(e=d.getElementsByTagName(e)[0]);t.async=1;t.src=i;
+e.parentNode.insertBefore(t,e);})
+(window,"https://widgetbe.com/agent",document,"widgetTracker");
+window.widgetTracker("create", "WT-XQHVYQWW");
+window.widgetTracker("send", "pageview");`}
+        </Script>
       </body>
     </html>
   );
