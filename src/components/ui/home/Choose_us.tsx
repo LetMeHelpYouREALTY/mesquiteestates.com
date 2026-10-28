@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Navbar from "../../common/Navbar";
 
 interface Reason {
   title: string;
@@ -38,7 +37,6 @@ const reasons: Reason[] = [
 
 const WhyChooseUs: React.FC = () => (
   <>
-    <Navbar />
     <div className="bg-indigo-900 text-white py-10 px-8 lg:px-40">
       <h2 className="text-5xl font-bold text-center mb-10">Why Choose Us</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
