@@ -30,7 +30,7 @@ function App() {
             <div className="w-full md:w-1/2 bg-blue-100 p-8 flex flex-col items-center md:items-start text-center md:text-left">
               <div className="text-blue-700 font-bold text-2xl mb-4">Mesquite Estates</div>
               <p className="text-blue-700 mb-6">
-                Find your dream home in beautiful Mesquite, Nevada. Custom lots from $70K, homes $360K-$700K. About an hour north of Las Vegas in the scenic Virgin River Valley.
+                Find your dream home in beautiful Mesquite, Nevada. Homes from condos under $200K to estates over $1 million. About an hour north of Las Vegas in the scenic Virgin River Valley.
               </p>
               <div className="w-full h-64 md:h-auto rounded-lg flex items-center justify-center">
                 <img

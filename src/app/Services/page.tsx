@@ -100,13 +100,13 @@ export default function Services() {
         {[
           {
             title: "Custom Lot Sales",
-            description: "Build your dream home on a custom lot. Choose from available lots starting at $70K in prime Mesquite locations with stunning views of the Virgin River Valley.",
-            link: "/Property/Property_type"
+            description: "Build your dream home on a custom lot. Choose from available lots in prime Mesquite locations with stunning views of the Virgin River Valley.",
+            link: "/Mesquite_Homes_For_Sale#listings"
           },
           {
             title: "Home Sales",
-            description: "Browse our selection of beautiful homes ranging from $360K to $700K. From cozy starter homes to luxury estates, find the perfect property for your lifestyle.",
-            link: "/Property/Property_type"
+            description: "Browse homes from condos under $200K to estates over $1 million. From starter homes to luxury estates, find the perfect property for your lifestyle.",
+            link: "/Mesquite_Homes_For_Sale#listings"
           },
           {
             title: "Real Estate Consultation",
@@ -164,7 +164,7 @@ export default function Services() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             { icon: FaUserTie, title: "Expert Agent", description: "Dr. Jan Duffy is an experienced real estate professional, in real estate since 1983, specializing in Mesquite real estate." },
-            { icon: FaCog, title: "Custom Options", description: "From custom lots to move-in-ready homes, we offer options tailored to your specific needs and budget ($70K-$700K)." },
+            { icon: FaCog, title: "Custom Options", description: "From custom lots to move-in-ready homes, we offer options tailored to your specific needs and budget." },
             { icon: FaCheckCircle, title: "Client-Focused", description: "We prioritize your satisfaction and work tirelessly to help you find the perfect property that matches your lifestyle and goals." },
             { icon: FaChartLine, title: "Market Expertise", description: "Deep knowledge of the Mesquite market, area amenities, and investment potential to help you make informed decisions." }
           ].map((item, index) => (
@@ -209,7 +209,7 @@ export default function Services() {
         <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6 text-center">Current Mesquite Listings</h2>
         <p className="text-base text-gray-700 mb-8 text-center max-w-3xl mx-auto">
           Browse our current selection of homes, lots, and properties available in Mesquite, Nevada. 
-          From custom lots starting at $70K to luxury homes up to $700K, find the perfect property for your lifestyle.
+          From custom lots to luxury homes over $1 million, find the property that fits your plans.
         </p>
         <div className="w-full">
           <realscout-office-listings 

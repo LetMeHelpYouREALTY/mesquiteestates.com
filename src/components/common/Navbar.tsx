@@ -65,11 +65,11 @@ export default function Navbar() {
           >
             <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-1 xl:space-x-4 p-4 lg:p-0">
               {[
+                { href: "/mesquite-estates", label: "Mesquite Estates" },
                 { href: "/Mesquite_Homes_For_Sale", label: "Homes for Sale" },
                 { href: "/Golf_Homes_Mesquite", label: "Golf Homes" },
                 { href: "/About_Mesquite", label: "About Mesquite" },
                 { href: "/Services", label: "Services" },
-                { href: "/Dashboard", label: "Market Analysis" },
                 { href: "/Contact_us", label: "Contact" },
               ].map((link) => (
                 <Link
@@ -101,7 +101,7 @@ export default function Navbar() {
                 <div
                   className={`absolute top-full left-0 mt-1 w-56 bg-white rounded-md shadow-lg border border-gray-200 z-50 ${
                     isSunCityDropdownOpen ? 'block' : 'hidden'
-                  } lg:block`}
+                  }`}
                 >
                   <div className="py-1">
                     <Link

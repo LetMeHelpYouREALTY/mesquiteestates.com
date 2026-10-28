@@ -97,7 +97,7 @@ export default function About() {
               <p className="text-base text-gray-700 mb-4">
                 Our mission is to help individuals and families discover their perfect home in Mesquite, Nevada. 
                 We provide expert guidance in finding custom lots and homes that fit your lifestyle and budget, 
-                from custom lots starting at $70K to beautiful homes ranging from $360K to $700K. As your trusted Mesquite 
+                from custom lots to homes from condos under $200K to estates over $1 million. As your trusted Mesquite 
                 realtor, Dr. Jan Duffy offers comprehensive realtor services that make the process of finding and purchasing 
                 Mesquite homes efficient and enjoyable.
               </p>

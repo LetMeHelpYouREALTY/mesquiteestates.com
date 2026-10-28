@@ -19,7 +19,7 @@ export default function GolfHomesMesquite() {
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto mb-6">
             Discover exceptional golf homes in Mesquite, Nevada with Dr. Jan Duffy, your trusted Mesquite realtor. 
-            Explore luxury homes and custom lots from $70K to $700K on championship golf courses in the beautiful Virgin River Valley.
+            Explore golf-course homes and custom lots, including estates over $1 million, in the beautiful Virgin River Valley.
           </p>
           <a
             href="tel:702-718-2228"
@@ -44,7 +44,7 @@ export default function GolfHomesMesquite() {
             provides unparalleled access to world-class golfing while maintaining the tranquility of small-town living.
           </p>
           <p className="text-base text-gray-700 mb-4">
-            When searching for golf homes in Mesquite, you&apos;ll discover properties ranging from $360K to $700K, each offering 
+            When searching for golf homes in Mesquite, you&apos;ll discover properties from the $300s into seven figures, each offering 
             unique advantages. These golf homes are strategically positioned to provide stunning views of meticulously maintained 
             fairways, desert landscapes, and the majestic flat-top red mesas that define the Mesquite skyline. Dr. Jan Duffy&apos;s 
             expertise as a Mesquite real estate professional ensures you find homes that combine luxury living with exceptional 
@@ -64,7 +64,7 @@ export default function GolfHomesMesquite() {
             </p>
             <p className="text-base text-gray-700">
               Dr. Jan Duffy, a trusted Mesquite realtor in real estate since 1983, understands the unique appeal of golf homes 
-              in this region. Whether you&apos;re looking for a custom lot from $70K to build your dream golf home or an existing 
+              in this region. Whether you&apos;re looking for a custom lot to build your dream golf home or an existing 
               luxury residence, her expertise in Mesquite real estate ensures you find properties that meet your specific needs 
               and preferences.
             </p>
@@ -129,8 +129,8 @@ export default function GolfHomesMesquite() {
           <p className="text-base text-gray-700 mb-4">
             Investing in golf homes in Mesquite offers exceptional value compared to other golf communities in the Southwest. 
             Dr. Jan Duffy&apos;s expertise as a Mesquite realtor reveals that golf homes in this area provide more square footage, 
-            better views, and superior amenities at competitive prices. Custom lots for golf homes start at $70K, while existing 
-            golf homes range from $360K to $700K, making Mesquite real estate accessible to a wide range of buyers.
+            better views, and superior amenities at competitive prices. Golf-community homes run from the $300s into seven figures; 
+            Falcon Ridge alone recorded 26 sales over $1 million since January 2024.
           </p>
           <p className="text-base text-gray-700 mb-4">
             The Mesquite real estate market for golf homes has shown consistent growth, driven by the area&apos;s expanding reputation 
@@ -143,7 +143,7 @@ export default function GolfHomesMesquite() {
             Custom Golf Home Lots in Mesquite
           </h3>
           <p className="text-base text-gray-700 mb-4">
-            For buyers interested in building their dream golf home, Mesquite offers custom lots from $70K in prime locations 
+            For buyers interested in building their dream golf home, Mesquite offers custom lots in prime locations 
             near championship courses. Dr. Jan Duffy specializes in helping clients identify the best lots for golf homes, 
             considering factors such as course proximity, views, topography, and community amenities. These custom lots provide 
             the foundation for creating personalized golf homes that reflect your unique preferences and lifestyle.
@@ -257,7 +257,7 @@ export default function GolfHomesMesquite() {
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-indigo-100">
             Contact Dr. Jan Duffy, your trusted Mesquite realtor, to explore golf homes for sale. 
-            Discover luxury homes and custom lots from $70K to $700K on championship golf courses.
+            Discover golf-course homes and custom lots on championship golf courses.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -267,7 +267,7 @@ export default function GolfHomesMesquite() {
               📞 Call/Text 702-718-2228
             </a>
             <Link
-              href="/Property/Property_type"
+              href="/Mesquite_Homes_For_Sale#listings"
               className="bg-white text-indigo-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300"
             >
               View Golf Homes

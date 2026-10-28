@@ -47,7 +47,7 @@ export default function Header() {
               Mesquite Nevada Homes for Sale
             </h1>
             <h2 className="text-lg md:text-xl lg:text-3xl font-semibold text-white mb-2 bg-black/50 rounded-md p-2">
-              Golf Course Living • 55+ Communities • Custom Lots from $70K
+              Golf Course Living • 55+ Communities • Custom Lots & New Builds
             </h2>
             <p className="text-base md:text-lg lg:text-xl text-white mb-6 bg-black/50 rounded-md p-2 mx-auto max-w-3xl">
               Just 80 miles from Las Vegas in the stunning Virgin River Valley

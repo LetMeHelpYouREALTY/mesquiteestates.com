@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Navbar from "../../common/Navbar";
 
 interface Reason {
   title: string;
@@ -31,14 +30,13 @@ const reasons: Reason[] = [
   {
     title: "Investment Potential",
     description:
-      "Growing area with excellent amenities and a welcoming community. Custom lots from $70K, homes $360K-$700K. A smart investment in Nevada's desert paradise.",
+      "Growing area with golf communities and new construction. Homes from condos under $200K to estates over $1 million, plus custom lots. Median home list price about $415,000.",
     icon: "💰",
   },
 ];
 
 const WhyChooseUs: React.FC = () => (
   <>
-    <Navbar />
     <div className="bg-indigo-900 text-white py-10 px-8 lg:px-40">
       <h2 className="text-5xl font-bold text-center mb-10">Why Choose Us</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

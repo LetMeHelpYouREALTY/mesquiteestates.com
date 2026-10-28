@@ -25,7 +25,7 @@ export default function StructuredData() {
       name: 'Mesquite',
       addressRegion: 'NV',
     },
-    priceRange: '$70,000-$700,000',
+    priceRange: '$150,000-$1,500,000',
     memberOf: {
       '@type': 'Organization',
       name: 'Berkshire Hathaway HomeServices Nevada Properties',
@@ -38,14 +38,6 @@ export default function StructuredData() {
     name: siteConfig.name,
     url: siteConfig.url,
     description: siteConfig.description,
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${siteConfig.url}/Property?search={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
   };
 
   const breadcrumbSchema = {

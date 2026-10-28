@@ -335,7 +335,7 @@ export default function AboutMesquite() {
             Find Your Dream Home in Mesquite Estates
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-indigo-100">
-            Custom lots from $70K, homes $360K-$700K. Experience the perfect blend of natural beauty, 
+            Homes from condos under $200K to estates over $1 million, plus custom lots. Experience the perfect blend of natural beauty, 
             recreational opportunities, and small-town charm.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -346,7 +346,7 @@ export default function AboutMesquite() {
               📞 Call/Text 702-718-2228
             </a>
             <Link
-              href="/Property/Property_type"
+              href="/Mesquite_Homes_For_Sale#listings"
               className="bg-white text-indigo-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300"
             >
               Browse Properties

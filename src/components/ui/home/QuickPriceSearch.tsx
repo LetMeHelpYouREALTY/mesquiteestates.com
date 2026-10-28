@@ -41,7 +41,7 @@ export default function QuickPriceSearch() {
             href="/Mesquite_Homes_For_Sale?type=lot"
             className="text-indigo-900 font-semibold hover:text-indigo-700 transition duration-300 text-lg"
           >
-            Custom Lots from $70K →
+            Custom Lots & Homesites →
           </Link>
         </div>
       </div>

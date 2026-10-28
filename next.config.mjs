@@ -7,6 +7,13 @@ const nextConfig = {
     minimumCacheTTL: 60,
   },
   compress: true,
+  // Old template listings pages (demo data) now point to live Mesquite listings
+  async redirects() {
+    return [
+      { source: '/Property', destination: '/Mesquite_Homes_For_Sale', permanent: true },
+      { source: '/Property/:path*', destination: '/Mesquite_Homes_For_Sale', permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

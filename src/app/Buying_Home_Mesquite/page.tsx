@@ -64,8 +64,8 @@ export default function BuyingHomeMesquite() {
             </h3>
             <p className="text-base text-gray-700 mb-4">
               Buying a home in Mesquite offers numerous advantages that make this desert community an attractive destination 
-              for homebuyers. The Mesquite real estate market provides exceptional value, with homes ranging from $360K to 
-              $700K and custom lots starting at $70K. This affordability, combined with the area&apos;s natural beauty and amenities, 
+              for homebuyers. The Mesquite real estate market provides exceptional value, with homes 
+              from condos under $200K to estates over $1 million and custom lots for buyers who want to build. This affordability, combined with the area&apos;s natural beauty and amenities, 
               creates an ideal environment for buying a home that offers both lifestyle benefits and investment potential.
             </p>
             <p className="text-base text-gray-700">
@@ -189,7 +189,7 @@ export default function BuyingHomeMesquite() {
               </p>
               <p className="text-base text-gray-700 mb-4">
                 When buying a home in Mesquite, various financing options are available, including conventional loans, FHA loans, 
-                and VA loans for qualified buyers. The affordability of Mesquite homes, with prices ranging from $360K to $700K, 
+                and VA loans for qualified buyers. The affordability of Mesquite homes, from condos under $200K to estates over $1 million, 
                 makes homeownership achievable for many buyers. Dr. Jan Duffy&apos;s expertise as a Mesquite realtor includes knowledge 
                 of financing options that help clients successfully complete their home purchases in Mesquite.
               </p>
@@ -282,7 +282,7 @@ export default function BuyingHomeMesquite() {
               📞 Call/Text 702-718-2228
             </a>
             <Link
-              href="/Property/Property_type"
+              href="/Mesquite_Homes_For_Sale#listings"
               className="bg-white text-indigo-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300"
             >
               View Available Homes

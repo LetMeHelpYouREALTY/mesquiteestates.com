@@ -16,7 +16,7 @@ export default function MesquiteVistas() {
             Mesquite Vistas Homes for Sale
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto mb-6">
-            Family-friendly community with scenic desert vistas and convenient access to Mesquite amenities in the Virgin River Valley.
+            Residential community with scenic desert vistas and convenient access to Mesquite amenities in the Virgin River Valley.
           </p>
           <a
             href="tel:702-718-2228"
@@ -33,7 +33,7 @@ export default function MesquiteVistas() {
                 About Mesquite Vistas
               </h2>
               <p className="text-base text-gray-700 mb-4">
-                Mesquite Vistas offers beautiful homes with stunning desert views in a family-friendly setting. 
+                Mesquite Vistas offers beautiful homes with stunning desert views close to parks and shopping. 
                 This welcoming community provides residents with easy access to Mesquite&apos;s amenities, schools, 
                 and recreational opportunities, making it an ideal choice for families and those seeking a peaceful 
                 lifestyle with scenic surroundings.

@@ -98,6 +98,22 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <Link
+                  href="/mesquite-estates"
+                  className="text-indigo-200 hover:text-white transition duration-300 font-semibold"
+                >
+                  Mesquite Estates Neighborhoods
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/mesquite-estates/new-construction-buyers"
+                  className="text-indigo-200 hover:text-white transition duration-300"
+                >
+                  New-Build Buyer Representation
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/Sun_City_Mesquite"
                   className="text-indigo-200 hover:text-white transition duration-300 font-semibold"
                 >
@@ -205,7 +221,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/Property/Property_type"
+                  href="/Mesquite_Homes_For_Sale#listings"
                   className="text-indigo-200 hover:text-white transition duration-300"
                 >
                   Browse Properties
