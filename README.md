@@ -33,5 +33,6 @@ npm run build   # run before every push
 - This site has its own phone number. Don't swap in another site's number or the general CTA line.
 - Fair Housing: no protected-class wording or proxies ("family-friendly", "safe neighborhood", "good schools"). Describe homes, lots, amenities, and distances instead.
 - Brokerage name and license appear in the footer only.
-- `/Dashboard`, `/Login`, and `/Property` are template pages with demo data; they are noindexed and disallowed in robots.
+- `/Dashboard` and `/Login` are template pages with demo data; they are noindexed and disallowed in robots.
+- `/Property/*` was retired and 301-redirects to `/Mesquite_Homes_For_Sale` (see `next.config.mjs`).
 - Work on a branch and open a PR; Vercel builds a preview for every PR.

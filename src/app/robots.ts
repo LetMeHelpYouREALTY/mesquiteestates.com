@@ -13,7 +13,7 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
         userAgent: '*',
         allow: '/',
         // Template pages with demo data — keep out of search
-        disallow: ['/Dashboard', '/Login', '/Property'],
+        disallow: ['/Dashboard', '/Login'],
       },
       // ── AI Retrieval Bots (power AI search results) ──
       {

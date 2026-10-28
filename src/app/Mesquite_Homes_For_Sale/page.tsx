@@ -252,7 +252,7 @@ export default function MesquiteHomesForSale() {
         </section>
 
         {/* RealScout Office Listings */}
-        <section className="mb-16">
+        <section id="listings" className="mb-16 scroll-mt-24">
           <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6 text-center">Browse Current Mesquite Listings</h2>
           <p className="text-base text-gray-700 mb-8 text-center max-w-3xl mx-auto">
             Explore our current selection of homes, lots, and properties available in Mesquite, Nevada. 
@@ -284,7 +284,7 @@ export default function MesquiteHomesForSale() {
               📞 Call/Text 702-718-2228
             </a>
             <Link
-              href="/Property/Property_type"
+              href="/Mesquite_Homes_For_Sale#listings"
               className="bg-white text-indigo-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300"
             >
               View All Homes

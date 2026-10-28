@@ -282,7 +282,7 @@ export default function BuyingHomeMesquite() {
               📞 Call/Text 702-718-2228
             </a>
             <Link
-              href="/Property/Property_type"
+              href="/Mesquite_Homes_For_Sale#listings"
               className="bg-white text-indigo-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300"
             >
               View Available Homes

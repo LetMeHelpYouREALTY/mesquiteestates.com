@@ -205,7 +205,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/Property/Property_type"
+                  href="/Mesquite_Homes_For_Sale#listings"
                   className="text-indigo-200 hover:text-white transition duration-300"
                 >
                   Browse Properties

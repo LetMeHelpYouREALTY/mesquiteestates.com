@@ -101,12 +101,12 @@ export default function Services() {
           {
             title: "Custom Lot Sales",
             description: "Build your dream home on a custom lot. Choose from available lots starting at $70K in prime Mesquite locations with stunning views of the Virgin River Valley.",
-            link: "/Property/Property_type"
+            link: "/Mesquite_Homes_For_Sale#listings"
           },
           {
             title: "Home Sales",
             description: "Browse our selection of beautiful homes ranging from $360K to $700K. From cozy starter homes to luxury estates, find the perfect property for your lifestyle.",
-            link: "/Property/Property_type"
+            link: "/Mesquite_Homes_For_Sale#listings"
           },
           {
             title: "Real Estate Consultation",
