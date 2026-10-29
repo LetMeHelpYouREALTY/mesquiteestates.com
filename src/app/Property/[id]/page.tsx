@@ -99,10 +99,10 @@ const PropertyDetails = (props: { params: Promise<{ id: string }> }) => {
       <ul className="list-disc list-inside text-gray-700 space-y-2">
         <li>Walking distance to top-rated restaurants</li>
         <li>Proximity to public transportation</li>
-        <li>Highly-rated school district</li>
+        <li>School district</li>
         <li>Nearby parks and recreational facilities</li>
         <li>Vibrant local arts and culture scene</li>
-        <li>Safe and family-friendly community</li>
+        <li>Parks and community amenities</li>
       </ul>
     </div>
     <div className="bg-white p-6 rounded-lg shadow-lg">

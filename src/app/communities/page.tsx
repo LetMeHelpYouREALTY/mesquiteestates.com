@@ -26,10 +26,10 @@ const communities = [
   {
     name: "Mesquite Vistas",
     slug: "mesquite-vistas",
-    description: "Family-friendly community with scenic desert vistas and convenient access to Mesquite amenities.",
+    description: "Community with scenic desert vistas and convenient access to Mesquite amenities.",
     image: "/Image/hero_bg_3.jpg",
     featured: false,
-    amenities: ["Desert Views", "Family-Friendly", "Parks & Recreation"],
+    amenities: ["Desert Views", "Parks & Recreation"],
   },
   {
     name: "Highland Villas",

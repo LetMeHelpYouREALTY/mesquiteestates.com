@@ -46,7 +46,7 @@ export default function MesquiteHomesForSale() {
           <p className="text-base text-gray-700 mb-4">
             Mesquite homes for sale represent exceptional value in the Nevada real estate market. With prices ranging from 
             $360K to $700K for existing homes and custom lots starting at $70K, Mesquite real estate provides opportunities 
-            for first-time homebuyers, growing families, retirees, and investors. The combination of affordable pricing, 
+            for first-time homebuyers, move-up buyers, downsizers, and investors. The combination of affordable pricing, 
             quality construction, and desirable location makes Mesquite homes an attractive option for buyers seeking value 
             and lifestyle benefits.
           </p>
@@ -94,7 +94,7 @@ export default function MesquiteHomesForSale() {
                 to a wide range of buyers. The Mesquite real estate market features homes priced from $360K to $700K, 
                 providing options for different budgets and preferences. Custom lots starting at $70K offer opportunities for 
                 buyers interested in building their dream home, while existing Mesquite homes provide immediate move-in 
-                convenience and established neighborhoods.
+                convenience and older neighborhoods.
               </p>
               <p className="text-base text-gray-700 mb-4">
                 Dr. Jan Duffy&apos;s expertise as a Mesquite realtor includes comprehensive market knowledge that helps clients 

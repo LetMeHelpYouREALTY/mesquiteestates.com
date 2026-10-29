@@ -43,7 +43,7 @@ export default function HighlandVillas() {
               <p className="text-base text-gray-700 mb-4">
                 Highland Villas is a peaceful residential community in Mesquite, Nevada, offering comfortable homes 
                 in a quiet neighborhood setting. This community provides residents with convenient access to shopping, 
-                dining, and entertainment while maintaining a relaxed, family-friendly atmosphere.
+                dining, and entertainment while maintaining a relaxed, parks and community amenities.
               </p>
               <p className="text-base text-gray-700 mb-4">
                 Dr. Jan Duffy helps clients discover Highland Villas homes that offer the perfect balance of comfort, 
