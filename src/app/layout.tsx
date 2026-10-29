@@ -4,7 +4,6 @@ import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "@/config/siteConfig";
 import AccessibilityWidget from "@/components/common/AccessibilityWidget";
-import WidgetTracker from './widget-tracker'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -113,7 +112,6 @@ export default function RootLayout({
         {children}
         <AccessibilityWidget />
         <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module" async></script>
-        <WidgetTracker />
       </body>
     </html>
   );
