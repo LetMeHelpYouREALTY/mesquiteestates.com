@@ -18,7 +18,7 @@ export const homeFaqs: HomeFaqItem[] = [
   {
     question: "Who is the real estate agent behind Mesquite Estates?",
     answer:
-      "Dr. Jan Duffy, REALTOR® in real estate since 1983, helps buyers and sellers in Mesquite and nearby 55+ communities. Call or text 702-718-2228 to get started.",
+      "Dr. Jan Duffy, REALTOR® licensed since 2008 · 35 years in Las Vegas, helps buyers and sellers in Mesquite and nearby 55+ communities. Call or text 702-718-2228 to get started.",
   },
   {
     question: "How do I view current Mesquite listings?",

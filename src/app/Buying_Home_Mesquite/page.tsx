@@ -51,7 +51,7 @@ export default function BuyingHomeMesquite() {
             to Las Vegas, and abundant recreational opportunities makes Mesquite an ideal location for buying a home.
           </p>
           <p className="text-base text-gray-700 mb-4">
-            Dr. Jan Duffy, an experienced Mesquite realtor in real estate since 1983, specializes in helping clients navigate 
+            Dr. Jan Duffy, an experienced Mesquite realtor licensed since 2008 · 35 years in Las Vegas, specializes in helping clients navigate 
             the process of buying a home in Mesquite. Her expertise includes market analysis, property evaluation, and guidance 
             through the entire home purchase process. Whether you&apos;re a first-time homebuyer or an experienced real estate investor, 
             her professional realtor services ensure you make informed decisions when buying a home in Mesquite.

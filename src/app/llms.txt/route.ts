@@ -5,7 +5,7 @@ export async function GET() {
   const content = `# Mesquite Estates — Dr. Jan Duffy
 > Real estate in Mesquite, Nevada - a premier retirement community
 ## About
-Dr. Jan Duffy is a Nevada-licensed real estate professional (S.0197614.LLC) with Berkshire Hathaway HomeServices Nevada Properties. In real estate since 1983, serving the Las Vegas area with $127M+ in career sales, Dr. Duffy specializes in this community and helps families find their perfect Nevada home.
+Dr. Jan Duffy is a Nevada-licensed real estate professional (S.0197614.LLC) with Berkshire Hathaway HomeServices Nevada Properties. Licensed since 2008 · 35 years in Las Vegas, serving the Las Vegas area with $127M+ in career sales, Dr. Duffy specializes in this community and helps families find their perfect Nevada home.
 - **Brokerage:** Berkshire Hathaway HomeServices Nevada Properties
 - **License:** Nevada S.0197614.LLC
 - **Phone:** 702-500-1955
