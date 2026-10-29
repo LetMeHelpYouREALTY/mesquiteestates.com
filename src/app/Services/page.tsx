@@ -163,7 +163,7 @@ export default function Services() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { icon: FaUserTie, title: "Expert Agent", description: "Dr. Jan Duffy is an experienced real estate professional, in real estate since 1983, specializing in Mesquite real estate." },
+            { icon: FaUserTie, title: "Expert Agent", description: "Dr. Jan Duffy is an experienced real estate professional, licensed since 2008 · 35 years in Las Vegas, specializing in Mesquite real estate." },
             { icon: FaCog, title: "Custom Options", description: "From custom lots to move-in-ready homes, we offer options tailored to your specific needs and budget ($70K-$700K)." },
             { icon: FaCheckCircle, title: "Client-Focused", description: "We prioritize your satisfaction and work tirelessly to help you find the perfect property that matches your lifestyle and goals." },
             { icon: FaChartLine, title: "Market Expertise", description: "Deep knowledge of the Mesquite market, area amenities, and investment potential to help you make informed decisions." }

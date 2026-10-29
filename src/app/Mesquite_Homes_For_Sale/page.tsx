@@ -227,7 +227,7 @@ export default function MesquiteHomesForSale() {
             and professional real estate services ensures a successful and enjoyable home search experience.
           </p>
           <p className="text-base text-gray-700 mb-4">
-            As a Mesquite realtor in real estate since 1983, Dr. Jan Duffy offers comprehensive services to buyers of 
+            As a Mesquite realtor licensed since 2008 · 35 years in Las Vegas, Dr. Jan Duffy offers comprehensive services to buyers of 
             Mesquite homes for sale. These services include property search assistance, neighborhood tours, market analysis, 
             offer preparation, and negotiation. Her expertise in Mesquite real estate allows her to identify properties that 
             offer the best value and match client preferences, making the home search process efficient and effective.

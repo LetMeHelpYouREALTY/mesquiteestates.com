@@ -63,7 +63,7 @@ export default function GolfHomesMesquite() {
               days of sunshine annually, making them ideal for golf enthusiasts seeking the perfect desert golf community.
             </p>
             <p className="text-base text-gray-700">
-              Dr. Jan Duffy, a trusted Mesquite realtor in real estate since 1983, understands the unique appeal of golf homes 
+              Dr. Jan Duffy, a trusted Mesquite realtor licensed since 2008 · 35 years in Las Vegas, understands the unique appeal of golf homes 
               in this region. Whether you&apos;re looking for a custom lot from $70K to build your dream golf home or an existing 
               luxury residence, her expertise in Mesquite real estate ensures you find properties that meet your specific needs 
               and preferences.
@@ -210,7 +210,7 @@ export default function GolfHomesMesquite() {
             that make golf homes desirable, she provides expert guidance throughout your home search process.
           </p>
           <p className="text-base text-gray-700 mb-4">
-            As a Mesquite realtor in real estate since 1983, Dr. Jan Duffy understands the nuances of purchasing golf homes 
+            As a Mesquite realtor licensed since 2008 · 35 years in Las Vegas, Dr. Jan Duffy understands the nuances of purchasing golf homes 
             in this market. Her expertise includes knowledge of course restrictions, community amenities, resale values, and 
             investment potential specific to golf homes. Whether you&apos;re seeking a custom lot to build your dream golf home or 
             an existing property, her professional real estate services ensure a successful transaction.
