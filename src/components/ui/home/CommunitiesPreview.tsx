@@ -29,7 +29,7 @@ const communities = [
   {
     name: "Highland Villas",
     slug: "highland-villas",
-    description: "Family-Friendly Community",
+    description: "Community",
     image: "/Image/hero_bg_1.jpg",
     featured: false,
   },
