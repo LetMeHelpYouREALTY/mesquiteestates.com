@@ -121,7 +121,7 @@ export default function PropertyTypes() {
           <div className="flex flex-col  items-center mb-16 md:flex-row-reverse gap-10">
             <div className="w-full md:w-1/2 md:pl-8">
               <Image
-                src="/Image/hero_bg_4.jpg"
+                src="/Image/hero_bg_3.jpg"
                 alt="Penthouse"
                 width={600}
                 height={400}

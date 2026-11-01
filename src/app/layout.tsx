@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
+  alternates: {
+    // Self-referencing canonical on every route (resolved against metadataBase)
+    canonical: './',
+  },
   keywords: [
     'Mesquite Nevada homes',
     'Mesquite real estate',

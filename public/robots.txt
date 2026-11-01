@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://mesquiteestates.com/sitemap.xml
+Sitemap: https://www.mesquiteestates.com/sitemap.xml
 
 # Disallow admin/dashboard pages
 Disallow: /Dashboard
