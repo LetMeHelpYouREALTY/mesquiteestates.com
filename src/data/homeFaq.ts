@@ -8,7 +8,7 @@ export const homeFaqs: HomeFaqItem[] = [
   {
     question: "Where is Mesquite, Nevada?",
     answer:
-      "Mesquite sits in the Virgin River Valley, about an hour north of Las Vegas. The area is known for desert vistas, red mesas, and easy drives to regional parks and recreation.",
+      "Mesquite is in Clark County, Nevada, next to the Arizona state line in the Virgin River Valley—about 80 miles northeast of Las Vegas on Interstate 15. Dr. Jan Duffy can help you compare Mesquite neighborhoods and schedule time to explore the area in person.",
   },
   {
     question: "What kinds of homes can I explore on Mesquite Estates?",
@@ -28,6 +28,6 @@ export const homeFaqs: HomeFaqItem[] = [
   {
     question: "Is Mesquite a good fit if golf is important to me?",
     answer:
-      "Mesquite is a well-known golf destination with multiple championship courses a short drive from town. Many buyers choose Mesquite for course access, resort amenities, and year-round desert weather.",
+      "If golf drives your search, Mesquite has several in-city courses, including CasaBlanca Golf Club, Conestoga Golf Club, Coyote Willows Golf Course, Falcon Ridge Golf Course, Oasis Golf Club (The Palmer and The Canyons), and Wolf Creek Golf Club. Dr. Jan Duffy can help you focus on golf-adjacent homes and set up showings that match your tee-time priorities.",
   },
 ];

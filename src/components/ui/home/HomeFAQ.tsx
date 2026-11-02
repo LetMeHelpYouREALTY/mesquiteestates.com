@@ -19,6 +19,18 @@ export default function HomeFAQ() {
             </div>
           ))}
         </div>
+        <p className="text-gray-700 text-center mt-10 max-w-2xl mx-auto">
+          Want to see Mesquite homes in person?{" "}
+          <a
+            href="https://calendly.com/drjanduffy/showing?utm_source=mesquiteestates.com&utm_medium=website&utm_content=home-faq"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-indigo-700 font-semibold underline hover:text-indigo-900"
+          >
+            Book a private showing with Dr. Jan Duffy
+          </a>
+          .
+        </p>
       </div>
     </section>
   );
