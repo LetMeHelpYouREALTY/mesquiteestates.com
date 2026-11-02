@@ -7,6 +7,7 @@ import Footer from "@/components/common/Footer";
 import Newsletter from "@/components/common/Newsletter";
 import Link from "next/link";
 import { FaMapMarkerAlt, FaMountain, FaGolfBall, FaUmbrellaBeach, FaTree, FaRoute } from "react-icons/fa";
+import NearbyAmenitiesSection from "@/components/amenities/NearbyAmenitiesSection";
 
 export default function AboutMesquite() {
   return (
@@ -311,6 +312,12 @@ export default function AboutMesquite() {
             </div>
           </div>
         </section>
+
+        <NearbyAmenitiesSection
+          title="What's Nearby in Mesquite"
+          subtitle="See golf, healthcare, groceries, and parks around Mesquite Estates on an interactive map."
+          className="mb-8 px-0"
+        />
 
         {/* RealScout Office Listings */}
         <section className="mb-16">

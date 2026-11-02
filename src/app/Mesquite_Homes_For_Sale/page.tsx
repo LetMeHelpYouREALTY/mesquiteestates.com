@@ -6,6 +6,7 @@ import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import Link from "next/link";
 import { FaHome, FaMapMarkerAlt, FaDollarSign, FaKey, FaChartLine } from "react-icons/fa";
+import NearbyAmenitiesSection from "@/components/amenities/NearbyAmenitiesSection";
 
 export default function MesquiteHomesForSale() {
   return (
@@ -250,6 +251,12 @@ export default function MesquiteHomesForSale() {
             approach and commitment to excellence make her the ideal partner for your Mesquite home search.
           </p>
         </section>
+
+        <NearbyAmenitiesSection
+          title="What's Near Mesquite Homes"
+          defaultCategory="grocery"
+          className="mb-8 px-0"
+        />
 
         {/* RealScout Office Listings */}
         <section className="mb-16">
