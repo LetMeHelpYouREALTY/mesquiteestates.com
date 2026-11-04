@@ -87,7 +87,7 @@ export default async function EnclavePage({ params }: { params: Promise<{ enclav
         <section className="bg-ink text-sand">
           <div className="mx-auto max-w-5xl px-4 py-16 text-center sm:px-8">
             <h2 className="font-display text-4xl font-semibold">Search {e.name} and Mesquite Estates Listings</h2>
-            <p className="mt-3 text-dune">Search &ldquo;Mesquite, NV&rdquo; to see active homes and lots, then save your favorites.</p>
+            <p className="mt-3 text-dune">Search &ldquo;Mesquite, NV&rdquo; to see homes and lots for sale, then save your favorites.</p>
             <div className="mt-8 flex justify-center">
               <realscout-simple-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-simple-search>
             </div>
@@ -98,7 +98,7 @@ export default async function EnclavePage({ params }: { params: Promise<{ enclav
 
         <section className="bg-dune/60" aria-labelledby="more">
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-8">
-            <h2 id="more" className="font-display text-4xl font-semibold text-ink">Compare Other Mesquite Estates Enclaves</h2>
+            <h2 id="more" className="font-display text-4xl font-semibold text-ink">Compare Other Mesquite Estates Neighborhoods</h2>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {others.map((o) => (
                 <Link key={o.slug} href={`/mesquite-estates/${o.slug}`} className="group block bg-white shadow-sm hover:shadow-lg">
@@ -112,7 +112,7 @@ export default async function EnclavePage({ params }: { params: Promise<{ enclav
           </div>
         </section>
 
-        <CtaBand title={`Ready to Tour ${e.name}?`} body="Get same-enclave comps, HOA details and a private showing plan from Dr. Jan Duffy." />
+        <CtaBand title={`Ready to Tour ${e.name}?`} body="Get recent sale prices, HOA details and a private showing plan from Dr. Jan Duffy." />
       </main>
       <Footer />
     </>

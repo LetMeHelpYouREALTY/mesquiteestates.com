@@ -23,7 +23,7 @@ export const homeFaqs: HomeFaqItem[] = [
   {
     question: "How do I view current Mesquite listings?",
     answer:
-      "Browse Mesquite Homes for Sale from the main menu or use the RealScout search tools on this site to see active listings, save favorites, and request showings with Dr. Jan Duffy.",
+      "Browse Mesquite Homes for Sale from the main menu or use the home search on this site to see active listings, save favorites, and request showings with Dr. Jan Duffy.",
   },
   {
     question: "Is Mesquite a good fit if golf is important to me?",

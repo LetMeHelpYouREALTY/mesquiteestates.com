@@ -7,9 +7,9 @@ import { LuxeHero, CtaBand, Eyebrow, SourceNote, Breadcrumbs } from "@/component
 import { ENCLAVES, IMAGES } from "@/data/mesquiteEstates";
 
 export const metadata: Metadata = {
-  title: { absolute: "Mesquite Estates Neighborhoods | Enclaves Compared" },
+  title: { absolute: "Mesquite Estates Neighborhoods | Compared Side by Side" },
   description:
-    "Compare Mesquite Estates enclaves: Mohave Ridge, Bella Horizon, Cambria, Royal Vista and Gatherings at Ridgemont 55+. Prices, lots, HOA fees and build years.",
+    "Compare Mesquite Estates neighborhoods: Mohave Ridge, Bella Horizon, Cambria, Royal Vista and Gatherings at Ridgemont 55+. Prices, lots, HOA fees and build years.",
 };
 
 export default function Neighborhoods() {
@@ -21,18 +21,18 @@ export default function Neighborhoods() {
           image={IMAGES.townAerial}
           eyebrow="Mesquite Estates · North of I-15"
           title="Mesquite Estates Neighborhoods"
-          subtitle="Five enclaves, five sets of rules. Compare price bands, lot sizes, HOA fees and build years side by side."
+          subtitle="Five neighborhoods, five sets of rules. Compare prices, lot sizes, HOA fees and build years side by side."
         />
         <Breadcrumbs items={[{ name: "Mesquite Estates", href: "/" }, { name: "Neighborhoods", href: "/mesquite-estates/neighborhoods" }]} />
         <section className="bg-sand">
           <div className="mx-auto max-w-7xl px-4 pb-20 pt-8 sm:px-8">
             <Eyebrow>Side by Side</Eyebrow>
-            <h2 className="mt-4 font-display text-4xl font-semibold text-ink sm:text-5xl">Mesquite Estates Enclaves at a Glance</h2>
+            <h2 className="mt-4 font-display text-4xl font-semibold text-ink sm:text-5xl">Mesquite Estates Neighborhoods at a Glance</h2>
             <div className="mt-10 overflow-x-auto">
               <table className="w-full min-w-[640px] text-left text-sm">
                 <thead className="border-b-2 border-clay/50 text-xs uppercase tracking-widest text-mesa">
                   <tr>
-                    <th className="py-3 pr-4">Enclave</th>
+                    <th className="py-3 pr-4">Neighborhood</th>
                     <th className="py-3 pr-4">Headline figure</th>
                     <th className="py-3 pr-4">Detail</th>
                   </tr>
@@ -72,7 +72,7 @@ export default function Neighborhoods() {
             </div>
           </div>
         </section>
-        <CtaBand title="Not Sure Which Enclave Fits?" body="Tell Dr. Jan your must-haves: view, lot size, RV parking, gate, 55+. Get a shortlist with comps." />
+        <CtaBand title="Not Sure Which Neighborhood Fits?" body="Tell Dr. Jan your must-haves: view, lot size, RV parking, gate, 55+. Get a shortlist with recent sale prices." />
       </main>
       <Footer />
     </>

@@ -7,13 +7,13 @@ const COLUMNS: { title: string; links: { href: string; label: string }[] }[] = [
     links: [
       { href: "/mesquite-estates/homes-for-sale", label: "Homes for Sale" },
       { href: "/mesquite-estates/neighborhoods", label: "All Neighborhoods" },
-      { href: "/mesquite-estates/custom-home-lots", label: "Custom Home Lots" },
+      { href: "/mesquite-estates/custom-home-lots", label: "Land to Build On" },
       { href: "/mesquite-estates/market-report", label: "Market Report" },
       { href: "/sell-your-mesquite-home", label: "Sell Your Home" },
     ],
   },
   {
-    title: "Enclaves",
+    title: "Neighborhoods",
     links: ENCLAVES.map((e) => ({ href: `/mesquite-estates/${e.slug}`, label: e.name })),
   },
   {
@@ -38,7 +38,7 @@ export default function Footer() {
             Mesquite <span className="text-clay">Estates</span>
           </p>
           <p className="mt-4 text-sm leading-relaxed">
-            Hyperlocal real estate for the Mesquite Estates master plan, north of I-15 in Mesquite, Nevada 89027.
+            Homes, land and local know-how for Mesquite Estates, north of I-15 in Mesquite, Nevada 89027.
           </p>
           <address className="mt-6 space-y-1 text-sm not-italic">
             <p className="text-sand">Dr. Jan Duffy, REALTOR®</p>

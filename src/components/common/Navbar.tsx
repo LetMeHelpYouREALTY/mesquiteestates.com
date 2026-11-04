@@ -6,7 +6,7 @@ import Link from "next/link";
 const LINKS = [
   { href: "/mesquite-estates/homes-for-sale", label: "Homes for Sale" },
   { href: "/mesquite-estates/neighborhoods", label: "Neighborhoods" },
-  { href: "/mesquite-estates/custom-home-lots", label: "Custom Lots" },
+  { href: "/mesquite-estates/custom-home-lots", label: "Land" },
   { href: "/mesquite-estates/market-report", label: "Market Report" },
   { href: "/sell-your-mesquite-home", label: "Sell" },
   { href: "/Sun_City_Mesquite", label: "55+ Living" },

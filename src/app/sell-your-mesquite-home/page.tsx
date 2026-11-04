@@ -37,7 +37,7 @@ export default function SellYourMesquiteHome() {
               <FaHandshake className="text-indigo-900 text-3xl mb-4" />
               <h3 className="text-xl font-semibold text-indigo-900 mb-2">Professional Marketing</h3>
               <p className="text-gray-700">
-                Strategic marketing campaigns including professional photography, virtual tours, MLS listings, and 
+                Strategic marketing campaigns including professional photography, virtual tours, listing on every major home search site, and 
                 targeted advertising to reach qualified buyers.
               </p>
             </div>
@@ -94,7 +94,7 @@ export default function SellYourMesquiteHome() {
               <div>
                 <h3 className="text-xl font-semibold text-indigo-900 mb-2">Marketing & Showings</h3>
                 <p className="text-gray-700">
-                  Professional marketing campaign including MLS listing, professional photography, virtual tours, 
+                  Professional marketing campaign including listing on every major home search site, professional photography, virtual tours, 
                   open houses, and targeted advertising to maximize buyer interest.
                 </p>
               </div>

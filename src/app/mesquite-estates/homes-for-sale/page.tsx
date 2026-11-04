@@ -6,9 +6,9 @@ import { LuxeHero, CtaBand, Eyebrow, SourceNote, Breadcrumbs } from "@/component
 import { ENCLAVES, IMAGES } from "@/data/mesquiteEstates";
 
 export const metadata: Metadata = {
-  title: { absolute: "Mesquite Estates Homes for Sale | Live MLS Search" },
+  title: { absolute: "Mesquite Estates Homes for Sale | Search All Listings" },
   description:
-    "Search Mesquite Estates homes and lots for sale in Mesquite, NV 89027 with live MLS data. Save homes, get alerts and book private showings with Dr. Jan Duffy.",
+    "Search Mesquite Estates homes and lots for sale in Mesquite, NV 89027 updated daily. Save homes, get alerts and book private showings with Dr. Jan Duffy.",
 };
 
 export default function HomesForSale() {
@@ -18,9 +18,9 @@ export default function HomesForSale() {
       <main>
         <LuxeHero
           image={IMAGES.greatRoom}
-          eyebrow="Live MLS Search · Mesquite, NV 89027"
+          eyebrow="Updated Daily · Mesquite, NV 89027"
           title="Mesquite Estates Homes for Sale"
-          subtitle="Search active homes and lots, save favorites and get new-listing alerts. Then ask for same-enclave comps before you offer."
+          subtitle="Search homes and lots for sale, save favorites and get an email when new ones come up. Then ask what similar homes nearby sold for before you make an offer."
           primary={{ href: "#search", label: "Start Your Search" }}
         />
         <Breadcrumbs items={[{ name: "Mesquite Estates", href: "/" }, { name: "Homes for Sale", href: "/mesquite-estates/homes-for-sale" }]} />
@@ -39,7 +39,7 @@ export default function HomesForSale() {
 
         <section className="bg-sand">
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-8">
-            <h2 className="font-display text-4xl font-semibold text-ink">Browse by Enclave</h2>
+            <h2 className="font-display text-4xl font-semibold text-ink">Browse by Neighborhood</h2>
             <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
               {ENCLAVES.map((e) => (
                 <li key={e.slug}>
@@ -53,7 +53,7 @@ export default function HomesForSale() {
             <SourceNote keys={ENCLAVES.map((e) => e.facts[0].source)} className="mt-6" />
           </div>
         </section>
-        <CtaBand title="See Something You Like?" body="Text the address to Dr. Jan for HOA details, comps and a private showing." />
+        <CtaBand title="See Something You Like?" body="Text the address to Dr. Jan for HOA details, recent nearby sales and a private showing." />
       </main>
       <Footer />
     </>

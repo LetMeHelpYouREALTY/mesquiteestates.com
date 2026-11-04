@@ -7,7 +7,7 @@ import { IMAGES, type Stat } from "@/data/mesquiteEstates";
 export const metadata: Metadata = {
   title: { absolute: "Mesquite Estates Market Report | November 2026" },
   description:
-    "Mesquite Estates and Mesquite, NV home prices: Sept 2026 medians, luxury-tier sales, inventory and days on market, with dated MLS sources.",
+    "Mesquite Estates and Mesquite, NV home prices: Sept 2026 medians, luxury-tier sales, inventory and days on market, with dated sources.",
 };
 
 const ESTATES: Stat[] = [
@@ -73,7 +73,7 @@ export default function MarketReport() {
             </p>
             <h3 className="mt-8 font-display text-2xl font-semibold text-ink">For Sellers</h3>
             <p className="mt-3 text-lg text-ink/80">
-              Price to same-enclave comps, not the citywide median. Mesquite Estates&rsquo; 4 September closings sold in a median 29
+              Price from recent sales in your own neighborhood, not the citywide middle price. Mesquite Estates&rsquo; 4 September closings sold in a median 29
               days, but a sample that small can swing widely month to month.
             </p>
             <SourceNote keys={["luxury", "sept2026", "cityMarket"]} className="mt-6" />
@@ -88,7 +88,7 @@ export default function MarketReport() {
             { question: "How many Mesquite homes sell for over $1 million?", answer: "In the 12 months to early October 2026, 21 of 737 Mesquite residential sales closed at $1 million or more." },
           ]}
         />
-        <CtaBand title="Want the Numbers for Your Street?" body="Get a same-enclave CMA with active, pending and sold comps from Dr. Jan Duffy." />
+        <CtaBand title="Want the Numbers for Your Street?" body="Get a free price report on your home, using recent sales in your neighborhood, from Dr. Jan Duffy." />
       </main>
       <Footer />
     </>

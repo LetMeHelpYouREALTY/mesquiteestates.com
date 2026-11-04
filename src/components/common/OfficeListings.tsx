@@ -7,9 +7,9 @@ export default function OfficeListings() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-8">
         <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-clay">Live MLS</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-clay">Just Listed</p>
             <h2 id="office-listings" className="mt-3 font-display text-3xl font-semibold text-ink sm:text-4xl">
-              Newest BHHS Nevada Properties Listings
+              Newest Homes for Sale
             </h2>
           </div>
           <Link

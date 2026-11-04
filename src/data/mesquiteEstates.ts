@@ -1,5 +1,5 @@
 /**
- * Mesquite Estates hyperlocal data.
+ * Mesquite Estates neighborhood data.
  * Every figure carries an "asOf" date and a source in SOURCES below.
  * Refresh monthly from Mesquite MLS / CloudCMA before trusting these numbers.
  */
@@ -79,7 +79,7 @@ export const HEADLINE_STATS: Stat[] = [
   { value: "$920K", label: "Median price of Mesquite Estates sales at $700K+ (36 sales, Jan 2024–Oct 2026)", source: "luxury" },
   { value: "16", label: "Mesquite Estates sales at $1M or more since Jan 2024 — second only to Falcon Ridge", source: "luxury" },
   { value: "$606K", label: "Median of 4 Mesquite Estates closings in September 2026, in a median 29 days", source: "sept2026" },
-  { value: "$83/mo", label: "Typical master HOA fee; sub-associations add their own dues", source: "community" },
+  { value: "$83/mo", label: "Typical HOA fee; some neighborhoods add a small extra fee", source: "community" },
 ];
 
 export type Enclave = {
@@ -101,7 +101,7 @@ export const ENCLAVES: Enclave[] = [
     tagline: "New custom homes at the north edge of Mesquite Estates",
     image: IMAGES.mohaveRidge,
     summary:
-      "Mohave Ridge is a 19-home custom enclave north of I-15, backing to open desert near the Lincoln County line. It posted the highest median of the Mesquite Estates enclaves in recent MLS data: about $1.39 million across 10 sales since 2024.",
+      "Mohave Ridge is a 19-home custom neighborhood north of I-15, backing to open desert near the Lincoln County line. It has the highest prices of any Mesquite Estates neighborhood in recent sales: about $1.39 million across 10 sales since 2024.",
     facts: [
       { label: "Median price, $700K+ sales", value: "≈ $1.39M (10 sales)", source: "luxury" },
       { label: "Median lot", value: "0.43 acre", source: "luxury" },
@@ -118,16 +118,16 @@ export const ENCLAVES: Enclave[] = [
       },
       {
         h2: "Mohave Ridge Building Rules Buyers Should Know",
-        body: "Lot listings spell out the design minimums. Confirm every point against the current CC&Rs before you write an offer.",
+        body: "Lot listings spell out the building rules. Confirm each one in the HOA rules before you make an offer.",
         h3s: [
-          { h3: "Minimum Home Size", body: "2,300 sq ft on perimeter home sites and 2,100 sq ft on interior sites, per MLS #1127215 remarks." },
+          { h3: "Minimum Home Size", body: "2,300 sq ft on lots along the edge and 2,100 sq ft on inside lots, per the lot listings." },
           { h3: "Garage Requirement", body: "Every home must include at least a three-car garage." },
-          { h3: "Build Timeline", body: "Vertical construction must start within 6 months of closing on the lot. Line up plans and bids before you close." },
+          { h3: "Build Timeline", body: "Building must start within 6 months of buying the lot. Have your plans and builder quotes ready first." },
         ],
       },
     ],
     faqs: [
-      { question: "How much do Mohave Ridge homes sell for?", answer: "Mohave Ridge homes sold at a median of about $1.39 million across 10 sales from 2024 to early October 2026, per Mesquite MLS data." },
+      { question: "How much do Mohave Ridge homes sell for?", answer: "Mohave Ridge homes sold at a median of about $1.39 million across 10 sales from 2024 to early October 2026." },
       { question: "Can I buy a lot and build in Mohave Ridge?", answer: "Yes. In October 2026, quarter- to third-acre lots were listed from $165,000 to $205,000. The listing remarks require construction to start within 6 months of closing." },
     ],
   },
@@ -155,7 +155,7 @@ export const ENCLAVES: Enclave[] = [
         h2: "Checks Before You Buy a View Lot",
         body: "In Mesquite, view premiums are real, but views are rarely protected.",
         h3s: [
-          { h3: "Sightlines and Vacant Lots", body: "Walk the lots in front of you and read the height limits in the design guidelines." },
+          { h3: "Empty Lots in Front of You", body: "Walk the empty lots between you and the view, and check the HOA height limits." },
           { h3: "Golf Course Ownership", body: "Wolf Creek is a separate business from the HOA. Ask who owns it and whether any renovations are scheduled." },
         ],
       },
@@ -181,16 +181,16 @@ export const ENCLAVES: Enclave[] = [
       {
         h2: "Cambria at a Glance",
         body:
-          "Cambria is the most active of Mesquite Estates' higher-end enclaves by sales count. It suits buyers who want newer construction without managing a custom build.",
+          "Cambria has the most sales of Mesquite Estates' higher-priced neighborhoods. It suits buyers who want newer construction without managing a custom build.",
       },
       {
         h2: "How Cambria Pricing Compares",
         body:
-          "At a $780,000 median for $700K+ sales, Cambria sits below Bella Horizon ($906,095) and Mohave Ridge (about $1.39M). Smaller Cambria homes also trade below that band, so ask for comps on your exact floor plan.",
+          "At a $780,000 median for $700K+ sales, Cambria sits below Bella Horizon ($906,095) and Mohave Ridge (about $1.39M). Smaller Cambria homes also trade below that band, so ask what your exact floor plan has sold for.",
       },
     ],
     faqs: [
-      { question: "What is the HOA fee in Cambria?", answer: "Cambria's median listed HOA fee is $80 a month, per MLS data through early October 2026. Master-association dues may be billed separately." },
+      { question: "What is the HOA fee in Cambria?", answer: "Cambria's median listed HOA fee is $80 a month, based on listings through early October 2026. The community-wide HOA fee may be billed separately." },
     ],
   },
   {
@@ -220,13 +220,13 @@ export const ENCLAVES: Enclave[] = [
       },
     ],
     faqs: [
-      { question: "Is Gatherings at Ridgemont age-restricted?", answer: "Yes. MLS listings mark it as a 55+ senior area. Review the community's occupancy rules in its governing documents." },
+      { question: "Is Gatherings at Ridgemont age-restricted?", answer: "Yes. Listings mark it as a 55+ community. Check its HOA rules on who can live there." },
     ],
   },
   {
     slug: "royal-vista",
     name: "Royal Vista",
-    tagline: "A gated single-story enclave inside Mesquite Estates",
+    tagline: "A gated neighborhood of single-story homes",
     image: IMAGES.entry,
     summary:
       "Royal Vista is a gated community within Mesquite Estates. A 2018 home at 60 Dancing Sky Trail sold for $619,000 on July 6, 2026.",
@@ -239,11 +239,11 @@ export const ENCLAVES: Enclave[] = [
       {
         h2: "Royal Vista Homes",
         body:
-          "The July 2026 sale was a 3-bedroom-plus-den home built in 2018 by its original owner. It took 267 days to sell, so pricing to recent comps matters here.",
+          "The July 2026 sale was a 3-bedroom-plus-den home built in 2018 by its original owner. It took 267 days to sell, so pricing to recent nearby sales matters here.",
       },
     ],
     faqs: [
-      { question: "Is Royal Vista in Mesquite Estates gated?", answer: "Yes. Royal Vista is a gated community within the Mesquite Estates master plan, north of I-15 in ZIP 89027." },
+      { question: "Is Royal Vista in Mesquite Estates gated?", answer: "Yes. Royal Vista is a gated community within Mesquite Estates, north of I-15 in ZIP 89027." },
     ],
   },
 ];
@@ -262,12 +262,12 @@ export const HOME_FAQS = [
   {
     question: "Is Mesquite Estates a 55+ community?",
     answer:
-      "No. Mesquite Estates is an all-ages master plan. One section, Gatherings at Ridgemont, is age-restricted 55+.",
+      "No. Mesquite Estates is open to all ages. One section, Gatherings at Ridgemont, is age-restricted 55+.",
   },
   {
     question: "What are the HOA fees in Mesquite Estates?",
     answer:
-      "The typical fee is about $83 a month. Owners pay the master Mesquite Estates Association plus their sub-neighborhood's dues, so always check the listing's total.",
+      "The typical fee is about $83 a month. Owners pay the community HOA plus their own neighborhood's fee, so always check the total on the listing.",
   },
   {
     question: "Which schools serve Mesquite Estates?",
@@ -277,7 +277,7 @@ export const HOME_FAQS = [
   {
     question: "Can I build a custom home in Mesquite Estates?",
     answer:
-      "Yes. In October 2026, Mohave Ridge lots were listed from $165,000 to $205,000. Expect architectural review, minimum home sizes and a deadline to start construction.",
+      "Yes. In October 2026, Mohave Ridge lots were listed from $165,000 to $205,000. Expect HOA design approval, minimum home sizes and a deadline to start building.",
   },
 ];
 

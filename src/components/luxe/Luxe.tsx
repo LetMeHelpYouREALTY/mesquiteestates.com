@@ -79,7 +79,7 @@ export function SourceNote({ keys, className = "" }: { keys: SourceKey[]; classN
           {i < unique.length - 1 ? "; " : "."}
         </span>
       ))}{" "}
-      Figures are medians from small samples; verify current numbers for any specific home.
+      Prices are middle (median) values from a small number of sales. Ask for current numbers on any specific home.
     </p>
   );
 }
