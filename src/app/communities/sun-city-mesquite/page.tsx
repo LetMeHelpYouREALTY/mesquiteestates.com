@@ -150,12 +150,14 @@ export default function SunCityMesquite() {
             >
               📞 Call/Text 702-718-2228
             </a>
-            <Link
-              href="/Contact_us"
+            <a
+              href="https://calendly.com/drjanduffy"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-white hover:bg-gray-100 text-indigo-900 font-semibold px-8 py-3 rounded-lg transition duration-300"
             >
-              Contact Form
-            </Link>
+              Book a Time
+            </a>
           </div>
         </section>
 

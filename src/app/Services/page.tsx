@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
-import Newsletter from "@/components/common/Newsletter";
+import CalendlyBooking from "@/components/common/CalendlyBooking";
 import { FaCheckCircle, FaUserTie, FaCog, FaChartLine } from 'react-icons/fa';
 
 import OfficeListings from "@/components/common/OfficeListings";
@@ -219,16 +219,18 @@ export default function Services() {
           >
             📞 Call/Text 702-718-2228
           </a>
-          <Link
-            href="/Contact_us"
+          <a
+              href="https://calendly.com/drjanduffy"
+              target="_blank"
+              rel="noopener noreferrer"
             className="inline-block bg-white hover:bg-gray-100 text-indigo-900 font-semibold text-xl px-8 py-3 rounded-lg transition duration-300 text-center"
-          >
-            Contact Form
-          </Link>
+            >
+              Book a Time
+            </a>
         </div>
       </section>
     </div>
-    <Newsletter />
+    <CalendlyBooking />
     <Footer/>
     </>
   );

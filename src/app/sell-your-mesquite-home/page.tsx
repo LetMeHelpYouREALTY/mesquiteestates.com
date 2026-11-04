@@ -145,10 +145,12 @@ export default function SellYourMesquiteHome() {
             Call/Text 702-718-2228
           </a>
           <a
-            href="/Contact_us"
+            href="https://calendly.com/drjanduffy"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-white hover:bg-gray-100 text-indigo-900 font-semibold px-8 py-3 rounded-lg transition duration-300"
           >
-            Schedule Consultation
+            Book a Consultation
           </a>
         </section>
       </div>

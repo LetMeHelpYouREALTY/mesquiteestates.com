@@ -318,6 +318,7 @@ export const CONTACT = {
   phone: "702-718-2228",
   phoneHref: "tel:+17027182228",
   smsHref: "sms:+17027182228",
+  calendly: "https://calendly.com/drjanduffy",
   email: "DrDuffy@MesquiteEstates.com",
   license: "S.0197614.LLC",
   brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
