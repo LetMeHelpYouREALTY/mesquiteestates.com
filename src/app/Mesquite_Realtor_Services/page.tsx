@@ -93,7 +93,7 @@ export default function MesquiteRealtorServices() {
               <p className="text-base text-gray-700 mb-4">
                 Dr. Jan Duffy&apos;s Mesquite realtor services for home buyers include comprehensive property search assistance, market 
                 analysis, and expert negotiation. Her professional realtor services help clients identify Mesquite homes that match 
-                their needs, preferences, and budget. Whether seeking golf course homes, family residences, or investment properties, 
+                their needs, preferences, and budget. Whether seeking golf course homes, move-in-ready homes, or investment properties, 
                 her Mesquite realtor services provide the expertise needed to find the perfect property.
               </p>
               <p className="text-base text-gray-700 mb-4">

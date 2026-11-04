@@ -66,8 +66,7 @@ export default function BuyingHomeMesquite() {
             </h3>
             <p className="text-base text-gray-700 mb-4">
               Buying a home in Mesquite offers numerous advantages that make this desert community an attractive destination 
-              for homebuyers. The Mesquite real estate market provides exceptional value, with homes ranging from $360K to 
-              $700K and custom lots starting at $70K. This affordability, combined with the area&apos;s natural beauty and amenities, 
+              for homebuyers. The Mesquite real estate market provides exceptional value, with a $440K median home sale over the past year and building lots in Mesquite Estates listed at $165K–$205K (MLS, Oct–Nov 2026). This affordability, combined with the area&apos;s natural beauty and amenities, 
               creates an ideal environment for buying a home that offers both lifestyle benefits and investment potential.
             </p>
             <p className="text-base text-gray-700">
@@ -98,7 +97,7 @@ export default function BuyingHomeMesquite() {
               <p className="text-base text-gray-700 mb-4">
                 The first step in buying a home in Mesquite involves understanding your needs, preferences, and budget. 
                 Dr. Jan Duffy works closely with clients to identify their priorities, whether seeking golf course homes, 
-                family residences, or investment properties. This initial consultation ensures that the home search process 
+                move-in-ready homes, or investment properties. This initial consultation ensures that the home search process 
                 focuses on properties that match specific criteria, making buying a home in Mesquite efficient and effective.
               </p>
               
@@ -191,7 +190,7 @@ export default function BuyingHomeMesquite() {
               </p>
               <p className="text-base text-gray-700 mb-4">
                 When buying a home in Mesquite, various financing options are available, including conventional loans, FHA loans, 
-                and VA loans for qualified buyers. The affordability of Mesquite homes, with prices ranging from $360K to $700K, 
+                and VA loans for qualified buyers. The affordability of Mesquite homes, with a $440K median sale over the past year, 
                 makes homeownership achievable for many buyers. Dr. Jan Duffy&apos;s expertise as a Mesquite realtor includes knowledge 
                 of financing options that help clients successfully complete their home purchases in Mesquite.
               </p>

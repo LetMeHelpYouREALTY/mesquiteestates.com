@@ -32,7 +32,7 @@ export default function Services() {
           As your trusted Mesquite realtor, Dr. Jan Duffy provides professional realtor services that encompass all aspects of 
           buying and selling real estate in Mesquite. Our expertise in Mesquite homes, golf course properties, 55+ communities, and custom lots 
           ensures that clients receive expert guidance throughout their real estate journey. Whether you&apos;re seeking golf homes 
-          on championship courses, active adult living in Sun City Mesquite, family residences, or investment properties, our comprehensive realtor services make the process 
+          on championship courses, active adult living in Sun City Mesquite, move-in-ready homes, or investment properties, our comprehensive realtor services make the process 
           of finding and purchasing Mesquite real estate smooth and successful.
         </p>
         <div className="text-center mb-6">
@@ -55,7 +55,7 @@ export default function Services() {
           Our comprehensive real estate services in Mesquite are designed to meet the diverse needs of home buyers, sellers, 
           and investors. Dr. Jan Duffy&apos;s expertise as a Mesquite realtor ensures that clients receive professional services 
           tailored to the unique characteristics of the Mesquite real estate market. From golf homes and luxury properties to 
-          custom lots and family residences, our realtor services encompass all aspects of Mesquite real estate transactions.
+          custom lots and move-in-ready homes, our realtor services encompass all aspects of Mesquite real estate transactions.
         </p>
         <p className="text-base text-gray-700 mb-6">
           Whether you&apos;re buying your first home in Mesquite, investing in golf course properties, or selling a residence, 
@@ -102,12 +102,12 @@ export default function Services() {
         {[
           {
             title: "Custom Lot Sales",
-            description: "Build your dream home on a custom lot. Choose from available lots starting at $70K in prime Mesquite locations with stunning views of the Virgin River Valley.",
+            description: "Build your dream home on a custom lot. Choose from available lots in prime Mesquite locations with stunning views of the Virgin River Valley.",
             link: "/Property/Property_type"
           },
           {
             title: "Home Sales",
-            description: "Browse our selection of beautiful homes ranging from $360K to $700K. From cozy starter homes to luxury estates, find the perfect property for your lifestyle.",
+            description: "Browse Mesquite homes, which sold for a $440K median over the past year. From smaller homes to luxury estates, find the perfect property for your lifestyle.",
             link: "/Property/Property_type"
           },
           {
@@ -166,7 +166,7 @@ export default function Services() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             { icon: FaUserTie, title: "Expert Agent", description: "Dr. Jan Duffy is an experienced real estate professional, licensed since 2008 · 35 years in Las Vegas, specializing in Mesquite real estate." },
-            { icon: FaCog, title: "Custom Options", description: "From custom lots to move-in-ready homes, we offer options tailored to your specific needs and budget ($70K-$700K)." },
+            { icon: FaCog, title: "Custom Options", description: "From custom lots to move-in-ready homes, we offer options tailored to your specific needs and budget." },
             { icon: FaCheckCircle, title: "Client-Focused", description: "We prioritize your satisfaction and work tirelessly to help you find the perfect property that matches your lifestyle and goals." },
             { icon: FaChartLine, title: "Market Expertise", description: "Deep knowledge of the Mesquite market, area amenities, and investment potential to help you make informed decisions." }
           ].map((item, index) => (

@@ -35,14 +35,13 @@ export default function MesquiteVistas() {
                 About Mesquite Vistas
               </h2>
               <p className="text-base text-gray-700 mb-4">
-                Mesquite Vistas offers beautiful homes with stunning desert views in a setting. 
+                Mesquite Vistas offers beautiful homes with stunning desert views around Oasis Golf Club. 
                 This welcoming community provides residents with easy access to Mesquite&apos;s amenities, schools, 
-                and recreational opportunities, making it an ideal choice for families and those seeking a peaceful 
-                lifestyle with scenic surroundings.
+                and recreational opportunities, with golf, trails and scenic surroundings close by.
               </p>
               <p className="text-base text-gray-700 mb-4">
                 Dr. Jan Duffy specializes in helping clients find the perfect Mesquite Vistas home that matches 
-                their family&apos;s needs and lifestyle. With expertise in Mesquite real estate, she provides 
+                their needs and lifestyle. With expertise in Mesquite real estate, she provides 
                 comprehensive guidance to ensure clients find properties that offer both comfort and value in 
                 this desirable community.
               </p>

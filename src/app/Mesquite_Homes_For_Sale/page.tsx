@@ -20,7 +20,7 @@ export default function MesquiteHomesForSale() {
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto mb-6">
             Explore Mesquite homes for sale with Dr. Jan Duffy, your trusted Mesquite realtor. Discover beautiful homes 
-            and custom lots in Mesquite, Nevada ranging from $70K to $700K in the scenic Virgin River Valley, just an hour north of Las Vegas.
+            and building lots in Mesquite, Nevada, where homes sold for a $440K median over the past year, in the scenic Virgin River Valley, just an hour north of Las Vegas.
           </p>
           <a
             href="tel:702-718-2228"
@@ -47,7 +47,7 @@ export default function MesquiteHomesForSale() {
           </p>
           <p className="text-base text-gray-700 mb-4">
             Mesquite homes for sale represent exceptional value in the Nevada real estate market. With prices ranging from 
-            $360K to $700K for existing homes and custom lots starting at $70K, Mesquite real estate provides opportunities 
+            $225K to $3M for homes sold over the past year (a $440K median), Mesquite real estate provides opportunities 
             for first-time homebuyers, move-up buyers, downsizers, and investors. The combination of affordable pricing, 
             quality construction, and desirable location makes Mesquite homes an attractive option for buyers seeking value 
             and lifestyle benefits.
@@ -56,7 +56,7 @@ export default function MesquiteHomesForSale() {
             As your dedicated Mesquite realtor, Dr. Jan Duffy understands that finding the right home requires careful 
             consideration of your needs, preferences, and budget. Her expertise in Mesquite real estate allows her to guide 
             clients through the diverse selection of Mesquite homes for sale, identifying properties that offer the best 
-            combination of features, location, and value. Whether you&apos;re seeking a golf course home, a family residence, 
+            combination of features, location, and value. Whether you&apos;re seeking a golf course home, a move-in-ready home, 
             or a vacation property, her professional real estate services ensure a successful home search experience.
           </p>
           
@@ -93,8 +93,8 @@ export default function MesquiteHomesForSale() {
               </div>
               <p className="text-base text-gray-700 mb-4">
                 Mesquite homes for sale offer exceptional value across various price points, making homeownership accessible 
-                to a wide range of buyers. The Mesquite real estate market features homes priced from $360K to $700K, 
-                providing options for different budgets and preferences. Custom lots starting at $70K offer opportunities for 
+                to a wide range of buyers. The Mesquite real estate market saw homes sell for $225K to $3M over the past year, 
+                providing options for different budgets and preferences. Building lots offer opportunities for 
                 buyers interested in building their dream home, while existing Mesquite homes provide immediate move-in 
                 convenience and older neighborhoods.
               </p>
@@ -187,7 +187,7 @@ export default function MesquiteHomesForSale() {
                 </h2>
               </div>
               <p className="text-base text-gray-700 mb-4">
-                In addition to existing Mesquite homes for sale, the market offers custom lots starting at $70K for buyers 
+                In addition to existing Mesquite homes for sale, the market offers building lots for buyers 
                 interested in building their dream home. These custom lots provide opportunities to create personalized 
                 residences that reflect individual preferences and lifestyle needs. Dr. Jan Duffy assists clients in identifying 
                 the best custom lots in Mesquite, considering factors such as location, views, topography, and building restrictions.
@@ -260,7 +260,7 @@ export default function MesquiteHomesForSale() {
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-indigo-100">
             Contact Dr. Jan Duffy, your trusted Mesquite realtor, to view available homes for sale. 
-            Discover properties ranging from $70K to $700K in beautiful Mesquite, Nevada.
+            Discover homes and building lots in Mesquite, Nevada.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
