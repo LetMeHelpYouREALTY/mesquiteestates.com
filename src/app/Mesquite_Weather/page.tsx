@@ -109,7 +109,7 @@ export default function MesquiteWeather() {
             </div>
             <div className="relative w-full h-64 sm:h-80 lg:order-2">
               <Image
-                src="/Image/hero_bg_2.jpg"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/mesquite-estates-pool-terrace-mountain-view.jpg"
                 alt="Beautiful weather in Mesquite, Nevada"
                 fill
                 className="rounded-lg shadow-lg object-cover"
@@ -162,7 +162,7 @@ export default function MesquiteWeather() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative w-full h-64 sm:h-80 lg:order-1">
               <Image
-                src="/Image/hero_bg_3.jpg"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/mesquite-valley-city-lights-evening.jpg"
                 alt="Outdoor activities in Mesquite weather"
                 fill
                 className="rounded-lg shadow-lg object-cover"

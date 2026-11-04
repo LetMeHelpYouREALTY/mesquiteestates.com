@@ -69,7 +69,7 @@ export default function About() {
             </div>
             <div className="relative w-full h-64 sm:h-80 lg:order-2">
               <Image
-                src="/Image/story.png"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/desert-home-front-entry-twilight.jpg"
                 alt="Our Story"
                 layout="fill"
                 objectFit="cover"
@@ -83,7 +83,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative w-full h-64 sm:h-80 lg:order-1">
               <Image
-                src="/Image/mission.webp"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/mesquite-valley-city-lights-evening.jpg"
                 alt="Our Mission"
                 layout="fill"
                 objectFit="cover"
@@ -150,14 +150,8 @@ export default function About() {
           <div className="py-10 px-4 bg-gray-100">
             <div className="max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="relative w-56 h-56 mx-auto mb-4">
-                  <Image
-                    src="/Image/agent1.jpg"
-                    alt="Dr. Jan Duffy"
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-full shadow-lg"
-                  />
+                <div className="mx-auto mb-4 flex h-40 w-40 items-center justify-center rounded-full bg-ink font-display text-5xl font-semibold text-sand" aria-hidden="true">
+                  JD
                 </div>
                 <h3 className="text-xl font-bold text-indigo-900">
                   Dr. Jan Duffy

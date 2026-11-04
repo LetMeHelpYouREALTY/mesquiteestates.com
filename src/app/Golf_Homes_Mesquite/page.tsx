@@ -109,7 +109,7 @@ export default function GolfHomesMesquite() {
             </div>
             <div className="relative w-full h-64 sm:h-80 lg:order-2">
               <Image
-                src="/Image/hero_bg_1.jpg"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/golf-course-home-backyard.jpg"
                 alt="Golf homes in Mesquite, Nevada"
                 fill
                 className="rounded-lg shadow-lg object-cover"
@@ -155,7 +155,7 @@ export default function GolfHomesMesquite() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative w-full h-64 sm:h-80 lg:order-1">
               <Image
-                src="/Image/hero_bg_2.jpg"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/bella-horizon-gated-home-fairway-view.jpg"
                 alt="Luxury golf homes in Mesquite, Nevada"
                 fill
                 className="rounded-lg shadow-lg object-cover"

@@ -83,7 +83,7 @@ export default function AboutMesquite() {
             </div>
             <div className="relative w-full h-64 sm:h-80 lg:order-2">
               <Image
-                src="/Image/hero_bg_1.jpg"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/virgin-river-valley-sunset.jpg"
                 alt="Mesquite, Nevada landscape"
                 fill
                 className="rounded-lg shadow-lg object-cover"
@@ -141,7 +141,7 @@ export default function AboutMesquite() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative w-full h-64 sm:h-80 lg:order-1">
               <Image
-                src="/Image/hero_bg_2.jpg"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/golf-fairway-red-mesas-mesquite.jpg"
                 alt="Mesquite recreation and activities"
                 fill
                 className="rounded-lg shadow-lg object-cover"
@@ -281,7 +281,7 @@ export default function AboutMesquite() {
             </div>
             <div className="relative w-full h-64 sm:h-80 lg:order-2">
               <Image
-                src="/Image/hero_bg_3.jpg"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/mesquite-nevada-town-aerial-dusk.jpg"
                 alt="Mesquite community and lifestyle"
                 fill
                 className="rounded-lg shadow-lg object-cover"

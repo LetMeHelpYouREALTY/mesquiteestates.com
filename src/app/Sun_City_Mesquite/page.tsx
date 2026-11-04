@@ -60,7 +60,7 @@ export default function SunCityMesquite() {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "name": "Dr. Jan Duffy - Sun City Mesquite Expert",
-    "image": "https://www.mesquiteestates.com/Image/agent1.jpg",
+    "image": "https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/active-adult-clubhouse-pool.jpg",
     "url": "https://www.mesquiteestates.com/Sun_City_Mesquite",
     "telephone": "+1-702-718-2228",
     "email": "DrDuffy@MesquiteEstates.com",

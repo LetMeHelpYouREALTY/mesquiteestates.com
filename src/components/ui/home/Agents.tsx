@@ -19,7 +19,7 @@ const agents: Agent[] = [
     id: 1,
     name: "Dr. Jan Duffy",
     role: "Mesquite Real Estate Specialist",
-    image: "/Image/agent1.jpg",
+    image: "https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/desert-home-front-entry-twilight.jpg",
     specialties: ["Mesquite Properties", "Golf Course Homes", "55+ Communities", "Custom Lots", "Las Vegas REALTOR®"],
     rating: 5,
   },

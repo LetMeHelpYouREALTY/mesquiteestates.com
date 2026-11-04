@@ -135,7 +135,7 @@ export default function Services() {
           }
         ].map((service, index) => (
           <div key={index} className="bg-white p-8 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
-            <Image src="/Image/services.webp" alt={service.title} width={500} height={300} className="rounded-lg mb-4 object-cover" />
+            <Image src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/closing-keys-contract-desk.jpg" alt={service.title} width={500} height={300} className="rounded-lg mb-4 object-cover" />
             <h3 className="text-2xl font-bold text-indigo-900 mb-2">{service.title}</h3>
             <p className="text-lg text-gray-600 mb-4">
               {service.description}

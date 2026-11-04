@@ -15,7 +15,7 @@ export default function SunCityMesquite() {
         <section className="relative mb-16 rounded-lg overflow-hidden">
           <div className="relative h-96">
             <Image
-              src="/Image/hero_bg_1.jpg"
+              src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/active-adult-clubhouse-pool.jpg"
               alt="Sun City Mesquite 55+ Community"
               fill
               className="object-cover"

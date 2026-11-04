@@ -77,7 +77,7 @@ export default function FiftyFivePlusCommunities() {
             </div>
             <div className="relative w-full h-64 sm:h-80">
               <Image
-                src="/Image/hero_bg_1.jpg"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/active-adult-clubhouse-pool.jpg"
                 alt="55+ Community Living in Mesquite"
                 fill
                 className="rounded-lg shadow-lg object-cover"
@@ -92,7 +92,7 @@ export default function FiftyFivePlusCommunities() {
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="relative h-64 lg:h-full">
                 <Image
-                  src="/Image/hero_bg_1.jpg"
+                  src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/ridgemont-single-story-home-sunset-view.jpg"
                   alt="Sun City Mesquite"
                   fill
                   className="object-cover"

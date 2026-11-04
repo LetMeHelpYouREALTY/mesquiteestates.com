@@ -6,9 +6,9 @@ import Image from "next/image";
 export default function Header() {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-   "/Image/hero_bg_1.jpg",
-   "/Image/hero_bg_2.jpg",
-   "/Image/hero_bg_3.jpg",
+   "https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/hero-mesquite-estates-view-home.jpg",
+   "https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/mesquite-estates-pool-terrace-mountain-view.jpg",
+   "https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/mesquite-valley-city-lights-evening.jpg",
   ];
 
   useEffect(() => {

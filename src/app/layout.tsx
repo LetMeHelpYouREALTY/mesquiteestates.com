@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Cormorant_Garamond } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "@/config/siteConfig";
 import AccessibilityWidget from "@/components/common/AccessibilityWidget";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
+const display = Cormorant_Garamond({ subsets: ["latin"], weight: ["500", "600", "700"], variable: "--font-display", display: "swap" });
 
 export const metadata: Metadata = {
   title: {
@@ -43,10 +44,10 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: '/Image/hero_bg_1.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Mesquite Estates - Homes by Dr. Jan Duffy',
+        url: 'https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/hero-mesquite-estates-view-home.jpg',
+        width: 1024,
+        height: 1024,
+        alt: 'Desert contemporary view home above the Mesquite, Nevada valley at sunset',
       },
     ],
   },
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.name,
     description: siteConfig.description,
-    images: ['/Image/hero_bg_1.jpg'],
+    images: ['https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/hero-mesquite-estates-view-home.jpg'],
   },
   robots: {
     index: true,
@@ -112,7 +113,7 @@ export default function RootLayout({
           `
         }} />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} ${inter.variable} ${display.variable}`}>
         {children}
         <AccessibilityWidget />
         <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module" async></script>

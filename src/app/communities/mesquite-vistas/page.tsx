@@ -47,7 +47,7 @@ export default function MesquiteVistas() {
             </div>
             <div className="relative w-full h-64 sm:h-80">
               <Image
-                src="/Image/hero_bg_3.jpg"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/golf-fairway-red-mesas-mesquite.jpg"
                 alt="Mesquite Vistas Community"
                 fill
                 className="rounded-lg shadow-lg object-cover"
