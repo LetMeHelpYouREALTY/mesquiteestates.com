@@ -11,7 +11,7 @@ export default function StructuredData() {
     description: siteConfig.description,
     url: siteConfig.url,
     image: IMAGES.hero.src,
-    telephone: ['+1-702-718-2228', '+1-702-500-1955'],
+    telephone: '+1-702-718-2228',
     email: 'DrDuffy@MesquiteEstates.com',
     address: {
       '@type': 'PostalAddress',
@@ -23,6 +23,7 @@ export default function StructuredData() {
     },
     areaServed: [
       { '@type': 'Place', name: 'Mesquite Estates, Mesquite, NV 89027' },
+      { '@type': 'Place', name: 'Sun City Mesquite, Mesquite, NV 89034' },
       { '@type': 'City', name: 'Mesquite', containedInPlace: { '@type': 'State', name: 'Nevada' } },
     ],
     knowsAbout: [
