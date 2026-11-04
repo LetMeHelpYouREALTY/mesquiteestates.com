@@ -74,6 +74,13 @@ export default function Home() {
                   </div>
                 </Link>
               ))}
+              <Link href="/mesquite-estates/neighborhoods" className="group flex flex-col justify-between bg-ink p-8 text-sand transition hover:bg-clay-dark">
+                <span className="text-xs font-semibold uppercase tracking-[0.28em] text-dune">Side by side</span>
+                <span>
+                  <span className="block font-display text-3xl font-semibold">Compare All Five Enclaves</span>
+                  <span className="mt-3 block text-sm text-dune">Prices, lot sizes, HOA fees and build years in one table →</span>
+                </span>
+              </Link>
             </div>
           </div>
         </section>

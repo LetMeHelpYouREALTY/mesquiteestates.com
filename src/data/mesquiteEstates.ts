@@ -16,7 +16,7 @@ const img = (key: string, alt: string, position?: string): SiteImage => ({
 
 /** Illustrative photography (not photos of specific listings). Stored in Cloudflare R2. */
 export const IMAGES = {
-  hero: img("hero-mesquite-estates-view-home", "Desert contemporary view home on an elevated lot above the Mesquite, Nevada valley at sunset"),
+  hero: img("hero-mesquite-estates-view-home", "Desert contemporary view home on an elevated lot above the Mesquite, Nevada valley at sunset", "center 65%"),
   poolTerrace: img("mesquite-estates-pool-terrace-mountain-view", "Pool and spa terrace with a valley and mountain view at sunset in Mesquite, NV"),
   mohaveRidge: img("mohave-ridge-custom-home-open-desert", "New custom desert home with a three-car garage backing to open desert north of I-15"),
   bellaHorizon: img("bella-horizon-gated-home-fairway-view", "Elevated patio view over golf fairways and red mesas in Mesquite, Nevada"),

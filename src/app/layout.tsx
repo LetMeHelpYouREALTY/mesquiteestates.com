@@ -86,9 +86,10 @@ export default function RootLayout({
           __html: `
             realscout-simple-search {
               --rs-ss-font-primary-color: #000000;
-              --rs-ss-searchbar-border-color: #8b572a;
+              --rs-ss-searchbar-border-color: #9A5A34;
               --rs-ss-box-shadow: 0 10px 15px -3px #0000001a;
-              --rs-ss-widget-width: 500px !important;
+              --rs-ss-widget-width: min(500px, calc(100vw - 32px)) !important;
+              max-width: 100%;
             }
             realscout-office-listings {
               --rs-listing-divider-color: #0e64c8;
@@ -96,9 +97,10 @@ export default function RootLayout({
             }
             realscout-advanced-search {
               --rs-as-button-text-color: #ffffff;
-              --rs-as-background-color: #000000;
-              --rs-as-button-color: #8b572a;
-              --rs-as-widget-width: 500px !important;
+              --rs-as-background-color: #16120F;
+              --rs-as-button-color: #9A5A34;
+              --rs-as-widget-width: min(500px, calc(100vw - 32px)) !important;
+              max-width: 100%;
             }
             realscout-home-value {
               --rs-hvw-background-color: #ffffff;

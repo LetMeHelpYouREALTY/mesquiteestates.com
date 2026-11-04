@@ -5,7 +5,7 @@ export default function FloatingCTA() {
     <div className="fixed bottom-4 right-4 z-50 md:hidden flex flex-col space-y-3">
       <a 
         href="tel:702-718-2228"
-        className="bg-orange-500 text-white rounded-full p-4 shadow-lg flex items-center justify-center hover:bg-orange-600 transition duration-300"
+        className="bg-clay text-white rounded-full p-4 shadow-lg flex items-center justify-center hover:bg-clay-dark transition duration-300"
         aria-label="Call Dr. Jan Duffy at 702-718-2228"
       >
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
@@ -14,7 +14,7 @@ export default function FloatingCTA() {
       </a>
       <a 
         href="sms:702-718-2228"
-        className="bg-green-500 text-white rounded-full p-4 shadow-lg flex items-center justify-center hover:bg-green-600 transition duration-300"
+        className="bg-ink text-white rounded-full p-4 shadow-lg flex items-center justify-center hover:bg-sage transition duration-300"
         aria-label="Text Dr. Jan Duffy at 702-718-2228"
       >
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
