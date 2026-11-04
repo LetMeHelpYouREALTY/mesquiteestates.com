@@ -19,6 +19,9 @@ const nextConfig = {
       { source: '/Dashboard', destination: '/mesquite-estates/market-report', permanent: true },
       { source: '/Dashboard/:path*', destination: '/mesquite-estates/market-report', permanent: true },
       { source: '/Login', destination: '/', permanent: true },
+      // Lowercase paths linked from old llms.txt (reported as 404 in Search Console)
+      { source: '/contact', destination: '/Contact_us', permanent: true },
+      { source: '/about', destination: '/About', permanent: true },
     ];
   },
 };
