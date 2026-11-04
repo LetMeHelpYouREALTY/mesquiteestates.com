@@ -41,6 +41,7 @@ export default function Navbar() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-8">
           <Link href="/" className="font-display text-2xl font-semibold tracking-wide text-ink sm:text-3xl">
             Mesquite <span className="text-clay">Estates</span>
+            <span className="block font-sans text-[10px] font-semibold uppercase tracking-[0.25em] text-mesa sm:text-xs">Homes by Dr. Jan Duffy</span>
           </Link>
           <button
             className="text-ink lg:hidden"

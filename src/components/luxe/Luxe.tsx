@@ -179,6 +179,9 @@ export function CtaBand({ title, body }: { title: string; body: string }) {
           <a href={CONTACT.smsHref} className="inline-flex items-center justify-center rounded-full border border-sand/60 px-8 py-4 text-sm font-semibold uppercase tracking-widest transition hover:bg-sand hover:text-ink">
             Text Dr. Jan
           </a>
+          <a href={CONTACT.calendly} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full border border-sand/60 px-8 py-4 text-sm font-semibold uppercase tracking-widest transition hover:bg-sand hover:text-ink">
+            Book a Time
+          </a>
         </div>
       </div>
     </section>

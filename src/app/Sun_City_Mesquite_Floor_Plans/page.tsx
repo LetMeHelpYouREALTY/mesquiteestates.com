@@ -18,7 +18,7 @@ export default function SunCityMesquiteFloorPlans() {
             Sun City Mesquite Floor Plans & Home Designs
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto mb-6">
-            Del Webb offers 21 thoughtfully designed single-family floor plans across six collections.
+            As of October 12, 2026, Del Webb listed three single-story series, Cottage, Retreat and Encore, from 1,285 to 2,731 sq ft. Base prices exclude lot premiums and options.
             All homes are single-story ranch designs with 2-car garages, perfect for active adult living.
           </p>
           <a
@@ -34,7 +34,7 @@ export default function SunCityMesquiteFloorPlans() {
         <section className="mb-16">
           <div className="bg-indigo-50 p-6 rounded-lg mb-6">
             <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-4">Cottage Series</h2>
-            <p className="text-xl font-semibold text-indigo-600 mb-4">Starting ~$328K</p>
+            <p className="text-xl font-semibold text-indigo-600 mb-4">From $349,990</p>
             <p className="text-base text-gray-700 mb-4">
               Perfect starter homes in Sun City Mesquite, offering comfortable living spaces with efficient designs.
             </p>
@@ -91,7 +91,7 @@ export default function SunCityMesquiteFloorPlans() {
         <section className="mb-16">
           <div className="bg-indigo-50 p-6 rounded-lg mb-6">
             <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-4">Retreat Series</h2>
-            <p className="text-xl font-semibold text-indigo-600 mb-4">Starting ~$405K</p>
+            <p className="text-xl font-semibold text-indigo-600 mb-4">From $429,990</p>
             <p className="text-base text-gray-700 mb-4">
               Spacious homes with upgraded features and enhanced living spaces for comfortable retirement living.
             </p>
@@ -167,7 +167,7 @@ export default function SunCityMesquiteFloorPlans() {
         <section className="mb-16">
           <div className="bg-indigo-50 p-6 rounded-lg mb-6">
             <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-4">Encore Series</h2>
-            <p className="text-xl font-semibold text-indigo-600 mb-4">Starting ~$463K</p>
+            <p className="text-xl font-semibold text-indigo-600 mb-4">From $491,990</p>
             <p className="text-base text-gray-700 mb-4">
               Premium homes with luxury features, spacious layouts, and upscale finishes for discerning buyers.
             </p>
@@ -247,12 +247,14 @@ export default function SunCityMesquiteFloorPlans() {
             >
               Back to Sun City Mesquite
             </Link>
-            <Link
-              href="/Contact_us"
+            <a
+              href="https://calendly.com/drjanduffy"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-600 transition duration-300"
             >
-              Contact Form
-            </Link>
+              Book a Time
+            </a>
           </div>
           <p className="text-indigo-100 text-lg">
             Models open daily 9AM-5PM<br />

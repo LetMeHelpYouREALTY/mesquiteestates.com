@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
-import Newsletter from "@/components/common/Newsletter";
+import CalendlyBooking from "@/components/common/CalendlyBooking";
 import Link from "next/link";
 import { FaMapMarkerAlt, FaMountain, FaGolfBall, FaUmbrellaBeach, FaTree, FaRoute } from "react-icons/fa";
 
@@ -336,16 +336,18 @@ export default function AboutMesquite() {
             >
               Browse Properties
             </Link>
-            <Link
-              href="/Contact_us"
+            <a
+              href="https://calendly.com/drjanduffy"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-600 transition duration-300"
             >
-              Contact Form
-            </Link>
+              Book a Time
+            </a>
           </div>
         </section>
       </div>
-      <Newsletter />
+      <CalendlyBooking />
       <Footer />
     </>
   );

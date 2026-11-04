@@ -307,12 +307,14 @@ export default function MesquiteGolfTrip() {
             >
               View Golf Homes
             </Link>
-            <Link
-              href="/Contact_us"
+            <a
+              href="https://calendly.com/drjanduffy"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-600 transition duration-300"
             >
-              Contact Form
-            </Link>
+              Book a Time
+            </a>
           </div>
         </section>
       </div>
