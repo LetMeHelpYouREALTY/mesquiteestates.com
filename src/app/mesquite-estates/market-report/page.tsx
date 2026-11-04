@@ -1,3 +1,4 @@
+import { ogFor } from "@/config/og";
 import type { Metadata } from "next";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
@@ -5,6 +6,7 @@ import { LuxeHero, FaqBlock, CtaBand, Eyebrow, SourceNote, Breadcrumbs, StatBand
 import { IMAGES, type Stat } from "@/data/mesquiteEstates";
 
 export const metadata: Metadata = {
+  ...ogFor("Mesquite Estates Market Report | November 2026", "Mesquite Estates and Mesquite, NV home prices: Sept 2026 medians, luxury-tier sales, inventory and days on market, with dated sources.", "/mesquite-estates/market-report", IMAGES.townAerial),
   title: { absolute: "Mesquite Estates Market Report | November 2026" },
   description:
     "Mesquite Estates and Mesquite, NV home prices: Sept 2026 medians, luxury-tier sales, inventory and days on market, with dated sources.",

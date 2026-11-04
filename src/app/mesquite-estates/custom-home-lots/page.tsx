@@ -1,3 +1,4 @@
+import { ogFor } from "@/config/og";
 import type { Metadata } from "next";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
@@ -5,6 +6,7 @@ import { LuxeHero, FaqBlock, CtaBand, SourceNote, Breadcrumbs, SplitFeature, Eye
 import { IMAGES } from "@/data/mesquiteEstates";
 
 export const metadata: Metadata = {
+  ...ogFor("Land to Build a Home in Mesquite Estates | Mesquite, NV", "Buying land to build a home in Mesquite Estates: Mohave Ridge lots $165K–$205K (Oct 2026), minimum home sizes, 3-car garages and the 6-month rule to start building.", "/mesquite-estates/custom-home-lots", IMAGES.lot),
   title: { absolute: "Land to Build a Home in Mesquite Estates | Mesquite, NV" },
   description:
     "Buying land to build a home in Mesquite Estates: Mohave Ridge lots $165K–$205K (Oct 2026), minimum home sizes, 3-car garages and the 6-month rule to start building.",

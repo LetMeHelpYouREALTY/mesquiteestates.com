@@ -1,3 +1,4 @@
+import { ogFor } from "@/config/og";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/common/Navbar";
@@ -6,6 +7,7 @@ import { LuxeHero, CtaBand, Eyebrow, SourceNote, Breadcrumbs } from "@/component
 import { ENCLAVES, IMAGES } from "@/data/mesquiteEstates";
 
 export const metadata: Metadata = {
+  ...ogFor("Mesquite Estates Homes for Sale | Search All Listings", "Search Mesquite Estates homes and lots for sale in Mesquite, NV 89027 updated daily. Save homes, get alerts and book private showings with Dr. Jan Duffy.", "/mesquite-estates/homes-for-sale", IMAGES.greatRoom),
   title: { absolute: "Mesquite Estates Homes for Sale | Search All Listings" },
   description:
     "Search Mesquite Estates homes and lots for sale in Mesquite, NV 89027 updated daily. Save homes, get alerts and book private showings with Dr. Jan Duffy.",

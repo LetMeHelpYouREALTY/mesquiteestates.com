@@ -1,3 +1,4 @@
+import { ogFor } from "@/config/og";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,6 +8,7 @@ import { LuxeHero, CtaBand, Eyebrow, SourceNote, Breadcrumbs } from "@/component
 import { ENCLAVES, IMAGES } from "@/data/mesquiteEstates";
 
 export const metadata: Metadata = {
+  ...ogFor("Mesquite Estates Neighborhoods | Compared Side by Side", "Compare Mesquite Estates neighborhoods: Mohave Ridge, Bella Horizon, Cambria, Royal Vista and Gatherings at Ridgemont 55+. Prices, lots, HOA fees and build years.", "/mesquite-estates/neighborhoods", IMAGES.townAerial),
   title: { absolute: "Mesquite Estates Neighborhoods | Compared Side by Side" },
   description:
     "Compare Mesquite Estates neighborhoods: Mohave Ridge, Bella Horizon, Cambria, Royal Vista and Gatherings at Ridgemont 55+. Prices, lots, HOA fees and build years.",

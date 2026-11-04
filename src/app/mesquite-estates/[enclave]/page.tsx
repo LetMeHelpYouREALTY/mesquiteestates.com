@@ -6,6 +6,7 @@ import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import { LuxeHero, FaqBlock, CtaBand, Eyebrow, SourceNote, Breadcrumbs } from "@/components/luxe/Luxe";
 import { ENCLAVES } from "@/data/mesquiteEstates";
+import { ogFor } from "@/config/og";
 
 export const dynamicParams = false;
 
@@ -17,11 +18,9 @@ export async function generateMetadata({ params }: { params: Promise<{ enclave: 
   const { enclave } = await params;
   const e = ENCLAVES.find((x) => x.slug === enclave);
   if (!e) return {};
-  return {
-    title: { absolute: `${e.name} Homes for Sale | Mesquite Estates, Mesquite NV` },
-    description: e.summary.slice(0, 158),
-    openGraph: { images: [{ url: e.image.src, width: 1024, height: 1024, alt: e.image.alt }] },
-  };
+  const title = `${e.name} Homes for Sale | Mesquite Estates, Mesquite NV`;
+  const description = e.summary.length > 158 ? `${e.summary.slice(0, 155).replace(/\s+\S*$/, "")}…` : e.summary;
+  return { ...ogFor(title, description, `/mesquite-estates/${e.slug}`, e.image), title: { absolute: title }, description };
 }
 
 export default async function EnclavePage({ params }: { params: Promise<{ enclave: string }> }) {

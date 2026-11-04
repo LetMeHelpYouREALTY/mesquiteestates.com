@@ -1,6 +1,9 @@
+import { ogFor } from "@/config/og";
+import { IMAGES } from "@/data/mesquiteEstates";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  ...ogFor('Sell Your Mesquite Home | Expert Realtor Services', 'Sell your Mesquite home with Dr. Jan Duffy. Expert market analysis, professional marketing, and negotiation. Get your home\'s value. Call 702-718-2228.', "/sell-your-mesquite-home", IMAGES.entry),
   title: 'Sell Your Mesquite Home | Expert Realtor Services',
   description: 'Sell your Mesquite home with Dr. Jan Duffy. Expert market analysis, professional marketing, and negotiation. Get your home\'s value. Call 702-718-2228.',
   keywords: [

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
   alternates: {
-    // Self-referencing canonical on every route (resolved against metadataBase)
+    // Self-referencing canonical on every route (resolved against metadataBase); pages override via ogFor()
     canonical: './',
   },
   keywords: [

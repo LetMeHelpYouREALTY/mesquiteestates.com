@@ -1,6 +1,9 @@
+import { ogFor } from "@/config/og";
+import { IMAGES } from "@/data/mesquiteEstates";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  ...ogFor('Sun City Mesquite Homes for Sale | 55+ Del Webb Community', 'Sun City Mesquite homes for sale in Nevada\'s premier 55+ active adult community by Del Webb. Golf, fitness, clubs. Call Dr. Jan 702-718-2228.', "/communities/sun-city-mesquite", IMAGES.clubhouse),
   title: 'Sun City Mesquite Homes for Sale | 55+ Del Webb Community',
   description: 'Sun City Mesquite homes for sale in Nevada\'s premier 55+ active adult community by Del Webb. Golf, fitness, clubs. Call Dr. Jan 702-718-2228.',
   keywords: [
