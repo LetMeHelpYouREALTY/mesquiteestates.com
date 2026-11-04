@@ -99,7 +99,8 @@ export default function Contact() {
             <p className="text-lg text-gray-600">
               1155 W Pioneer Blvd<br />
               Suite 104-D<br />
-              Mesquite, NV 89027
+              Mesquite, NV 89027<br />
+              Open daily, 8 AM – 8 PM
             </p>
           </div>
         </section>

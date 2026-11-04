@@ -194,7 +194,7 @@ export default function SunCityMesquiteAmenities() {
             <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900">Social Activities & Clubs</h2>
           </div>
           <p className="text-base text-gray-700 mb-4">
-            A full-time Activities Director coordinates over 100 clubs and interest groups, ensuring there&apos;s 
+            A full-time Activities Director coordinates clubs and interest groups, ensuring there&apos;s 
             always something exciting happening in Sun City Mesquite. From ice cream socials and holiday parties 
             to day trips to shows & attractions, the community calendar is always full.
           </p>

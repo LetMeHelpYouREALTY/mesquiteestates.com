@@ -28,7 +28,7 @@ export default function SunCityMesquite() {
     },
     {
       question: "What home styles are available in Sun City Mesquite?",
-      answer: "Del Webb offers 21 single-family ranch floor plans ranging from 1,285 to 2,731 square feet, with 2-3 bedrooms and prices starting in the low $300s."
+      answer: "As of October 12, 2026, Del Webb listed three single-story series (Cottage, Retreat and Encore) with plans from 1,285 to 2,731 square feet and base prices from $349,990."
     },
     {
       question: "Is there a restaurant in Sun City Mesquite?",
@@ -77,7 +77,7 @@ export default function SunCityMesquite() {
       "@type": "Place",
       "name": "Sun City Mesquite"
     },
-    "priceRange": "$327,990 - $700,000+",
+    "priceRange": "From $349,990",
     "memberOf": {
       "@type": "Organization",
       "name": "Berkshire Hathaway HomeServices Nevada Properties"
@@ -149,7 +149,7 @@ export default function SunCityMesquite() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <div className="text-lg font-semibold text-indigo-900 mb-2">Home Prices</div>
-              <div className="text-gray-700">$327,990 - $700,000+</div>
+              <div className="text-gray-700">New from $349,990 (Del Webb, Oct 12, 2026)</div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <div className="text-lg font-semibold text-indigo-900 mb-2">Home Sizes</div>
@@ -335,12 +335,12 @@ export default function SunCityMesquite() {
         <section className="mb-16">
           <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6">Home Collections</h2>
           <p className="text-base text-gray-700 mb-6">
-            Del Webb offers 21 single-family ranch floor plans across six collections:
+            As of October 12, 2026, Del Webb listed three single-family series. Base prices exclude lot premiums and options:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             <div className="bg-white p-6 rounded-lg shadow-lg border-2 border-indigo-100">
               <h3 className="text-2xl font-semibold text-indigo-900 mb-3">Cottage Series</h3>
-              <div className="text-xl font-bold text-indigo-600 mb-2">Starting ~$328K</div>
+              <div className="text-xl font-bold text-indigo-600 mb-2">From $349,990</div>
               <ul className="text-gray-700 space-y-2 mb-4">
                 <li>• 1,285+ sq ft</li>
                 <li>• 2 beds, 2 baths</li>
@@ -349,7 +349,7 @@ export default function SunCityMesquite() {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg border-2 border-indigo-100">
               <h3 className="text-2xl font-semibold text-indigo-900 mb-3">Retreat Series</h3>
-              <div className="text-xl font-bold text-indigo-600 mb-2">Starting ~$405K</div>
+              <div className="text-xl font-bold text-indigo-600 mb-2">From $429,990</div>
               <ul className="text-gray-700 space-y-2 mb-4">
                 <li>• 1,573+ sq ft</li>
                 <li>• 2 beds, 2 baths</li>
@@ -358,7 +358,7 @@ export default function SunCityMesquite() {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg border-2 border-indigo-100">
               <h3 className="text-2xl font-semibold text-indigo-900 mb-3">Encore Series</h3>
-              <div className="text-xl font-bold text-indigo-600 mb-2">Starting ~$463K</div>
+              <div className="text-xl font-bold text-indigo-600 mb-2">From $491,990</div>
               <ul className="text-gray-700 space-y-2 mb-4">
                 <li>• 2,023+ sq ft</li>
                 <li>• 2-3 beds, 2-2.5 baths</li>
@@ -516,7 +516,7 @@ export default function SunCityMesquite() {
         <section className="mb-16 bg-gray-50 p-8 rounded-lg">
           <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6">Active Lifestyle & Social Connection</h2>
           <p className="text-base text-gray-700 mb-4">
-            A full-time Activities Director coordinates over 100 clubs and interest groups, ice cream socials, 
+            A full-time Activities Director coordinates clubs and interest groups, ice cream socials, 
             holiday parties, day trips to shows & attractions, Tuacahn Center for the Arts trips, fitness classes 
             (yoga, Jazzercise, water aerobics), book clubs, and educational travel.
           </p>

@@ -21,6 +21,14 @@ export default function StructuredData() {
       postalCode: '89027',
       addressCountry: 'US',
     },
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+        opens: '08:00',
+        closes: '20:00',
+      },
+    ],
     areaServed: [
       { '@type': 'Place', name: 'Mesquite Estates, Mesquite, NV 89027' },
       { '@type': 'Place', name: 'Sun City Mesquite, Mesquite, NV 89034' },
