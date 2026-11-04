@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "@/config/siteConfig";
 import AccessibilityWidget from "@/components/common/AccessibilityWidget";
+import RealtorAnalytics from "../components/analytics/RealtorAnalytics";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 const display = Cormorant_Garamond({ subsets: ["latin"], weight: ["500", "600", "700"], variable: "--font-display", display: "swap" });
@@ -119,6 +120,7 @@ export default function RootLayout({
         {children}
         <AccessibilityWidget />
         <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module" async></script>
+        <RealtorAnalytics siteName="mesquiteestates.com" />
       </body>
     </html>
   );
