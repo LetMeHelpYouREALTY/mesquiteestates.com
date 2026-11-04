@@ -6,6 +6,7 @@ import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import Team from "@/components/ui/About/Team";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function About() {
   return (
     <React.Fragment>
@@ -27,6 +28,7 @@ export default function About() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         <section className="mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

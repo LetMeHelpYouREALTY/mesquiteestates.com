@@ -7,6 +7,7 @@ import Footer from "@/components/common/Footer";
 import Link from "next/link";
 import { FaHandshake, FaHome, FaKey, FaChartLine, FaCheckCircle } from "react-icons/fa";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function MesquiteRealtorServices() {
   return (
     <>
@@ -28,6 +29,7 @@ export default function MesquiteRealtorServices() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         {/* H2 Section 1 */}
         <section className="mb-16">

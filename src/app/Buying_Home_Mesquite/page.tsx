@@ -7,6 +7,7 @@ import Footer from "@/components/common/Footer";
 import Link from "next/link";
 import { FaHome, FaCheckCircle, FaMapMarkerAlt, FaHandshake, FaKey } from "react-icons/fa";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function BuyingHomeMesquite() {
   return (
     <>
@@ -28,6 +29,7 @@ export default function BuyingHomeMesquite() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         {/* H2 Section 1 */}
         <section className="mb-16">
@@ -247,22 +249,6 @@ export default function BuyingHomeMesquite() {
             approach, attention to detail, and dedication to client success make her the preferred choice for homebuyers seeking 
             to purchase homes in this premier desert destination.
           </p>
-        </section>
-
-        {/* RealScout Office Listings */}
-        <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6 text-center">Available Homes in Mesquite</h2>
-          <p className="text-base text-gray-700 mb-8 text-center max-w-3xl mx-auto">
-            Browse our current selection of homes, lots, and properties available in Mesquite. From starter homes 
-            to luxury estates, custom lots to golf course properties, explore what&apos;s on the market today.
-          </p>
-          <div className="w-full">
-            <realscout-office-listings 
-              agent-encoded-id="QWdlbnQtMjI1MDUw" 
-              sort-order="NEWEST" 
-              listing-status="For Sale"
-            ></realscout-office-listings>
-          </div>
         </section>
 
         {/* Call to Action */}

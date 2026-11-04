@@ -7,6 +7,7 @@ import Footer from "@/components/common/Footer";
 import Link from "next/link";
 import { FaSun, FaTemperatureHigh, FaCalendarAlt, FaUmbrella } from "react-icons/fa";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function MesquiteWeather() {
   return (
     <>
@@ -29,6 +30,7 @@ export default function MesquiteWeather() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         {/* H2 Section 1 */}
         <section className="mb-16">

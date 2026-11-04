@@ -5,6 +5,7 @@ import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import { FaCheckCircle, FaChartLine, FaHandshake, FaKey } from "react-icons/fa";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function SellYourMesquiteHome() {
   return (
     <>
@@ -19,6 +20,7 @@ export default function SellYourMesquiteHome() {
             Dr. Jan Duffy provides comprehensive market analysis, professional marketing, and expert negotiation.
           </p>
         </section>
+        <OfficeListings />
 
         <section className="mb-16">
           <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6">Why Choose Dr. Jan Duffy to Sell Your Home</h2>
@@ -128,22 +130,6 @@ export default function SellYourMesquiteHome() {
           <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6">Get Your Home&apos;s Value</h2>
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <realscout-home-value agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-home-value>
-          </div>
-        </section>
-
-        {/* RealScout Office Listings */}
-        <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6 text-center">Current Mesquite Market Listings</h2>
-          <p className="text-base text-gray-700 mb-8 text-center max-w-3xl mx-auto">
-            See what&apos;s currently on the market in Mesquite to help you understand pricing and competition. 
-            Contact Dr. Jan Duffy for a comprehensive market analysis of your property.
-          </p>
-          <div className="w-full">
-            <realscout-office-listings 
-              agent-encoded-id="QWdlbnQtMjI1MDUw" 
-              sort-order="NEWEST" 
-              listing-status="For Sale"
-            ></realscout-office-listings>
           </div>
         </section>
 

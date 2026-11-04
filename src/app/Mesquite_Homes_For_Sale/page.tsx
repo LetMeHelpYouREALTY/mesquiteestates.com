@@ -7,6 +7,7 @@ import Footer from "@/components/common/Footer";
 import Link from "next/link";
 import { FaHome, FaMapMarkerAlt, FaDollarSign, FaKey, FaChartLine } from "react-icons/fa";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function MesquiteHomesForSale() {
   return (
     <>
@@ -28,6 +29,7 @@ export default function MesquiteHomesForSale() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         {/* H2 Section 1 */}
         <section className="mb-16">
@@ -249,22 +251,6 @@ export default function MesquiteHomesForSale() {
             trends, property values, and neighborhood characteristics ensures clients make informed decisions. Her professional 
             approach and commitment to excellence make her the ideal partner for your Mesquite home search.
           </p>
-        </section>
-
-        {/* RealScout Office Listings */}
-        <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6 text-center">Browse Current Mesquite Listings</h2>
-          <p className="text-base text-gray-700 mb-8 text-center max-w-3xl mx-auto">
-            Explore our current selection of homes, lots, and properties available in Mesquite, Nevada. 
-            From custom lots starting at $70K to luxury homes up to $700K, find the perfect property for your lifestyle.
-          </p>
-          <div className="w-full">
-            <realscout-office-listings 
-              agent-encoded-id="QWdlbnQtMjI1MDUw" 
-              sort-order="NEWEST" 
-              listing-status="For Sale"
-            ></realscout-office-listings>
-          </div>
         </section>
 
         {/* Call to Action */}

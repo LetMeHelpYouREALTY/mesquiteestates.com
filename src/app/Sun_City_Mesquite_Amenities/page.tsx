@@ -6,6 +6,7 @@ import Footer from "@/components/common/Footer";
 import Link from "next/link";
 import { FaSwimmingPool, FaDumbbell, FaUtensils, FaTableTennis, FaBasketballBall, FaRoute, FaUsers } from "react-icons/fa";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function SunCityMesquiteAmenities() {
   return (
     <>
@@ -27,6 +28,7 @@ export default function SunCityMesquiteAmenities() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         {/* Pioneer Center Section */}
         <section className="mb-16">
@@ -243,18 +245,6 @@ export default function SunCityMesquiteAmenities() {
             >
               Learn More About Conestoga Golf Club →
             </Link>
-          </div>
-        </section>
-
-        {/* RealScout Listings */}
-        <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6">Sun City Mesquite Homes for Sale</h2>
-          <div className="w-full">
-            <realscout-office-listings 
-              agent-encoded-id="QWdlbnQtMjI1MDUw" 
-              sort-order="NEWEST" 
-              listing-status="For Sale"
-            ></realscout-office-listings>
           </div>
         </section>
 

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import OfficeListings from "@/components/common/OfficeListings";
 import { CONTACT, SOURCES, type SiteImage, type SourceKey, type Stat } from "@/data/mesquiteEstates";
 
 export function Eyebrow({ children }: { children: React.ReactNode }) {
@@ -26,6 +27,7 @@ export function LuxeHero({
   priority?: boolean;
 }) {
   return (
+    <>
     <section className="relative isolate flex min-h-[88vh] items-end overflow-hidden bg-ink text-sand">
       <Image
         src={image.src}
@@ -59,6 +61,8 @@ export function LuxeHero({
         </div>
       </div>
     </section>
+    <OfficeListings />
+    </>
   );
 }
 

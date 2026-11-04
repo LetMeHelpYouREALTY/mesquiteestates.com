@@ -6,6 +6,7 @@ import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import Link from "next/link";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function FiftyFivePlusCommunities() {
   return (
     <>
@@ -26,6 +27,7 @@ export default function FiftyFivePlusCommunities() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         <section className="mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -112,17 +114,6 @@ export default function FiftyFivePlusCommunities() {
                 </Link>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6">55+ Homes for Sale in Mesquite</h2>
-          <div className="w-full">
-            <realscout-office-listings 
-              agent-encoded-id="QWdlbnQtMjI1MDUw" 
-              sort-order="NEWEST" 
-              listing-status="For Sale"
-            ></realscout-office-listings>
           </div>
         </section>
 

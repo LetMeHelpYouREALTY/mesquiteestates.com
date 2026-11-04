@@ -8,6 +8,7 @@ import Footer from "@/components/common/Footer";
 import Newsletter from "@/components/common/Newsletter";
 import { CONTACT_ERROR_MESSAGE } from "@/lib/contact-constants";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -71,6 +72,7 @@ export default function Contact() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         <section className="mb-16 grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="flex flex-col items-center text-center">
@@ -206,22 +208,6 @@ export default function Contact() {
                 </button>
               </form>
             )}
-          </div>
-        </section>
-
-        {/* RealScout Office Listings */}
-        <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6 text-center">Browse Current Listings</h2>
-          <p className="text-base text-gray-700 mb-8 text-center max-w-3xl mx-auto">
-            Explore our current selection of homes, lots, and properties available in Mesquite, Nevada. 
-            Contact us to schedule a viewing or get more information about any property that interests you.
-          </p>
-          <div className="w-full">
-            <realscout-office-listings 
-              agent-encoded-id="QWdlbnQtMjI1MDUw" 
-              sort-order="NEWEST" 
-              listing-status="For Sale"
-            ></realscout-office-listings>
           </div>
         </section>
 

@@ -6,6 +6,7 @@ import Footer from "@/components/common/Footer";
 import Link from "next/link";
 import { FaGolfBall, FaUtensils, FaClock, FaMapMarkerAlt, FaCheckCircle } from "react-icons/fa";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function ConestogaGolfMesquite() {
   return (
     <>
@@ -30,6 +31,7 @@ export default function ConestogaGolfMesquite() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         {/* Overview Section */}
         <section className="mb-16">
@@ -212,18 +214,6 @@ export default function ConestogaGolfMesquite() {
               For tee times, membership information, or restaurant reservations, contact the Conestoga Golf Club 
               directly or stop by the pro shop. Sun City Mesquite residents enjoy priority booking and special rates.
             </p>
-          </div>
-        </section>
-
-        {/* RealScout Listings */}
-        <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6">Golf Homes in Sun City Mesquite</h2>
-          <div className="w-full">
-            <realscout-office-listings 
-              agent-encoded-id="QWdlbnQtMjI1MDUw" 
-              sort-order="NEWEST" 
-              listing-status="For Sale"
-            ></realscout-office-listings>
           </div>
         </section>
 

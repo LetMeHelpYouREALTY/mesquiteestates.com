@@ -8,6 +8,7 @@ import Footer from "@/components/common/Footer";
 import Newsletter from "@/components/common/Newsletter";
 import { FaCheckCircle, FaUserTie, FaCog, FaChartLine } from 'react-icons/fa';
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function Services() {
   return (
     <>
@@ -43,6 +44,7 @@ export default function Services() {
           </Link>
         </div>
       </section>
+      <OfficeListings />
 
       {/* H2 Section 1 */}
       <section className="mb-16">
@@ -201,22 +203,6 @@ export default function Services() {
               <p className="text-center text-gray-600 max-w-xs">{item.desc}</p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* RealScout Office Listings */}
-      <section className="mb-16">
-        <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6 text-center">Current Mesquite Listings</h2>
-        <p className="text-base text-gray-700 mb-8 text-center max-w-3xl mx-auto">
-          Browse our current selection of homes, lots, and properties available in Mesquite, Nevada. 
-          From custom lots starting at $70K to luxury homes up to $700K, find the perfect property for your lifestyle.
-        </p>
-        <div className="w-full">
-          <realscout-office-listings 
-            agent-encoded-id="QWdlbnQtMjI1MDUw" 
-            sort-order="NEWEST" 
-            listing-status="For Sale"
-          ></realscout-office-listings>
         </div>
       </section>
 

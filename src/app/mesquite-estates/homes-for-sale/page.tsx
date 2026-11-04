@@ -36,21 +36,6 @@ export default function HomesForSale() {
           </div>
         </section>
 
-        <section className="bg-dune/60">
-          <div className="mx-auto max-w-7xl px-4 py-16 sm:px-8">
-            <Eyebrow>Featured</Eyebrow>
-            <h2 className="mt-4 font-display text-4xl font-semibold text-ink">Featured BHHS Office Listings From $400K</h2>
-            <div className="mt-8">
-              <realscout-office-listings
-                agent-encoded-id="QWdlbnQtMjI1MDUw"
-                sort-order="NEWEST"
-                listing-status="For Sale"
-                property-types=",SFR,OTHER"
-                price-min="400000"
-              ></realscout-office-listings>
-            </div>
-          </div>
-        </section>
 
         <section className="bg-sand">
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-8">

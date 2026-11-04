@@ -6,6 +6,7 @@ import Image from "next/image";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 
+import OfficeListings from "@/components/common/OfficeListings";
 const communities = [
   {
     name: "Sun City Mesquite",
@@ -61,6 +62,7 @@ export default function CommunitiesPage() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {communities.map((community) => (
