@@ -1,5 +1,5 @@
 import { siteConfig } from '@/config/siteConfig';
-import { IMAGES, ENCLAVES } from '@/data/mesquiteEstates';
+import { IMAGES, ENCLAVES, CONTACT } from '@/data/mesquiteEstates';
 
 /** Site-wide entity schema for the home page. FAQPage schema is emitted by <FaqBlock>. */
 export default function StructuredData() {
@@ -7,8 +7,17 @@ export default function StructuredData() {
     '@context': 'https://schema.org',
     '@type': 'RealEstateAgent',
     '@id': `${siteConfig.url}/#agent`,
-    name: 'Dr. Jan Duffy',
+    name: 'Mesquite Estates Homes by Dr. Jan Duffy',
+    alternateName: 'Dr. Jan Duffy, REALTOR®',
     description: siteConfig.description,
+    foundingDate: '2017-09',
+    founder: { '@type': 'Person', name: 'Dr. Jan Duffy', jobTitle: 'REALTOR®' },
+    hasMap: 'https://www.google.com/maps?q=1155+W+Pioneer+Blvd+Suite+104-D+Mesquite+NV+89027',
+    potentialAction: {
+      '@type': 'ScheduleAction',
+      name: 'Book a time with Dr. Jan Duffy',
+      target: CONTACT.calendly,
+    },
     url: siteConfig.url,
     image: IMAGES.hero.src,
     telephone: '+1-702-718-2228',

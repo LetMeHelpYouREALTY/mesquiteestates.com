@@ -60,7 +60,8 @@ export default function SunCityMesquite() {
   const realEstateAgentSchema = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "name": "Dr. Jan Duffy - Sun City Mesquite Expert",
+    "@id": "https://www.mesquiteestates.com/#agent",
+    "name": "Mesquite Estates Homes by Dr. Jan Duffy",
     "image": "https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/active-adult-clubhouse-pool.jpg",
     "url": "https://www.mesquiteestates.com/Sun_City_Mesquite",
     "telephone": "+1-702-718-2228",
@@ -75,9 +76,8 @@ export default function SunCityMesquite() {
     },
     "areaServed": {
       "@type": "Place",
-      "name": "Sun City Mesquite"
+      "name": "Sun City Mesquite, Mesquite, NV 89034"
     },
-    "priceRange": "From $349,990",
     "memberOf": {
       "@type": "Organization",
       "name": "Berkshire Hathaway HomeServices Nevada Properties"
