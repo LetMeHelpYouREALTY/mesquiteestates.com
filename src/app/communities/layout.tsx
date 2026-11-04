@@ -3,8 +3,8 @@ import { IMAGES } from "@/data/mesquiteEstates";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  ...ogFor('Mesquite Communities', 'Explore Mesquite, Nevada communities including Sun City Mesquite 55+, Falcon Ridge, Mesquite Vistas, and more. Find your perfect neighborhood with Dr. Jan Duffy.', "/communities", IMAGES.townAerial),
-  title: 'Mesquite Communities',
+  ...ogFor('Mesquite, NV Communities | Neighborhood Guide', 'Explore Mesquite, Nevada communities including Sun City Mesquite 55+, Falcon Ridge, Mesquite Vistas, and more. Find your perfect neighborhood with Dr. Jan Duffy.', "/communities", IMAGES.townAerial),
+  title: { absolute: 'Mesquite, NV Communities | Neighborhood Guide' },
   description: 'Explore Mesquite, Nevada communities including Sun City Mesquite 55+, Falcon Ridge, Mesquite Vistas, and more. Find your perfect neighborhood with Dr. Jan Duffy.',
   keywords: [
     'Mesquite communities',

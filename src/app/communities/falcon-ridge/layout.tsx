@@ -3,8 +3,8 @@ import { IMAGES } from "@/data/mesquiteEstates";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  ...ogFor('Falcon Ridge Homes for Sale | Golf Course Community Mesquite', 'Falcon Ridge homes for sale in Mesquite, Nevada. Luxury golf course living with stunning views. Call Dr. Jan Duffy 702-718-2228.', "/communities/falcon-ridge", IMAGES.golfBackyard),
-  title: 'Falcon Ridge Homes for Sale | Golf Course Community Mesquite',
+  ...ogFor('Falcon Ridge Homes for Sale | Golf Community, Mesquite', 'Falcon Ridge homes for sale in Mesquite, Nevada. Luxury golf course living with stunning views. Call Dr. Jan Duffy 702-718-2228.', "/communities/falcon-ridge", IMAGES.golfBackyard),
+  title: { absolute: 'Falcon Ridge Homes for Sale | Golf Community, Mesquite' },
   description: 'Falcon Ridge homes for sale in Mesquite, Nevada. Luxury golf course living with stunning views. Call Dr. Jan Duffy 702-718-2228.',
   keywords: [
     'Falcon Ridge Mesquite',
