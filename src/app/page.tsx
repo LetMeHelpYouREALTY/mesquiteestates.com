@@ -7,13 +7,14 @@ import FloatingCTA from "@/components/common/FloatingCTA";
 import StructuredData from "@/components/seo/StructuredData";
 import { LuxeHero, StatBand, SplitFeature, FaqBlock, CtaBand, Eyebrow, SourceNote, AgentCard } from "@/components/luxe/Luxe";
 import { ENCLAVES, HEADLINE_STATS, HOME_FAQS, IMAGES } from "@/data/mesquiteEstates";
-import { ogFor } from "@/config/og";
+import { ogFor, HOME_CARD } from "@/config/og";
 
 export const metadata: Metadata = {
   ...ogFor(
     "Mesquite Estates Homes for Sale | View Homes & Custom Lots",
     "Mesquite Estates, Mesquite NV: 36 sales at $700K+ since 2024 at a $920K median. View homes, gated neighborhoods and lots to build on, with Dr. Jan Duffy.",
     "/",
+    HOME_CARD,
   ),
   title: { absolute: "Mesquite Estates Homes for Sale | View Homes & Custom Lots" },
   description:

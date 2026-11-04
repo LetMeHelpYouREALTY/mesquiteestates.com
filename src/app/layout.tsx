@@ -45,9 +45,9 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: 'https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/hero-mesquite-estates-view-home.jpg',
-        width: 1024,
-        height: 1024,
+        url: 'https://www.mesquiteestates.com/og/mesquite-estates-homes-for-sale.jpg',
+        width: 1200,
+        height: 630,
         alt: 'Desert contemporary view home above the Mesquite, Nevada valley at sunset',
       },
     ],
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.name,
     description: siteConfig.description,
-    images: ['https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/hero-mesquite-estates-view-home.jpg'],
+    images: ['https://www.mesquiteestates.com/og/mesquite-estates-homes-for-sale.jpg'],
   },
   robots: {
     index: true,
