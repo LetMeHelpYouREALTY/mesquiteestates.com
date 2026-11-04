@@ -65,6 +65,38 @@ export const SOURCES = {
     label: "Mesquite Estates HOA sold homes (GLVAR MLS), accessed Nov 4, 2026",
     url: "https://www.vivahomevegas.com/mesquite-estates_hoa_mesquite/homes-sold",
   },
+  scmGuide: {
+    label: "Sun City Mesquite buyer's guide (Del Webb pricing as of Oct 12, 2026), published Oct 14, 2026",
+    url: "https://homesforsaleinmesquitenevada.com/news/buying-in-sun-city-mesquite-what-to-check-before-an-offer",
+  },
+  delwebbHoa: {
+    label: "Del Webb, Sun City Mesquite HOA page, accessed Nov 4, 2026",
+    url: "https://www.delwebb.com/homes/nevada/mesquite/mesquite/sun-city-mesquite-12443/hoa",
+  },
+  beazer: {
+    label: "Beazer Homes, Gatherings at Ridgemont, accessed Nov 4, 2026",
+    url: "https://www.beazer.com/las-vegas-NV/mesquite/gatherings-at-ridgemont",
+  },
+  fiftyFive: {
+    label: "Mesquite 55+ communities compared (MLS, updated Oct 28, 2026)",
+    url: "https://homesforsaleinmesquitenevada.com/news/mesquite-nevada-55-plus-communities",
+  },
+  gated: {
+    label: "Mesquite gated community sales (MLS, updated Oct 30, 2026)",
+    url: "https://homesforsaleinmesquitenevada.com/nevada/mesquite/gated-community-homes",
+  },
+  highlandVistas: {
+    label: "Highland Vistas neighborhood guide (listings as of Oct 12, 2026)",
+    url: "https://homesforsaleinmesquitenevada.com/news/highland-vistas-mesquite-nv-neighborhood-guide",
+  },
+  places55Area: {
+    label: "55places, Mesquite-area 55+ communities (data updated Sep 18, 2026)",
+    url: "https://www.55places.com/nevada/area/mesquite-area",
+  },
+  highlandHills: {
+    label: "55places, Highland Hills community profile",
+    url: "https://www.55places.com/nevada/communities/highland-hills",
+  },
   visit: {
     label: "Visit Mesquite FAQs",
     url: "https://www.visitmesquite.com/faqs",
@@ -202,7 +234,8 @@ export const ENCLAVES: Enclave[] = [
     summary:
       "Gatherings at Ridgemont is a 55+ age-restricted Beazer Homes section of Mesquite Estates, north of I-15. Recent listings run 1,340 to 1,552 sq ft on 0.16-acre lots with a $107 monthly HOA fee.",
     facts: [
-      { label: "Builder", value: "Beazer Homes", source: "ridgemont" },
+      { label: "New homes from", value: "$389,990 (Beazer, Nov 2026)", source: "beazer" },
+      { label: "Homes", value: "81 single-story homes, building since 2022", source: "fiftyFive" },
       { label: "HOA fee", value: "$107/month", source: "ridgemont" },
       { label: "Lot size", value: "0.16 acre", source: "ridgemont" },
       { label: "Example list price", value: "$475,900 · 1,552 sq ft · built 2024", source: "ridgemont" },
@@ -289,3 +322,27 @@ export const CONTACT = {
   license: "S.0197614.LLC",
   brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
 };
+
+export type FiftyFiveCommunity = {
+  name: string;
+  builder: string;
+  built: string;
+  homes: string;
+  price: string;
+  hoa: string;
+  gated: boolean;
+  note: string;
+  href?: string;
+  sources: SourceKey[];
+};
+
+/** Mesquite's age-restricted (55+) communities. Dates on every figure live in SOURCES. */
+export const FIFTY_FIVE: FiftyFiveCommunity[] = [
+  { name: "Sun City Mesquite", builder: "Del Webb", built: "2007–present", homes: "Largest in town; still building", price: "Median $395K (25 sales, Sept 2026); new from $349,990", hoa: "$145/mo (Del Webb)", gated: false, note: "Only 55+ community with its own clubhouse, pools, courts and golf course", href: "/Sun_City_Mesquite", sources: ["sept2026", "scmGuide", "delwebbHoa"] },
+  { name: "Gatherings at Ridgemont", builder: "Beazer Homes", built: "2022–present", homes: "81 homes", price: "New from $389,990", hoa: "≈ $107/mo, includes cable TV", gated: false, note: "Single-story homes, solar included, community dog park", href: "/mesquite-estates/gatherings-at-ridgemont", sources: ["beazer", "fiftyFive"] },
+  { name: "Shadow Crest", builder: "Newer section by Beazer Homes", built: "2008–present", homes: "105 homes at buildout", price: "Median $489K (8 sales)", hoa: "≈ $238/mo, includes yard care", gated: true, note: "Mountain and valley views; no on-site amenities", sources: ["gated", "fiftyFive", "places55Area", "highlandVistas"] },
+  { name: "Sun Crest", builder: "—", built: "Current listings built 2022", homes: "—", price: "Recent listings $620K (2,100–2,300 sq ft)", hoa: "≈ $251/mo", gated: true, note: "Larger newer homes in Highland Vistas", sources: ["highlandVistas"] },
+  { name: "Mesa Hills", builder: "—", built: "Median build year 2006", homes: "89 homes", price: "Median $495K (8 sales)", hoa: "≈ $258/mo", gated: true, note: "Some lots along Falcon Ridge Golf Course", sources: ["gated", "highlandVistas", "places55Area"] },
+  { name: "Highland Fairways", builder: "—", built: "Median build year 2003", homes: "127 homes", price: "Median $343K (11 sales)", hoa: "≈ $215/mo", gated: true, note: "Lowest median price of the gated 55+ options listed here", sources: ["gated", "places55Area"] },
+  { name: "Highland Hills", builder: "RFMS, D.R. Horton", built: "2005–2006", homes: "68 homes", price: "High $400Ks–high $500Ks", hoa: "Check listing", gated: true, note: "Resale only; across from Falcon Ridge Golf Course", sources: ["highlandHills"] },
+];

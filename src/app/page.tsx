@@ -98,6 +98,22 @@ export default function Home() {
           </div>
         </section>
 
+        <SplitFeature image={IMAGES.clubhouse} eyebrow="55+ Living" title="55+ Communities in Mesquite, Compared">
+          <p>
+            Mesquite has seven 55+ communities. Sun City Mesquite is the largest, with new Del Webb homes from $349,990 and a
+            September 2026 median sale of $395,000.
+          </p>
+          <p>
+            Want something smaller or gated? Gatherings at Ridgemont starts at $389,990, and five 55+ neighborhoods have gates.
+          </p>
+          <p>
+            <Link href="/55-plus-communities-mesquite" className="font-semibold text-clay underline underline-offset-4">
+              Compare all seven 55+ communities →
+            </Link>
+          </p>
+          <SourceNote keys={["scmGuide", "sept2026", "beazer", "gated"]} />
+        </SplitFeature>
+
         <SplitFeature image={IMAGES.lot} eyebrow="Build Your Own" title="Land to Build Your Own Home in Mesquite Estates" reverse>
           <p>
             In October 2026, Mohave Ridge listed quarter- to third-acre lots from $165,000 to $205,000. Its rules require a home of at

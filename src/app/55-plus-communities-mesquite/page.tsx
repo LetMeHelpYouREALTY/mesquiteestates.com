@@ -1,145 +1,159 @@
-"use client";
-
-import React from "react";
-import Image from "next/image";
+import Link from "next/link";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
-import Link from "next/link";
+import { LuxeHero, StatBand, SplitFeature, FaqBlock, CtaBand, Eyebrow, SourceNote, Breadcrumbs } from "@/components/luxe/Luxe";
+import { FIFTY_FIVE, IMAGES, type Stat } from "@/data/mesquiteEstates";
 
-import OfficeListings from "@/components/common/OfficeListings";
-export default function FiftyFivePlusCommunities() {
+const STATS: Stat[] = [
+  { value: "$395K", label: "Median Sun City Mesquite sale, September 2026 (25 sales)", source: "sept2026" },
+  { value: "$349,990", label: "Lowest new Del Webb price in Sun City Mesquite, Oct 12, 2026", source: "scmGuide" },
+  { value: "$389,990", label: "Starting price for new Beazer homes at Gatherings at Ridgemont", source: "beazer" },
+  { value: "5 of 7", label: "Mesquite 55+ communities on this page that are gated", source: "gated" },
+];
+
+const FAQS = [
+  {
+    question: "What are the 55+ communities in Mesquite, NV?",
+    answer:
+      "Mesquite's 55+ communities include Sun City Mesquite, Gatherings at Ridgemont, Shadow Crest, Sun Crest, Mesa Hills, Highland Fairways and Highland Hills. Sun City Mesquite is by far the largest and the only one with its own clubhouse, pools and golf course.",
+  },
+  {
+    question: "Do both people have to be 55 or older?",
+    answer:
+      "No. In Sun City Mesquite, each home generally needs at least one resident age 55 or older. Federal rules require at least 80% of occupied homes in a 55+ community to have one resident 55 or older. Check each community's own rules before you buy.",
+  },
+  {
+    question: "What are HOA fees in Mesquite 55+ communities?",
+    answer:
+      "Del Webb lists Sun City Mesquite dues at $145 a month, collected quarterly. Gatherings at Ridgemont runs about $107 a month including cable TV. Gated communities like Shadow Crest, Sun Crest and Mesa Hills run about $238 to $258 a month.",
+  },
+  {
+    question: "Is Sun City Mesquite gated?",
+    answer:
+      "No. Sun City Mesquite is not gated. Shadow Crest, Sun Crest, Mesa Hills, Highland Fairways and Highland Hills are gated 55+ options.",
+  },
+  {
+    question: "Is golf included in Sun City Mesquite HOA dues?",
+    answer:
+      "No. Conestoga Golf Club is run as a separate business. Residents can buy a resident pass for lower rates and preferred tee times.",
+  },
+];
+
+export default function FiftyFivePlus() {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto py-20 px-4 sm:px-6 lg:px-40 lg:mt-9 sm:mt-4">
-        <section className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-indigo-900 mb-4">
-            55+ Communities in Mesquite, Nevada
-          </h1>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto mb-6">
-            Discover active adult living in Mesquite&apos;s premier 55+ communities, featuring resort-style amenities, 
-            championship golf, and vibrant social lifestyles perfect for retirees and active adults.
+      <main>
+        <LuxeHero
+          image={IMAGES.clubhouse}
+          eyebrow="55+ Living · Mesquite, Nevada"
+          title="55+ Communities in Mesquite, NV"
+          subtitle="Seven 55+ communities, from Del Webb's Sun City Mesquite to small gated neighborhoods. Compare prices, HOA fees and what each one includes."
+          primary={{ href: "#compare", label: "Compare All Seven" }}
+        />
+        <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "55+ Communities", href: "/55-plus-communities-mesquite" }]} />
+
+        <StatBand stats={STATS} />
+
+        <section id="compare" className="scroll-mt-32 bg-sand" aria-labelledby="compare-h">
+          <div className="mx-auto max-w-7xl px-4 py-20 sm:px-8">
+            <Eyebrow>Side by Side</Eyebrow>
+            <h2 id="compare-h" className="mt-4 font-display text-4xl font-semibold text-ink sm:text-5xl">Mesquite 55+ Communities Compared</h2>
+            <div className="mt-10 overflow-x-auto">
+              <table className="w-full min-w-[820px] text-left text-sm">
+                <thead className="border-b-2 border-clay/50 text-xs uppercase tracking-widest text-mesa">
+                  <tr>
+                    <th className="py-3 pr-4">Community</th>
+                    <th className="py-3 pr-4">Price</th>
+                    <th className="py-3 pr-4">HOA</th>
+                    <th className="py-3 pr-4">Gated</th>
+                    <th className="py-3 pr-4">Built</th>
+                    <th className="py-3 pr-4">Good to know</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {FIFTY_FIVE.map((c) => (
+                    <tr key={c.name} className="border-b border-mesa/20 align-top">
+                      <td className="py-4 pr-4">
+                        {c.href ? (
+                          <Link href={c.href} className="font-display text-xl font-semibold text-ink hover:text-clay">{c.name}</Link>
+                        ) : (
+                          <span className="font-display text-xl font-semibold text-ink">{c.name}</span>
+                        )}
+                        <span className="block text-xs text-mesa">{c.builder !== "—" ? c.builder : ""}</span>
+                      </td>
+                      <td className="py-4 pr-4 text-ink/80">{c.price}</td>
+                      <td className="py-4 pr-4 text-ink/80">{c.hoa}</td>
+                      <td className="py-4 pr-4 text-ink/80">{c.gated ? "Yes" : "No"}</td>
+                      <td className="py-4 pr-4 text-ink/80">{c.built}</td>
+                      <td className="py-4 pr-4 text-ink/80">{c.note}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <SourceNote keys={FIFTY_FIVE.flatMap((c) => c.sources)} className="mt-6" />
+          </div>
+        </section>
+
+        <SplitFeature image={IMAGES.golfBackyard} eyebrow="The Biggest Choice" title="Sun City Mesquite by Del Webb">
+          <p>
+            Sun City Mesquite surrounds Conestoga Golf Club and is still selling new homes. On October 12, 2026, Del Webb listed three
+            series: Cottage from $349,990, Retreat from $429,990 and Encore from $491,990.
           </p>
-          <a
-            href="tel:702-718-2228"
-            className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold text-xl px-8 py-4 rounded-lg transition duration-300 shadow-lg"
-          >
-            📞 Call/Text: 702-718-2228
-          </a>
-        </section>
-        <OfficeListings />
-
-        <section className="mb-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-4">
-                Active Adult Living in Mesquite
-              </h2>
-              <p className="text-base text-gray-700 mb-4">
-                Mesquite, Nevada offers exceptional 55+ communities designed for active adults seeking a vibrant, 
-                engaging lifestyle. These age-qualified communities provide resort-style amenities, championship golf, 
-                fitness centers, pools, and numerous clubs and activities, all within a welcoming, social environment 
-                perfect for retirement and active adult living.
-              </p>
-              <p className="text-base text-gray-700 mb-4">
-                As a Mesquite realtor specializing in 55+ communities, Dr. Jan Duffy helps clients discover the perfect 
-                active adult community that matches their lifestyle preferences. Whether you&apos;re seeking an active 
-                social calendar, championship golf access, or a low-maintenance lifestyle, Mesquite&apos;s 55+ communities 
-                offer diverse options for active adult living.
-              </p>
-              <h3 className="text-2xl font-semibold text-indigo-900 mb-4 mt-6">
-                Benefits of 55+ Living in Mesquite
-              </h3>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-indigo-600 mr-2 font-bold">•</span>
-                  <span>Age-qualified environment focused on active adult lifestyles</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-indigo-600 mr-2 font-bold">•</span>
-                  <span>Resort-style amenities including pools, fitness centers, and clubs</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-indigo-600 mr-2 font-bold">•</span>
-                  <span>Championship golf course access within communities</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-indigo-600 mr-2 font-bold">•</span>
-                  <span>Low-maintenance homes perfect for active lifestyles</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-indigo-600 mr-2 font-bold">•</span>
-                  <span>Vibrant social calendars with numerous clubs and activities</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-indigo-600 mr-2 font-bold">•</span>
-                  <span>300+ days of sunshine for year-round outdoor activities</span>
-                </li>
-              </ul>
-            </div>
-            <div className="relative w-full h-64 sm:h-80">
-              <Image
-                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/active-adult-clubhouse-pool.jpg"
-                alt="55+ Community Living in Mesquite"
-                fill
-                className="rounded-lg shadow-lg object-cover"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6">Featured 55+ Community</h2>
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-2">
-              <div className="relative h-64 lg:h-full">
-                <Image
-                  src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/ridgemont-single-story-home-sunset-view.jpg"
-                  alt="Sun City Mesquite"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-3xl font-bold text-indigo-900 mb-4">Sun City Mesquite</h3>
-                <p className="text-gray-700 mb-4">
-                  Nevada&apos;s premier 55+ active adult community by Del Webb, featuring 2,500+ homes, 18-hole 
-                  Conestoga Golf Club, fitness center, pools, and over 100 clubs and activities.
-                </p>
-                <Link
-                  href="/Sun_City_Mesquite"
-                  className="inline-block bg-indigo-900 hover:bg-indigo-800 text-white font-semibold px-6 py-3 rounded-lg transition duration-300"
-                >
-                  Explore Sun City Mesquite →
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white p-8 rounded-lg text-center shadow-lg">
-          <h2 className="text-3xl font-bold mb-4">Retire in Mesquite, Nevada</h2>
-          <p className="text-xl mb-6 text-indigo-100">
-            Let Dr. Jan Duffy help you find the perfect 55+ community home in Mesquite.
+          <p>
+            <Link href="/Sun_City_Mesquite" className="font-semibold text-clay underline underline-offset-4">See Sun City Mesquite homes and details →</Link>
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:702-718-2228"
-              className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-lg transition duration-300 shadow-lg"
-            >
-              📞 Call/Text 702-718-2228
-            </a>
-            <Link
-              href="/Contact_us"
-              className="inline-block bg-white hover:bg-gray-100 text-indigo-900 font-semibold px-8 py-3 rounded-lg transition duration-300"
-            >
-              Contact Form
-            </Link>
+          <SourceNote keys={["scmGuide"]} />
+        </SplitFeature>
+
+        <section className="bg-dune/60">
+          <div className="mx-auto max-w-7xl px-4 py-20 sm:px-8">
+            <h2 className="font-display text-4xl font-semibold text-ink sm:text-5xl">What Sun City Mesquite HOA Dues Cover</h2>
+            <p className="mt-4 max-w-3xl text-lg text-ink/80">Del Webb lists dues of $145 a month, collected quarterly and subject to change.</p>
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
+              {[
+                { h3: "The Pioneer Center", body: "A 30,560 sq ft clubhouse staffed by 6 concierges, with free Wi-Fi and a lending library of more than 4,500 titles." },
+                { h3: "Outdoor Courts", body: "Pickleball, basketball and tennis courts, plus an 18-hole putting course." },
+                { h3: "What's Not Included", body: "Golf. Conestoga Golf Club is a separate business with a resident pass for lower rates." },
+              ].map((x) => (
+                <div key={x.h3} className="bg-white p-6 shadow-sm">
+                  <h3 className="font-display text-2xl font-semibold text-ink">{x.h3}</h3>
+                  <p className="mt-3 text-ink/80">{x.body}</p>
+                </div>
+              ))}
+            </div>
+            <SourceNote keys={["delwebbHoa", "scmGuide"]} className="mt-8" />
           </div>
         </section>
-      </div>
+
+        <SplitFeature image={IMAGES.ridgemont} eyebrow="Smaller and Newer" title="Gatherings at Ridgemont by Beazer" reverse>
+          <p>
+            A newer 55+ neighborhood of 81 single-story homes, building since 2022. New homes start at $389,990, with solar included and
+            a community dog park.
+          </p>
+          <p>HOA dues run about $107 a month and include cable TV.</p>
+          <p>
+            <Link href="/mesquite-estates/gatherings-at-ridgemont" className="font-semibold text-clay underline underline-offset-4">See Gatherings at Ridgemont details →</Link>
+          </p>
+          <SourceNote keys={["beazer", "fiftyFive"]} />
+        </SplitFeature>
+
+        <section className="bg-sand">
+          <div className="mx-auto max-w-4xl px-4 py-16 sm:px-8">
+            <h2 className="font-display text-4xl font-semibold text-ink">Gated 55+ Options in Mesquite</h2>
+            <p className="mt-5 text-lg leading-relaxed text-ink/80">
+              Sun City Mesquite is not gated. If a gate matters to you, look at Shadow Crest, Sun Crest, Mesa Hills, Highland Fairways
+              and Highland Hills. Gated neighborhoods pay for gates and private streets, so dues run higher, about $215 to $258 a month.
+            </p>
+            <SourceNote keys={["gated", "highlandVistas"]} className="mt-6" />
+          </div>
+        </section>
+
+        <FaqBlock title="Mesquite 55+ Questions, Answered" faqs={FAQS} />
+        <CtaBand title="Find Your 55+ Home in Mesquite" body="Tell Dr. Jan your budget, gate preference and must-haves. Get a shortlist with recent sale prices." />
+      </main>
       <Footer />
     </>
   );
 }
-

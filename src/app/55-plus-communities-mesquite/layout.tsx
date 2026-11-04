@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '55+ Communities Mesquite NV | Retire in Mesquite',
-  description: 'Explore 55+ active adult communities in Mesquite, Nevada. Sun City Mesquite and more. Retire in Mesquite with resort-style living. Call Dr. Jan 702-718-2228.',
+  title: { absolute: '55+ Communities in Mesquite, NV | All 7 Compared' },
+  description: 'Compare Mesquite, NV 55+ communities: Sun City Mesquite (new from $349,990), Gatherings at Ridgemont, and 5 gated options. Prices, HOA fees, rules.',
   keywords: [
     '55+ communities Mesquite NV',
     'retire in Mesquite',
