@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ enclave: 
   const { enclave } = await params;
   const e = ENCLAVES.find((x) => x.slug === enclave);
   if (!e) return {};
-  const title = `${e.name} Homes for Sale | Mesquite Estates, Mesquite NV`;
+  const title = `${e.name} Homes for Sale | Mesquite Estates, NV`;
   const description = e.summary.length > 158 ? `${e.summary.slice(0, 155).replace(/\s+\S*$/, "")}…` : e.summary;
   return { ...ogFor(title, description, `/mesquite-estates/${e.slug}`, e.image), title: { absolute: title }, description };
 }
