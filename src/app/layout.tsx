@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "@/config/siteConfig";
 import AccessibilityWidget from "@/components/common/AccessibilityWidget";
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -115,6 +116,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <AccessibilityWidget />
+        <Analytics />
         <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module" async></script>
       </body>
     </html>
