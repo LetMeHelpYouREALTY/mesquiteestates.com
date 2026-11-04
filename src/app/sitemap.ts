@@ -8,6 +8,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Static pages
   const staticPages = [
     '',
+    '/mesquite-estates/homes-for-sale',
+    '/mesquite-estates/neighborhoods',
+    '/mesquite-estates/mohave-ridge',
+    '/mesquite-estates/bella-horizon',
+    '/mesquite-estates/cambria',
+    '/mesquite-estates/gatherings-at-ridgemont',
+    '/mesquite-estates/royal-vista',
+    '/mesquite-estates/custom-home-lots',
+    '/mesquite-estates/market-report',
     '/About',
     '/About_Mesquite',
     '/Services',
@@ -19,7 +28,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/Mesquite_Golf_Trip',
     '/Mesquite_Transportation',
     '/Mesquite_Weather',
-    '/Property',
     '/communities',
     '/communities/sun-city-mesquite',
     '/communities/falcon-ridge',
@@ -37,6 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Set priority based on route importance
     let priority = 0.8;
     if (route === '') priority = 1.0;
+    else if (route.startsWith('/mesquite-estates/')) priority = 0.95;
     else if (route === '/Sun_City_Mesquite') priority = 0.9;
     else if (['/Sun_City_Mesquite_Floor_Plans', '/Sun_City_Mesquite_Amenities', '/Conestoga_Golf_Mesquite'].includes(route)) priority = 0.85;
     else if (['/Mesquite_Homes_For_Sale', '/Golf_Homes_Mesquite', '/Contact_us'].includes(route)) priority = 0.85;

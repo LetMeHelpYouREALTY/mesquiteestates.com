@@ -7,6 +7,7 @@ import Footer from "@/components/common/Footer";
 import Link from "next/link";
 import { FaGolfBall, FaSun, FaMapMarkerAlt, FaHotel, FaUtensils } from "react-icons/fa";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function MesquiteGolfTrip() {
   return (
     <>
@@ -29,6 +30,7 @@ export default function MesquiteGolfTrip() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         {/* H2 Section 1 */}
         <section className="mb-16">
@@ -115,7 +117,7 @@ export default function MesquiteGolfTrip() {
             </div>
             <div className="relative w-full h-64 sm:h-80 lg:order-2">
               <Image
-                src="/Image/hero_bg_1.jpg"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/golf-fairway-red-mesas-mesquite.jpg"
                 alt="Golf trip to Mesquite, Nevada"
                 fill
                 className="rounded-lg shadow-lg object-cover"
@@ -168,7 +170,7 @@ export default function MesquiteGolfTrip() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative w-full h-64 sm:h-80 lg:order-1">
               <Image
-                src="/Image/hero_bg_2.jpg"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/golf-course-home-backyard.jpg"
                 alt="Championship golf courses in Mesquite"
                 fill
                 className="rounded-lg shadow-lg object-cover"

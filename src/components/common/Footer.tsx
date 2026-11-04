@@ -1,262 +1,76 @@
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faFacebookF,
-  faLinkedinIn,
-  faPinterestP,
-  faInstagram,
-  faDribbble,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import { ENCLAVES } from "@/data/mesquiteEstates";
 
-const Footer = () => {
+const COLUMNS: { title: string; links: { href: string; label: string }[] }[] = [
+  {
+    title: "Mesquite Estates",
+    links: [
+      { href: "/mesquite-estates/homes-for-sale", label: "Homes for Sale" },
+      { href: "/mesquite-estates/neighborhoods", label: "All Neighborhoods" },
+      { href: "/mesquite-estates/custom-home-lots", label: "Land to Build On" },
+      { href: "/mesquite-estates/market-report", label: "Market Report" },
+      { href: "/sell-your-mesquite-home", label: "Sell Your Home" },
+    ],
+  },
+  {
+    title: "Neighborhoods",
+    links: ENCLAVES.map((e) => ({ href: `/mesquite-estates/${e.slug}`, label: e.name })),
+  },
+  {
+    title: "Greater Mesquite",
+    links: [
+      { href: "/Sun_City_Mesquite", label: "Sun City Mesquite 55+" },
+      { href: "/communities/falcon-ridge", label: "Falcon Ridge" },
+      { href: "/communities/mesquite-vistas", label: "Mesquite Vistas" },
+      { href: "/Golf_Homes_Mesquite", label: "Golf Homes" },
+      { href: "/About_Mesquite", label: "About Mesquite" },
+      { href: "/Mesquite_Weather", label: "Mesquite Weather" },
+    ],
+  },
+];
+
+export default function Footer() {
   return (
-    <footer className="bg-indigo-950 text-white py-16 px-4">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Company Info Section */}
-          <div>
-            <h3 className="font-bold text-2xl mb-6">Mesquite Estates</h3>
-            <p className="text-indigo-200 mb-4">
-              Homes by Dr. Jan Duffy
+    <footer className="bg-ink text-dune">
+      <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-8 md:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <p className="font-display text-3xl font-semibold text-sand">
+            Mesquite <span className="text-clay">Estates</span>
+          </p>
+          <p className="mt-4 text-sm leading-relaxed">
+            Homes, land and local know-how for Mesquite Estates, north of I-15 in Mesquite, Nevada 89027.
+          </p>
+          <address className="mt-6 space-y-1 text-sm not-italic">
+            <p className="text-sand">Dr. Jan Duffy, REALTOR®</p>
+            <p>1155 W Pioneer Blvd, Suite 104-D</p>
+            <p>Mesquite, NV 89027</p>
+            <p>
+              <a href="tel:+17027182228" className="hover:text-clay">702-718-2228</a>
             </p>
-            <p className="text-2xl font-bold text-orange-400 mb-4">
-              <a href="tel:702-718-2228">702-718-2228</a>
+            <p>
+              <a href="mailto:DrDuffy@MesquiteEstates.com" className="hover:text-clay">DrDuffy@MesquiteEstates.com</a>
             </p>
-            <div className="flex space-x-4">
-              {[faTwitter, faFacebookF, faLinkedinIn, faInstagram].map((icon, index) => (
-                <Link
-                  key={index}
-                  href="#"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  <FontAwesomeIcon icon={icon} className="h-5 w-5" />
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Quick Links Section */}
-          <div>
-            <h3 className="font-bold text-xl mb-6">Quick Links</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/Mesquite_Homes_For_Sale"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  Homes for Sale
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/Golf_Homes_Mesquite"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  Golf Homes
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/Sun_City_Mesquite"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  Sun City Mesquite (55+)
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/Buying_Home_Mesquite"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  Buying Guide
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/sell-your-mesquite-home"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  Sell Your Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/About_Mesquite"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  About Mesquite
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Communities Section */}
-          <div>
-            <h3 className="font-bold text-xl mb-6">Communities</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/Sun_City_Mesquite"
-                  className="text-indigo-200 hover:text-white transition duration-300 font-semibold"
-                >
-                  Sun City Mesquite (55+)
-                </Link>
-              </li>
-              <li className="ml-4 space-y-2">
-                <Link
-                  href="/Sun_City_Mesquite_Floor_Plans"
-                  className="text-indigo-300 hover:text-white transition duration-300 text-sm block"
-                >
-                  • Floor Plans
-                </Link>
-                <Link
-                  href="/Sun_City_Mesquite_Amenities"
-                  className="text-indigo-300 hover:text-white transition duration-300 text-sm block"
-                >
-                  • Amenities
-                </Link>
-                <Link
-                  href="/Conestoga_Golf_Mesquite"
-                  className="text-indigo-300 hover:text-white transition duration-300 text-sm block"
-                >
-                  • Conestoga Golf Club
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/communities/falcon-ridge"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  Falcon Ridge
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/communities/mesquite-vistas"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  Mesquite Vistas
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/communities/highland-villas"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  Highland Villas
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/Golf_Homes_Mesquite"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  Golf Course Homes
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/55-plus-communities-mesquite"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  55+ Communities
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Services Section */}
-          <div>
-            <h3 className="font-bold text-xl mb-6">Our Services</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/Services"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  Home Sales
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/Services"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  Custom Lots
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/Services"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  Property Consultation
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/Services"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  Real Estate Investment
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/Property/Property_type"
-                  className="text-indigo-200 hover:text-white transition duration-300"
-                >
-                  Browse Properties
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Section */}
-          <div>
-            <h3 className="font-bold text-xl mb-6">Contact Dr. Jan</h3>
-            <address className="text-indigo-200 not-italic space-y-3">
-              <div className="flex items-start">
-                <FontAwesomeIcon icon={faMapMarkerAlt} className="h-5 w-5 mr-3 text-indigo-300 mt-1" />
-                <span className="text-sm">
-                  1155 W Pioneer Blvd<br />
-                  Suite 104-D<br />
-                  Mesquite, NV 89027
-                </span>
-              </div>
-              <div className="flex items-center">
-                <FontAwesomeIcon icon={faPhone} className="h-5 w-5 mr-3 text-indigo-300" />
-                <a href="tel:702-718-2228" className="hover:text-white transition duration-300">
-                  702-718-2228
-                </a>
-              </div>
-              <div className="flex items-center">
-                <FontAwesomeIcon icon={faEnvelope} className="h-5 w-5 mr-3 text-indigo-300" />
-                <a
-                  href="mailto:DrDuffy@MesquiteEstates.com"
-                  className="hover:text-white transition duration-300 text-sm"
-                >
-                  DrDuffy@MesquiteEstates.com
-                </a>
-              </div>
-            </address>
-          </div>
+          </address>
         </div>
-
-        {/* Copyright */}
-        <div className="border-t border-indigo-800 mt-12 pt-8 text-center text-indigo-300">
-          <p>
-            © {new Date().getFullYear()} Mesquite Estates. All Rights Reserved.
-          </p>
-          <p className="mt-2">
-            Berkshire Hathaway HomeServices Nevada Properties since September 2008 · License S.0197614.LLC
-          </p>
+        {COLUMNS.map((c) => (
+          <div key={c.title}>
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-clay">{c.title}</p>
+            <ul className="mt-5 space-y-3 text-sm">
+              {c.links.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className="hover:text-sand">{l.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <div className="border-t border-white/10">
+        <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-6 text-xs text-mesa sm:px-8 md:flex-row md:justify-between">
+          <p>© {new Date().getFullYear()} Mesquite Estates. All rights reserved. Equal Housing Opportunity.</p>
+          <p>Berkshire Hathaway HomeServices Nevada Properties · Licensed since 2008 · NV License S.0197614.LLC</p>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

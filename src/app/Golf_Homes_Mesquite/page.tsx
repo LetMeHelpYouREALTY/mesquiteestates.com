@@ -7,6 +7,7 @@ import Footer from "@/components/common/Footer";
 import Link from "next/link";
 import { FaGolfBall, FaMapMarkerAlt, FaHome, FaTree, FaDollarSign } from "react-icons/fa";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function GolfHomesMesquite() {
   return (
     <>
@@ -28,6 +29,7 @@ export default function GolfHomesMesquite() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         {/* H2 Section 1 */}
         <section className="mb-16">
@@ -109,7 +111,7 @@ export default function GolfHomesMesquite() {
             </div>
             <div className="relative w-full h-64 sm:h-80 lg:order-2">
               <Image
-                src="/Image/hero_bg_1.jpg"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/golf-course-home-backyard.jpg"
                 alt="Golf homes in Mesquite, Nevada"
                 fill
                 className="rounded-lg shadow-lg object-cover"
@@ -155,7 +157,7 @@ export default function GolfHomesMesquite() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative w-full h-64 sm:h-80 lg:order-1">
               <Image
-                src="/Image/hero_bg_2.jpg"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/bella-horizon-gated-home-fairway-view.jpg"
                 alt="Luxury golf homes in Mesquite, Nevada"
                 fill
                 className="rounded-lg shadow-lg object-cover"
@@ -232,22 +234,6 @@ export default function GolfHomesMesquite() {
             viewing to closing. Her commitment to client satisfaction and deep understanding of Mesquite&apos;s golf home market makes 
             her the ideal partner for your golf home search.
           </p>
-        </section>
-
-        {/* RealScout Office Listings */}
-        <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6 text-center">Golf Homes & Properties Available</h2>
-          <p className="text-base text-gray-700 mb-8 text-center max-w-3xl mx-auto">
-            Browse our current selection of golf course homes and properties in Mesquite. Discover luxury homes 
-            on championship golf courses, custom lots with golf course views, and 55+ golf community properties.
-          </p>
-          <div className="w-full">
-            <realscout-office-listings 
-              agent-encoded-id="QWdlbnQtMjI1MDUw" 
-              sort-order="NEWEST" 
-              listing-status="For Sale"
-            ></realscout-office-listings>
-          </div>
         </section>
 
         {/* Call to Action */}

@@ -6,6 +6,7 @@ import Footer from "@/components/common/Footer";
 import Link from "next/link";
 import { FaHome, FaBed, FaBath, FaRulerCombined } from "react-icons/fa";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function SunCityMesquiteFloorPlans() {
   return (
     <>
@@ -27,6 +28,7 @@ export default function SunCityMesquiteFloorPlans() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         {/* Cottage Series */}
         <section className="mb-16">
@@ -220,18 +222,6 @@ export default function SunCityMesquiteFloorPlans() {
                 <li>• Modern appliance packages</li>
               </ul>
             </div>
-          </div>
-        </section>
-
-        {/* RealScout Listings */}
-        <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6">Sun City Mesquite Homes for Sale</h2>
-          <div className="w-full">
-            <realscout-office-listings 
-              agent-encoded-id="QWdlbnQtMjI1MDUw" 
-              sort-order="NEWEST" 
-              listing-status="For Sale"
-            ></realscout-office-listings>
           </div>
         </section>
 

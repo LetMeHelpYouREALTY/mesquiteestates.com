@@ -6,6 +6,7 @@ import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import Link from "next/link";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function SunCityMesquite() {
   return (
     <>
@@ -15,7 +16,7 @@ export default function SunCityMesquite() {
         <section className="relative mb-16 rounded-lg overflow-hidden">
           <div className="relative h-96">
             <Image
-              src="/Image/hero_bg_1.jpg"
+              src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/active-adult-clubhouse-pool.jpg"
               alt="Sun City Mesquite 55+ Community"
               fill
               className="object-cover"
@@ -44,6 +45,7 @@ export default function SunCityMesquite() {
             </div>
           </div>
         </section>
+        <OfficeListings />
 
         {/* Link to Comprehensive Page */}
         <section className="mb-16 bg-gradient-to-r from-indigo-600 to-indigo-800 text-white p-6 rounded-lg text-center">
@@ -132,18 +134,6 @@ export default function SunCityMesquite() {
                 <span>Restaurant & Dining</span>
               </li>
             </ul>
-          </div>
-        </section>
-
-        {/* Listings Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6">Sun City Mesquite Homes for Sale</h2>
-          <div className="w-full">
-            <realscout-office-listings 
-              agent-encoded-id="QWdlbnQtMjI1MDUw" 
-              sort-order="NEWEST" 
-              listing-status="For Sale"
-            ></realscout-office-listings>
           </div>
         </section>
 

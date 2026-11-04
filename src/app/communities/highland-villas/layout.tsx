@@ -1,7 +1,10 @@
+import { ogFor } from "@/config/og";
+import { IMAGES } from "@/data/mesquiteEstates";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Highland Villas Homes for Sale | Mesquite Nevada',
+  ...ogFor('Highland Villas Homes for Sale | Mesquite, NV', 'Highland Villas homes for sale in Mesquite, Nevada. Peaceful neighborhood with easy access to amenities. Call Dr. Jan Duffy 702-718-2228.', "/communities/highland-villas", IMAGES.cambria),
+  title: { absolute: 'Highland Villas Homes for Sale | Mesquite, NV' },
   description: 'Highland Villas homes for sale in Mesquite, Nevada. Peaceful neighborhood with easy access to amenities. Call Dr. Jan Duffy 702-718-2228.',
 };
 

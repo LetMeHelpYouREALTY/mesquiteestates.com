@@ -7,6 +7,7 @@ import Footer from "@/components/common/Footer";
 import Link from "next/link";
 import { FaGolfBall, FaHome, FaSwimmingPool, FaDumbbell, FaUtensils, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function SunCityMesquite() {
   const faqs = [
     {
@@ -60,7 +61,7 @@ export default function SunCityMesquite() {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "name": "Dr. Jan Duffy - Sun City Mesquite Expert",
-    "image": "https://www.mesquiteestates.com/Image/agent1.jpg",
+    "image": "https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/active-adult-clubhouse-pool.jpg",
     "url": "https://www.mesquiteestates.com/Sun_City_Mesquite",
     "telephone": "+1-702-718-2228",
     "email": "DrDuffy@MesquiteEstates.com",
@@ -122,6 +123,7 @@ export default function SunCityMesquite() {
             </a>
           </div>
         </section>
+        <OfficeListings />
 
         {/* Key Stats Section */}
         <section className="mb-16 bg-indigo-50 p-8 rounded-lg">
@@ -522,18 +524,6 @@ export default function SunCityMesquite() {
             Popular clubs include: Accordion Interest Group, Art Studio Group, Astronomy Club, ATV Club, Basket Making, 
             Basketball, Bible Study, Bicycling, Billiards, Genealogy, Woodworking, and many more!
           </p>
-        </section>
-
-        {/* RealScout Listings Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6">Sun City Mesquite Homes for Sale</h2>
-          <div className="w-full">
-            <realscout-office-listings 
-              agent-encoded-id="QWdlbnQtMjI1MDUw" 
-              sort-order="NEWEST" 
-              listing-status="For Sale"
-            ></realscout-office-listings>
-          </div>
         </section>
 
         {/* FAQ Section */}

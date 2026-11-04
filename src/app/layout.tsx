@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Cormorant_Garamond } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "@/config/siteConfig";
 import AccessibilityWidget from "@/components/common/AccessibilityWidget";
+import RealtorAnalytics from "../components/analytics/RealtorAnalytics";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
+const display = Cormorant_Garamond({ subsets: ["latin"], weight: ["500", "600", "700"], variable: "--font-display", display: "swap" });
 
 export const metadata: Metadata = {
   title: {
@@ -15,7 +17,7 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
   alternates: {
-    // Self-referencing canonical on every route (resolved against metadataBase)
+    // Self-referencing canonical on every route (resolved against metadataBase); pages override via ogFor()
     canonical: './',
   },
   keywords: [
@@ -43,10 +45,10 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: '/Image/hero_bg_1.jpg',
+        url: 'https://www.mesquiteestates.com/og/mesquite-estates-homes-for-sale.jpg',
         width: 1200,
         height: 630,
-        alt: 'Mesquite Estates - Homes by Dr. Jan Duffy',
+        alt: 'Desert contemporary view home above the Mesquite, Nevada valley at sunset',
       },
     ],
   },
@@ -54,7 +56,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.name,
     description: siteConfig.description,
-    images: ['/Image/hero_bg_1.jpg'],
+    images: ['https://www.mesquiteestates.com/og/mesquite-estates-homes-for-sale.jpg'],
   },
   robots: {
     index: true,
@@ -85,9 +87,10 @@ export default function RootLayout({
           __html: `
             realscout-simple-search {
               --rs-ss-font-primary-color: #000000;
-              --rs-ss-searchbar-border-color: #8b572a;
+              --rs-ss-searchbar-border-color: #9A5A34;
               --rs-ss-box-shadow: 0 10px 15px -3px #0000001a;
-              --rs-ss-widget-width: 500px !important;
+              --rs-ss-widget-width: min(500px, calc(100vw - 32px)) !important;
+              max-width: 100%;
             }
             realscout-office-listings {
               --rs-listing-divider-color: #0e64c8;
@@ -95,9 +98,10 @@ export default function RootLayout({
             }
             realscout-advanced-search {
               --rs-as-button-text-color: #ffffff;
-              --rs-as-background-color: #000000;
-              --rs-as-button-color: #8b572a;
-              --rs-as-widget-width: 500px !important;
+              --rs-as-background-color: #16120F;
+              --rs-as-button-color: #9A5A34;
+              --rs-as-widget-width: min(500px, calc(100vw - 32px)) !important;
+              max-width: 100%;
             }
             realscout-home-value {
               --rs-hvw-background-color: #ffffff;
@@ -112,10 +116,11 @@ export default function RootLayout({
           `
         }} />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} ${inter.variable} ${display.variable}`}>
         {children}
         <AccessibilityWidget />
         <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module" async></script>
+        <RealtorAnalytics siteName="mesquiteestates.com" />
       </body>
     </html>
   );

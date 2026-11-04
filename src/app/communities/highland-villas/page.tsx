@@ -6,6 +6,7 @@ import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import Link from "next/link";
 
+import OfficeListings from "@/components/common/OfficeListings";
 export default function HighlandVillas() {
   return (
     <>
@@ -25,12 +26,13 @@ export default function HighlandVillas() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         <section className="mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative w-full h-64 sm:h-80">
               <Image
-                src="/Image/hero_bg_1.jpg"
+                src="https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/cambria-single-story-home-street.jpg"
                 alt="Highland Villas Community"
                 fill
                 className="rounded-lg shadow-lg object-cover"
@@ -51,17 +53,6 @@ export default function HighlandVillas() {
                 process of finding homes that meet their specific needs and preferences in this welcoming community.
               </p>
             </div>
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-indigo-900 mb-6">Highland Villas Homes for Sale</h2>
-          <div className="w-full">
-            <realscout-office-listings 
-              agent-encoded-id="QWdlbnQtMjI1MDUw" 
-              sort-order="NEWEST" 
-              listing-status="For Sale"
-            ></realscout-office-listings>
           </div>
         </section>
 

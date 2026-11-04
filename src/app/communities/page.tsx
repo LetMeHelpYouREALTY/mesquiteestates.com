@@ -6,12 +6,13 @@ import Image from "next/image";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 
+import OfficeListings from "@/components/common/OfficeListings";
 const communities = [
   {
     name: "Sun City Mesquite",
     slug: "sun-city-mesquite",
     description: "Nevada's premier 55+ active adult community by Del Webb, featuring resort-style amenities, championship golf, and an active lifestyle.",
-    image: "/Image/hero_bg_1.jpg",
+    image: "https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/active-adult-clubhouse-pool.jpg",
     featured: true,
     amenities: ["18-hole Golf Course", "Fitness Center", "Pools", "100+ Clubs"],
   },
@@ -19,7 +20,7 @@ const communities = [
     name: "Falcon Ridge",
     slug: "falcon-ridge",
     description: "Beautiful golf course community offering luxury homes with stunning views and direct access to championship golf.",
-    image: "/Image/hero_bg_2.jpg",
+    image: "https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/golf-course-home-backyard.jpg",
     featured: false,
     amenities: ["Golf Course Access", "Mountain Views", "Resort Amenities"],
   },
@@ -27,7 +28,7 @@ const communities = [
     name: "Mesquite Vistas",
     slug: "mesquite-vistas",
     description: "Community with scenic desert vistas and convenient access to Mesquite amenities.",
-    image: "/Image/hero_bg_3.jpg",
+    image: "https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/mesquite-estates-pool-terrace-mountain-view.jpg",
     featured: false,
     amenities: ["Desert Views", "Parks & Recreation"],
   },
@@ -35,7 +36,7 @@ const communities = [
     name: "Highland Villas",
     slug: "highland-villas",
     description: "Peaceful neighborhood offering comfortable living with easy access to shopping and entertainment.",
-    image: "/Image/hero_bg_1.jpg",
+    image: "https://pub-96456b28eb81442f9bbd3d212e9b7115.r2.dev/raw/cambria-single-story-home-street.jpg",
     featured: false,
     amenities: ["Quiet Neighborhood", "Easy Access", "Community Pool"],
   },
@@ -61,6 +62,7 @@ export default function CommunitiesPage() {
             📞 Call/Text: 702-718-2228
           </a>
         </section>
+        <OfficeListings />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {communities.map((community) => (
