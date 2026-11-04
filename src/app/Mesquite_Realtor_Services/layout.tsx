@@ -1,0 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: { absolute: "Mesquite Realtor Services | Buy & Sell With Dr. Duffy" },
+  description: "Buyer and seller services in Mesquite, Nevada: pricing, marketing, negotiation, golf course homes, and custom lots with Dr. Jan Duffy.",
+};
+
+export default function MesquiteRealtorServicesLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <>{children}</>;
+}
