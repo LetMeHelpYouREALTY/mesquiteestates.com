@@ -84,15 +84,6 @@ export default async function EnclavePage({ params }: { params: Promise<{ enclav
           </section>
         ))}
 
-        <section className="bg-ink text-sand">
-          <div className="mx-auto max-w-5xl px-4 py-16 text-center sm:px-8">
-            <h2 className="font-display text-4xl font-semibold">Search {e.name} and Mesquite Estates Listings</h2>
-            <p className="mt-3 text-dune">Search &ldquo;Mesquite, NV&rdquo; to see homes and lots for sale, then save your favorites.</p>
-            <div className="mt-8 flex justify-center">
-              <realscout-simple-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-simple-search>
-            </div>
-          </div>
-        </section>
 
         <FaqBlock title={`${e.name} FAQs`} faqs={e.faqs} />
 

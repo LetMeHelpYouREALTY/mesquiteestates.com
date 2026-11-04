@@ -85,18 +85,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-ink text-sand" aria-labelledby="search">
-          <div className="mx-auto max-w-5xl px-4 py-20 text-center sm:px-8">
-            <Eyebrow>Search Homes</Eyebrow>
-            <h2 id="search" className="mt-4 font-display text-4xl font-semibold sm:text-5xl">Search Homes for Sale in Mesquite Estates</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-dune">
-              Type &ldquo;Mesquite, NV&rdquo; and filter by price, lot size or pool. Save homes and get an email when new ones come up.
-            </p>
-            <div className="mt-10 flex justify-center">
-              <realscout-simple-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-simple-search>
-            </div>
-          </div>
-        </section>
 
         <SplitFeature image={IMAGES.clubhouse} eyebrow="55+ Living" title="55+ Communities in Mesquite, Compared">
           <p>
