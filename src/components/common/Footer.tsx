@@ -44,6 +44,7 @@ export default function Footer() {
             <p className="text-sand">Dr. Jan Duffy, REALTOR®</p>
             <p>1155 W Pioneer Blvd, Suite 104-D</p>
             <p>Mesquite, NV 89027</p>
+            <p>Serving all of Mesquite, NV 89027 &amp; 89034</p>
             <p>
               <a href="tel:+17027182228" className="hover:text-clay">702-718-2228</a>
             </p>
