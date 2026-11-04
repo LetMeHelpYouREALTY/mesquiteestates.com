@@ -183,7 +183,7 @@ export default function SunCityMesquite() {
           </p>
           <p className="text-base text-gray-700 mb-4">
             The community is an easy day&apos;s drive from Arizona, California, Colorado, and Utah - 
-            perfect for visits from family and friends.
+            an easy trip for visiting guests.
           </p>
         </section>
 
@@ -550,7 +550,7 @@ export default function SunCityMesquite() {
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-indigo-100">
             Let Dr. Jan Duffy help you find the perfect home in Nevada&apos;s premier 55+ community.
-            With 500+ Vegas Valley families helped, I know this market inside and out.
+            With 500+ Vegas Valley clients helped, I know this market inside and out.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
             <Link

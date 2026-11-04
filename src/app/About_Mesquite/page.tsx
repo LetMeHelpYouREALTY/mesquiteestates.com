@@ -55,7 +55,7 @@ export default function AboutMesquite() {
                 The Virgin River Valley provides a unique setting that combines the tranquility of a small-town community 
                 with access to world-class amenities and entertainment. The natural beauty of the area makes it an ideal 
                 location for those seeking both adventure and relaxation. Mesquite real estate offers opportunities for golf 
-                homes, family residences, and vacation properties that take advantage of this exceptional location.
+                homes, move-in-ready homes, and vacation properties that take advantage of this exceptional location.
               </p>
               <p className="text-base text-gray-700 mb-6">
                 Dr. Jan Duffy, an experienced Mesquite realtor, helps clients understand the 
@@ -158,7 +158,7 @@ export default function AboutMesquite() {
               </div>
               <p className="text-base text-gray-700 mb-4">
                 Mesquite offers a vibrant lifestyle with something for everyone. Enjoy 24-hour casino action, live entertainment, 
-                delicious dining options, and exciting annual sports and special events for the whole family. This vibrant 
+                delicious dining options, and exciting annual sports and special events for every visitor. This vibrant 
                 atmosphere makes Mesquite homes appealing to buyers seeking an active lifestyle with diverse recreational opportunities.
               </p>
               <p className="text-base text-gray-700 mb-6">
@@ -320,7 +320,7 @@ export default function AboutMesquite() {
             Find Your Dream Home in Mesquite Estates
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-indigo-100">
-            Custom lots from $70K, homes $360K-$700K. Experience the perfect blend of natural beauty, 
+            Homes sold for $225K to $3M over the past year, a $440K median (MLS, Nov 2026). Experience the perfect blend of natural beauty, 
             recreational opportunities, and small-town charm.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -40,7 +40,7 @@ export default function About() {
                 Mesquite Estates represents the vision of bringing exceptional living experiences to the beautiful 
                 Virgin River Valley. Under the leadership of Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas, we specialize 
                 in helping clients discover their perfect home in Mesquite, Nevada. Our expertise in Mesquite real estate 
-                encompasses everything from golf homes and luxury properties to custom lots and family residences, ensuring 
+                encompasses everything from golf homes and luxury properties to custom lots and move-in-ready homes, ensuring 
                 that every client finds the ideal property that matches their lifestyle and budget.
               </p>
               <p className="text-base text-gray-700 mb-4">
@@ -53,7 +53,7 @@ export default function About() {
               <p className="text-base text-gray-700 mb-4">
                 The Mesquite Estates team understands that buying a home in Mesquite is more than just a real estate transaction - 
                 it&apos;s about investing in a lifestyle enriched by natural beauty, recreational opportunities, and community connections. 
-                Whether clients are seeking golf homes near championship courses, family residences in quiet neighborhoods, or custom 
+                Whether clients are seeking golf homes near championship courses, single-story homes with mountain views, or custom 
                 lots to build their dream home, we provide the expertise and personalized service that ensures successful outcomes.
               </p>
               
@@ -97,9 +97,9 @@ export default function About() {
                 Our Mission
               </h2>
               <p className="text-base text-gray-700 mb-4">
-                Our mission is to help individuals and families discover their perfect home in Mesquite, Nevada. 
+                Our mission is to help buyers and sellers find the right home in Mesquite, Nevada. 
                 We provide expert guidance in finding custom lots and homes that fit your lifestyle and budget, 
-                from custom lots starting at $70K to beautiful homes ranging from $360K to $700K. As your trusted Mesquite 
+                from building lots to homes that sold for $225K to $3M over the past year (a $440K median, MLS, Nov 2026). As your trusted Mesquite 
                 realtor, Dr. Jan Duffy offers comprehensive realtor services that make the process of finding and purchasing 
                 Mesquite homes efficient and enjoyable.
               </p>
@@ -107,7 +107,7 @@ export default function About() {
                 We are committed to excellence, integrity, and personalized service. Our goal is to create lasting value 
                 for our clients by helping them invest in not just a property, but in a lifestyle enriched by Mesquite&apos;s 
                 natural beauty, recreational opportunities, and welcoming community. Whether clients seek golf homes on 
-                championship courses, family residences, or investment properties, our mission centers on providing expert 
+                championship courses, move-in-ready homes, or investment properties, our mission centers on providing expert 
                 guidance that ensures successful real estate transactions.
               </p>
               
@@ -143,8 +143,8 @@ export default function About() {
             Expertise in Mesquite Real Estate
           </h3>
           <p className="text-base text-gray-700 mb-8 max-w-3xl mx-auto text-center">
-            Our team&apos;s expertise encompasses all aspects of Mesquite real estate, including golf homes, custom lots, family 
-            residences, and investment properties. We understand the unique characteristics that make Mesquite homes desirable, 
+            Our team&apos;s expertise encompasses all aspects of Mesquite real estate, including golf homes, custom lots, move-in-ready 
+            homes, and investment properties. We understand the unique characteristics that make Mesquite homes desirable, 
             from proximity to championship golf courses to stunning desert views and resort amenities. This comprehensive knowledge 
             of the Mesquite real estate market enables us to match clients with properties that perfectly suit their needs and preferences.
           </p>
