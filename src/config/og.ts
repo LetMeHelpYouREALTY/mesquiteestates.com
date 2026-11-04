@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { IMAGES, type SiteImage } from "@/data/mesquiteEstates";
 
 const SITE = "https://www.mesquiteestates.com";
-const SITE_NAME = "Mesquite Estates | Homes by Dr. Jan Duffy";
+const SITE_NAME = "Mesquite Estates Homes by Dr. Jan Duffy";
 
 /**
  * Per-page social share tags (Open Graph + X/Twitter) and canonical.
